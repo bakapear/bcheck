@@ -20,18 +20,6 @@ function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, 
   }
 }
 
-let args = process.argv.slice(2)
-let height = Number(args[0])
-let types = args[1] && args[1].split(',')
-let weapons = args[2] && args[2].split(',')
-
-if (!args.length) console.log('bcheck <height> [type] [weapon] | bcheck <types/weapons>')
-else {
-  if (args[0] === 'types') console.log('Types:', list.types.join(', '))
-  else if (args[0] === 'weapons') console.log('Weapons:', list.weapons.join(', '))
-  else main(height, types, weapons)
-}
-
 function main (height, types = ['default'], weapons = []) {
   if (!Array.isArray(types)) types = [types]
   if (!Array.isArray(weapons)) weapons = [weapons]
@@ -55,4 +43,16 @@ function main (height, types = ['default'], weapons = []) {
     if (check(types, type)) for (let bounce of bounces[type]) if (check(weapons, bounce.weapon)) logBounce(height, bounce, { jumpbug: true })
   }
   console.log('')
+}
+
+let args = process.argv.slice(2)
+let height = Number(args[0])
+let types = args[1] && args[1].split(',')
+let weapons = args[2] && args[2].split(',')
+
+if (!args.length) console.log('bcheck <height> [type] [weapon] | bcheck <types/weapons>')
+else {
+  if (args[0] === 'types') console.log('Types:', list.types.join(', '))
+  else if (args[0] === 'weapons') console.log('Weapons:', list.weapons.join(', '))
+  else main(height, types, weapons)
 }
