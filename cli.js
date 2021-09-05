@@ -20,9 +20,6 @@ function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, 
   }
 }
 
-let weps = new Set()
-Object.values(bounces).map(x => x.map(y => y.weapon && weps.add(y.weapon)))
-
 let args = process.argv.slice(2)
 let height = Number(args[0])
 let types = args[1] && args[1].split(',')
