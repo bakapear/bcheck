@@ -74,7 +74,7 @@ function getVelFromAngle (angle, crouched, [y, radius]) {
     ((p.height / 2) + 9)) / (Math.sqrt((p.height ** 2) + 4 * l2 + 36 * p.height + 324))
 }
 
-function getBounceAngles (height, bounce, land = { jumpbug: false, crouched: false }, teleheight) {
+function getBounceAngles (height, bounce, land = { jumpbug: false, crouched: false }, teleheight = 1) {
   let angles = []
   let set = []
   let prev = null
@@ -92,7 +92,20 @@ function getBounceAngles (height, bounce, land = { jumpbug: false, crouched: fal
     }
   }
   if (set.length > 1) angles.push([set.shift(), set.pop()])
-  return angles.sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]))
+  angles = angles.sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]))
+
+  if (bounce.ang && angles.length) {
+    let ang = angles[0]
+    let goal = bounce.ang
+    if (goal !== -1) {
+      let avg = x => (x[0] + x[1]) / 2
+      ang = angles.reduce((prev, curr) => {
+        return (Math.abs(avg(curr) - goal) < Math.abs(avg(prev) - goal) ? curr : prev)
+      })
+    }
+    return ang
+  }
+  return angles
 }
 
 function checkBounce (height, bounce, land = { jumpbug: false, crouched: false }, teleheight = 1) {
@@ -113,4 +126,33 @@ function checkBounce (height, bounce, land = { jumpbug: false, crouched: false }
   return b
 }
 
-module.exports = { checkBounce, getBounceAngles }
+function formatBounceJSON (data) {
+  let WILDCARD = '*'
+  let types = Object.keys(data)
+  let weapons = new Set()
+  Object.values(data).map(x => x.map(y => y.weapon && y.weapon !== WILDCARD && weapons.add(y.weapon)))
+
+  for (let type in data) {
+    let arr = data[type]
+    for (let i = 0; i < arr.length; i++) {
+      let bounce = arr[i]
+      let bulk = []
+      if (bounce.weapon === WILDCARD) {
+        for (let weapon of weapons) bulk.push({ ...bounce, weapon })
+      } else if (Array.isArray(bounce.offset)) {
+        bounce.offset.forEach((offset, i) => {
+          bulk.push({ ...bounce, offset, text: bounce.text.replace(WILDCARD, i + 1) })
+        })
+      } else if (Array.isArray(bounce.vel)) {
+        bounce.vel.forEach(vel => {
+          bulk.push({ ...bounce, vel, text: bounce.text.replace(WILDCARD, vel) })
+        })
+      }
+      if (bulk.length) arr.splice(i, 1, ...bulk)
+    }
+  }
+
+  return { bounces: data, list: { types, weapons: Array.from(weapons) } }
+}
+
+module.exports = { checkBounce, getBounceAngles, formatBounceJSON }

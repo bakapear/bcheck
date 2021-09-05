@@ -1,49 +1,16 @@
 let bcheck = require('./bcheck.js')
 
 let data = require('./bounces.json')
-let { bounces, list } = formatBounces(data)
-
-function formatBounces (data) {
-  let WILDCARD = '*'
-  let types = Object.keys(data)
-  let weapons = new Set()
-  Object.values(data).map(x => x.map(y => y.weapon && y.weapon !== WILDCARD && weapons.add(y.weapon)))
-
-  for (let type in data) {
-    let arr = data[type]
-    for (let i = 0; i < arr.length; i++) {
-      let bounce = arr[i]
-      if (bounce.weapon === WILDCARD) {
-        let bulk = []
-        for (let weapon of weapons) bulk.push({ ...bounce, weapon })
-        arr.splice(i, 1, ...bulk)
-      }
-    }
-  }
-
-  return { bounces: data, list: { types, weapons: Array.from(weapons) } }
-}
+let { bounces, list } = bcheck.formatBounceJSON(data)
 
 function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, teleheight = 1) {
   let b = false
   let ang = null
 
-  if (bounce.ang) {
-    let a = bcheck.getBounceAngles(height, bounce, land, teleheight)
-    if (a.length) {
-      ang = a[0]
-      let goal = bounce.ang
-      if (goal !== -1) {
-        let avg = x => (x[0] + x[1]) / 2
-        ang = a.reduce((prev, curr) => {
-          return (Math.abs(avg(curr) - goal) < Math.abs(avg(prev) - goal) ? curr : prev)
-        })
-      }
-      b = true
-    }
-  } else b = bcheck.checkBounce(height, bounce, land, teleheight)
+  if (bounce.ang) ang = bcheck.getBounceAngles(height, bounce, land, teleheight)
+  else b = bcheck.checkBounce(height, bounce, land, teleheight)
 
-  if (b) {
+  if (b || ang) {
     console.log(
       (bounce.weapon ? `(${bounce.weapon}) ` : '') +
       bounce.text +
