@@ -137,6 +137,12 @@ function formatBounceJSON (data) {
     for (let i = 0; i < arr.length; i++) {
       let bounce = arr[i]
       let bulk = []
+      if (i === 0 && bounce.all) {
+        arr.splice(0, 1)
+        data[type] = arr.map(x => { return { ...x, ...bounce.all } })
+        i = 0
+        continue
+      }
       if (bounce.weapon === WILDCARD) {
         for (let weapon of weapons) bulk.push({ ...bounce, weapon })
       } else if (Array.isArray(bounce.offset)) {
