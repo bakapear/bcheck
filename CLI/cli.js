@@ -1,6 +1,6 @@
-let bcheck = require('./bcheck.js')
+let bcheck = require('../bcheck.js')
 
-let data = require('./bounces.json')
+let data = require('../bounces.json')
 let { bounces, list } = bcheck.formatBounceJSON(data)
 
 function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, teleheight = 1) {
