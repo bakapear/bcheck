@@ -16,7 +16,7 @@ function formatBounces (bounces, types, weapons, land) {
           strs.push(
             (bounce.weapon ? `(${bounce.weapon}) ` : '') +
             bounce.text +
-            (bounce.ang ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
+            (bounce.ang.length ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
             (bounce.double ? ' [double]' : '')
           )
         }
