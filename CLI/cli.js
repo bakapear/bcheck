@@ -1,5 +1,4 @@
 let bcheck = require('../src/bcheck.js')
-
 let data = require('../src/bounces.json')
 let { bounces, list } = bcheck.formatBounceJSON(data)
 
