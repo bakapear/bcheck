@@ -10,7 +10,7 @@ function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, 
   if (bounce.ang) ang = bcheck.getBounceAngles(height, bounce, land, teleheight)
   else b = bcheck.checkBounce(height, bounce, land, teleheight)
 
-  if (b || ang) {
+  if (b || ang.length) {
     console.log(
       (bounce.weapon ? `(${bounce.weapon}) ` : '') +
       bounce.text +
