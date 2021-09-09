@@ -127,6 +127,28 @@
     { "text": "JDS Back <262 u/s>", "vel": 951.530395 },
     { "text": "JDS Left/Right <309 u/s>", "vel": 947.807434 },
     { "text": "JDS Forward+Left/Right <320 u/s>", "vel": 945.821289 },
-    { "text": "JDS Back+Left/Right <298 u/s>", "vel": 949.79486 }
+    { "text": "JDS Back+Left/Right <298 u/s>", "vel": 949.79486 },
+	
+	{ "all": { "weapon": "Mangler", "offset": 35.9, "crouched": true } },
+	{ "text": "JDS Stand <71 u/s>", "vel": 923.230285 },
+	{ "text": "JDS Forward <356 u/s>", "vel": 907.698486 },
+	{ "text": "JDS Back <295 u/s>", "vel": 916.801391 },
+	{ "text": "JDS Left <400 u/s>", "vel": 894.896789 },
+	{ "text": "JDS Right <267 u/s>", "vel": 928.724487 },
+	{ "text": "JDS Forward+Left <393 u/s>", "vel": 897.056579 },
+	{ "text": "JDS Forward+Right <303 u/s>", "vel": 920.841613 },
+	{ "text": "JDS Back+Left <377 u/s>", "vel": 901.838989 },
+	{ "text": "JDS Back+Right <278 u/s>", "vel": 926.394226 },
+	
+	{ "all": { "weapon": "Mangler", "offset": 32.195, "crouched": true } },
+	{ "text": "JDS Stand <76 u/s>", "vel": 946.746337 },
+	{ "text": "JDS Forward <332 u/s>", "vel": 938.016723 },
+	{ "text": "JDS Back <272 u/s>", "vel": 944.367858 },
+	{ "text": "JDS Left <380 u/s>", "vel": 928.198364 },
+	{ "text": "JDS Right <234 u/s>", "vel": 953.932678 },
+	{ "text": "JDS Forward+Left <372 u/s>", "vel": 929.870788 },
+	{ "text": "JDS Forward+Right <275 u/s>", "vel": 947.890380 },
+	{ "text": "JDS Back+Left <355 u/s>", "vel": 933.535827 },
+	{ "text": "JDS Back+Right <247 u/s>", "vel": 952.172241 }
   ]
 }
