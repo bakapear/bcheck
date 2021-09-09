@@ -103,5 +103,21 @@
     { "text": "(*x Ctap) Jump", "vel": 283 },
     { "text": "(*x Ctap) Crouch Jump", "vel": 289 },
     { "text": "(*x Ctap) Ctap", "vel": 289, "crouched": true }
+  ],
+  "jds": [
+    { "all": { "offset": 35.9, "weapon": "Original" } },
+    { "text": "JDS Stand (15 u/s)", "vel": 929.686889 },
+    { "text": "JDS Forward (350 u/s)", "vel": 913.787658 },
+    { "text": "JDS Back (288 u/s)", "vel": 923.102844 },
+    { "text": "JDS Left/Right (336 u/s)", "vel": 917.451354 },
+    { "text": "JDS Forward+Left/Right (346 u/s)", "vel": 914.864746 },
+    { "text": "JDS Back+Left/Right (326 u/s)", "vel": 920.063171 },
+    { "all": { "offset": 32.195, "weapon": "Original" } },
+    { "text": "JDS Stand (16 u/s)", "vel": 953.976379 },
+    { "text": "JDS Forward (324 u/s)", "vel": 945.002929 },
+    { "text": "JDS Back (262 u/s)", "vel": 951.530395 },
+    { "text": "JDS Left/Right (309 u/s)", "vel": 947.807434 },
+    { "text": "JDS Forward+Left/Right (320 u/s)", "vel": 945.821289 },
+    { "text": "JDS Back+Left/Right (298 u/s)", "vel": 949.79486 }
   ]
 }
