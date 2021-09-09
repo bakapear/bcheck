@@ -5,7 +5,7 @@ let { bounces, list } = bcheck.formatBounceJSON(data)
 
 function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, teleheight = 1) {
   let b = false
-  let ang = null
+  let ang = []
 
   if (bounce.ang) ang = bcheck.getBounceAngles(height, bounce, land, teleheight)
   else b = bcheck.checkBounce(height, bounce, land, teleheight)
@@ -14,7 +14,7 @@ function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, 
     console.log(
       (bounce.weapon ? `(${bounce.weapon}) ` : '') +
       bounce.text +
-      (ang ? ` <${ang[0]} - ${ang[1]}>` : '') +
+      (ang.length ? ` <${ang[0]} - ${ang[1]}>` : '') +
       ((bounce.double || b === 2) ? ' [double]' : '')
     )
   }
