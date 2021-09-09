@@ -1,489 +1,107 @@
 {
   "default": [
-    {
-      "text": "Walk",
-      "vel": -6
-    },
-    {
-      "text": "Crouch Walk",
-      "vel": -6,
-      "crouched": true
-    },
-    {
-      "text": "Jump",
-      "vel": 283
-    },
-    {
-      "text": "Crouch Jump",
-      "vel": 289
-    },
-    {
-      "text": "Ctap",
-      "vel": 289,
-      "crouched": true
-    },
-    {
-      "text": "Ceilingsmash",
-      "vel": -6,
-      "ceiling": true
-    }
+    { "text": "Walk", "vel": -6 },
+    { "text": "Crouch Walk", "vel": -6, "crouched": true },
+    { "text": "Jump", "vel": 283 },
+    { "text": "Crouch Jump", "vel": 289 },
+    { "text": "Ctap", "vel": 289, "crouched": true },
+    { "text": "Ceilingsmash", "vel": -6, "ceiling": true }
   ],
   "special": [
-    {
-      "weapon": "Stock",
-      "text": "Walk Back+Left",
-      "vel": 382.178863
-    },
-    {
-      "weapon": "Stock",
-      "text": "Walk Back",
-      "vel": 407.481628
-    },
-    {
-      "weapon": "Stock",
-      "text": "Walk Back+Right",
-      "vel": 432.108001
-    },
-    {
-      "weapon": "Stock",
-      "text": "Walk Left",
-      "vel": 371.735809
-    },
-    {
-      "weapon": "Stock",
-      "text": "Stand",
-      "vel": 416.319
-    },
-    {
-      "weapon": "Stock",
-      "text": "Walk Right",
-      "vel": 445.52951
-    },
-    {
-      "weapon": "Stock",
-      "text": "Walk Forward+Left",
-      "vel": 376.54486
-    },
-    {
-      "weapon": "Stock",
-      "text": "Walk Forward",
-      "vel": 395.33377
-    },
-    {
-      "weapon": "Stock",
-      "text": "Walk Forward+Right",
-      "vel": 422.11798
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Back+Left",
-      "vel": 573.305053,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Back",
-      "vel": 579.760192,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Back+Right",
-      "vel": 592.537048,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Left",
-      "vel": 576.230224,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch",
-      "vel": 591.277954,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Right",
-      "vel": 604.681518,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Forward+Left",
-      "vel": 587.184143,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Forward",
-      "vel": 600.576538,
-      "crouched": true
-    },
-    {
-      "weapon": "Stock",
-      "text": "Crouch Forward+Right",
-      "vel": 608.237792,
-      "crouched": true
-    },
-    {
-      "weapon": "Original",
-      "text": "Walk Back",
-      "vel": 429.627014
-    },
-    {
-      "weapon": "Original",
-      "text": "Walk Back+Left/Right",
-      "vel": 424.150573
-    },
-    {
-      "weapon": "Original",
-      "text": "Stand",
-      "vel": 445.986633
-    },
-    {
-      "weapon": "Original",
-      "text": "Walk Left/Right",
-      "vel": 419.64392
-    },
-    {
-      "weapon": "Original",
-      "text": "Walk Forward",
-      "vel": 413.769744
-    },
-    {
-      "weapon": "Original",
-      "text": "Walk Forward+Left/Right",
-      "vel": 415.43988
-    },
-    {
-      "weapon": "Original",
-      "text": "Crouch Back",
-      "vel": 616.712768,
-      "crouched": true
-    },
-    {
-      "weapon": "Original",
-      "text": "Crouch Back+Left/Right",
-      "vel": 620.422119,
-      "crouched": true
-    },
-    {
-      "weapon": "Original",
-      "text": "Crouch",
-      "vel": 631.863708,
-      "crouched": true
-    },
-    {
-      "weapon": "Original",
-      "text": "Crouch Left/Right",
-      "vel": 629.907104,
-      "crouched": true
-    },
-    {
-      "weapon": "Original",
-      "text": "Crouch Forward",
-      "vel": 645.275085,
-      "crouched": true
-    },
-    {
-      "weapon": "Original",
-      "text": "Crouch Forward+Left/Right",
-      "vel": 640.437744,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Back+Left",
-      "vel": 397.972534
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Back",
-      "vel": 418.827392
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Back+Right",
-      "vel": 435.86676
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Left",
-      "vel": 388.863159
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Stand",
-      "vel": 429.504943
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Right",
-      "vel": 442.260009
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Forward+Left",
-      "vel": 391.511077
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Forward",
-      "vel": 405.110107
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Walk Forward+Right",
-      "vel": 425.028869
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Back+Left",
-      "vel": 595.373779,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Back",
-      "vel": 599.184509,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Back+Right",
-      "vel": 609.867736,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Left",
-      "vel": 600.183776,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch",
-      "vel": 612.2807,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Right",
-      "vel": 621.940795,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Forward+Left",
-      "vel": 611.391357,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Forward",
-      "vel": 623.125061,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler",
-      "text": "Crouch Forward+Right",
-      "vel": 627.835876,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Back+Left",
-      "vel": 419.471618
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Back",
-      "vel": 430.357269
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Back+Right",
-      "vel": 442.140319
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Left",
-      "vel": 413.825378
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Stand",
-      "vel": 433.183532
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Right",
-      "vel": 445.936309
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Forward+Left",
-      "vel": 415.476013
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Forward",
-      "vel": 423.834533
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Walk Forward+Right",
-      "vel": 435.759887
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Back+Left",
-      "vel": 613.319702,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Back",
-      "vel": 614.964904,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Back+Right",
-      "vel": 619.456298,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Left",
-      "vel": 615.3927,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch",
-      "vel": 620.069274,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Right",
-      "vel": 624.288574,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Forward+Left",
-      "vel": 620.081237,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Forward",
-      "vel": 624.746643,
-      "crouched": true
-    },
-    {
-      "weapon": "Mangler Charged",
-      "text": "Crouch Forward+Right",
-      "vel": 626.536804,
-      "crouched": true
-    }
+    { "all": { "weapon": "Stock" } },
+    { "text": "Walk Back+Left", "vel": 382.178863 },
+    { "text": "Walk Back", "vel": 407.481628 },
+    { "text": "Walk Back+Right", "vel": 432.108001 },
+    { "text": "Walk Left", "vel": 371.735809 },
+    { "text": "Stand", "vel": 416.319 },
+    { "text": "Walk Right", "vel": 445.52951 },
+    { "text": "Walk Forward+Left", "vel": 376.54486 },
+    { "text": "Walk Forward", "vel": 395.33377 },
+    { "text": "Walk Forward+Right", "vel": 422.11798 },
+    { "all": { "weapon": "Stock", "crouched": true } },
+    { "text": "Crouch Back+Left", "vel": 573.305053 },
+    { "text": "Crouch Back", "vel": 579.760192 },
+    { "text": "Crouch Back+Right", "vel": 592.537048 },
+    { "text": "Crouch Left", "vel": 576.230224 },
+    { "text": "Crouch", "vel": 591.277954 },
+    { "text": "Crouch Right", "vel": 604.681518 },
+    { "text": "Crouch Forward+Left", "vel": 587.184143 },
+    { "text": "Crouch Forward", "vel": 600.576538 },
+    { "text": "Crouch Forward+Right", "vel": 608.237792 },
+    { "all": { "weapon": "Original" } },
+    { "text": "Walk Back", "vel": 429.627014 },
+    { "text": "Walk Back+Left/Right", "vel": 424.150573 },
+    { "text": "Stand", "vel": 445.986633 },
+    { "text": "Walk Left/Right", "vel": 419.64392 },
+    { "text": "Walk Forward", "vel": 413.769744 },
+    { "text": "Walk Forward+Left/Right", "vel": 415.43988 },
+    { "all": { "weapon": "Original", "crouched": true } },
+    { "text": "Crouch Back", "vel": 616.712768 },
+    { "text": "Crouch Back+Left/Right", "vel": 620.422119 },
+    { "text": "Crouch", "vel": 631.863708 },
+    { "text": "Crouch Left/Right", "vel": 629.907104 },
+    { "text": "Crouch Forward", "vel": 645.275085 },
+    { "text": "Crouch Forward+Left/Right", "vel": 640.437744 },
+    { "all": { "weapon": "Mangler" } },
+    { "text": "Walk Back+Left", "vel": 397.972534 },
+    { "text": "Walk Back", "vel": 418.827392 },
+    { "text": "Walk Back+Right", "vel": 435.86676 },
+    { "text": "Walk Left", "vel": 388.863159 },
+    { "text": "Stand", "vel": 429.504943 },
+    { "text": "Walk Right", "vel": 442.260009 },
+    { "text": "Walk Forward+Left", "vel": 391.511077 },
+    { "text": "Walk Forward", "vel": 405.110107 },
+    { "text": "Walk Forward+Right", "vel": 425.028869 },
+    { "all": { "weapon": "Mangler", "crouched": true } },
+    { "text": "Crouch Back+Left", "vel": 595.373779 },
+    { "text": "Crouch Back", "vel": 599.184509 },
+    { "text": "Crouch Back+Right", "vel": 609.867736 },
+    { "text": "Crouch Left", "vel": 600.183776 },
+    { "text": "Crouch", "vel": 612.2807 },
+    { "text": "Crouch Right", "vel": 621.940795 },
+    { "text": "Crouch Forward+Left", "vel": 611.391357 },
+    { "text": "Crouch Forward", "vel": 623.125061 },
+    { "text": "Crouch Forward+Right", "vel": 627.835876 },
+    { "all": { "weapon": "Mangler Charged" } },
+    { "text": "Walk Back+Left", "vel": 419.471618 },
+    { "text": "Walk Back", "vel": 430.357269 },
+    { "text": "Walk Back+Right", "vel": 442.140319 },
+    { "text": "Walk Left", "vel": 413.825378 },
+    { "text": "Stand", "vel": 433.183532 },
+    { "text": "Walk Right", "vel": 445.936309 },
+    { "text": "Walk Forward+Left", "vel": 415.476013 },
+    { "text": "Walk Forward", "vel": 423.834533 },
+    { "text": "Walk Forward+Right", "vel": 435.759887 },
+    { "all": { "weapon": "Mangler Charged", "crouched": true } },
+    { "text": "Crouch Back+Left", "vel": 613.319702 },
+    { "text": "Crouch Back", "vel": 614.964904 },
+    { "text": "Crouch Back+Right", "vel": 619.456298 },
+    { "text": "Crouch Left", "vel": 615.3927 },
+    { "text": "Crouch", "vel": 620.069274 },
+    { "text": "Crouch Right", "vel": 624.288574 },
+    { "text": "Crouch Forward+Left", "vel": 620.081237 },
+    { "text": "Crouch Forward", "vel": 624.746643 },
+    { "text": "Crouch Forward+Right", "vel": 626.536804 }
   ],
   "bhop": [
-    {
-      "text": "Bhop",
-      "vel": 283,
-      "offset": 0.705002
-    },
-    {
-      "text": "Double Bhop",
-      "vel": 283,
-      "offset": 1.410004
-    },
-    {
-      "text": "Double Bhop (Powerful)",
-      "vel": 283,
-      "offset": 2.115006
-    }
+    { "all": { "vel": 283 } }, 
+    { "text": "Bhop", "offset": 0.705002 }, 
+    { "text": "Double Bhop", "offset": 1.410004 }, 
+    { "text": "Double Bhop (Powerful)", "offset": 2.115006 }
   ],
   "angles": [
-    {
-      "weapon": "*",
-      "text": "Custom Angle",
-      "ang": 60
-    },
-    {
-      "weapon": "*",
-      "text": "Biggest Angle",
-      "ang": -1
-    }
+    { "all": { "weapon": "*" } },
+    { "text": "Steepest Angle", "ang": 1 },
+    { "text": "Biggest Angle", "ang": -1 },
+    { "text": "Steepest Angle Crouched", "ang": 1, "crouched": true },
+    { "text": "Biggest Angle Crouched", "ang": -1, "crouched": true }
   ],
   "ctap": [
-    {
-      "text": "(*x Ctap) Walk",
-      "vel": -6,
-      "offset": [
-        -0.004997,
-        -0.009994,
-        -0.014991,
-        -0.019989,
-        -0.024986,
-        -0.029983
-      ]
-    },
-    {
-      "text": "(*x Ctap) Crouch Walk",
-      "vel": -6,
-      "crouched": true,
-      "offset": [
-        -0.004997,
-        -0.009994,
-        -0.014991,
-        -0.019989,
-        -0.024986,
-        -0.029983
-      ]
-    },
-    {
-      "text": "(*x Ctap) Jump",
-      "vel": 283,
-      "offset": [
-        -0.004997,
-        -0.009994,
-        -0.014991,
-        -0.019989,
-        -0.024986,
-        -0.029983
-      ]
-    },
-    {
-      "text": "(*x Ctap) Crouch Jump",
-      "vel": 289,
-      "offset": [
-        -0.004997,
-        -0.009994,
-        -0.014991,
-        -0.019989,
-        -0.024986,
-        -0.029983
-      ]
-    },
-    {
-      "text": "(*x Ctap) Ctap",
-      "vel": 289,
-      "crouched": true,
-      "offset": [
-        -0.004997,
-        -0.009994,
-        -0.014991,
-        -0.019989,
-        -0.024986,
-        -0.029983
-      ]
-    }
+    { "all": { "offset": [ -0.004997, -0.009994, -0.014991, -0.019989, -0.024986, -0.029983 ] } },
+    { "text": "(*x Ctap) Walk", "vel": -6 },
+    { "text": "(*x Ctap) Crouch Walk", "vel": -6, "crouched": true },
+    { "text": "(*x Ctap) Jump", "vel": 283 },
+    { "text": "(*x Ctap) Crouch Jump", "vel": 289 },
+    { "text": "(*x Ctap) Ctap", "vel": 289, "crouched": true }
   ]
 }
