@@ -4,24 +4,16 @@ let data = require('../src/bounces.json')
 let { bounces, list } = bcheck.formatBounceJSON(data)
 
 function formatBounces (bounces, types, weapons, land) {
-  let check = (x, y) => !y || (!x.length || x.includes(y.toLowerCase()))
-
   let strs = []
 
-  for (let type in bounces) {
-    if (check(types, type)) {
-      let res = bcheck.getBounces(height, bounces[type], land)
-      for (let bounce of res) {
-        if (check(weapons, bounce.weapon)) {
-          strs.push(
-            (bounce.weapon ? `(${bounce.weapon}) ` : '') +
-            bounce.text +
-            (bounce.ang.length ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
-            (bounce.double ? ' [double]' : '')
-          )
-        }
-      }
-    }
+  let res = bcheck.getBounces(height, bounces, land)
+  for (let bounce of res) {
+    strs.push(
+      (bounce.weapon ? `(${bounce.weapon}) ` : '') +
+      bounce.text +
+      (bounce.ang.length ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
+      (bounce.double ? ' [double]' : '')
+    )
   }
 
   return strs.join('\n')
@@ -45,10 +37,15 @@ function main (height, types = ['default'], weapons = []) {
   types = types.map(x => x.toLowerCase())
   weapons = weapons.map(x => x.toLowerCase())
 
+  let c = (x, y) => !y || (!x.length || x.includes(y.toLowerCase()))
+  let m = '-'.repeat(5)
+
+  let set = Object.entries(bounces).filter(x => c(types, x[0])).map(x => x[1].filter(x => c(weapons, x.weapon))).flat()
+
   console.log([
     `BCHECK: ${height}` + '\n',
-    `${'-'.repeat(5)} UNCROUCHED ${'-'.repeat(5)}`, formatBounces(bounces, types, weapons, bcheck.UNCROUCHED) + '\n',
-    `${'-'.repeat(5)} CROUCHED ${'-'.repeat(5)}`, formatBounces(bounces, types, weapons, bcheck.CROUCHED) + '\n',
-    `${'-'.repeat(5)} JUMPBUG ${'-'.repeat(5)}`, formatBounces(bounces, types, weapons, bcheck.JUMPBUG) + '\n'
+    `${m} UNCROUCHED ${m}`, formatBounces(set, bcheck.UNCROUCHED) + '\n',
+    `${m} CROUCHED ${m}`, formatBounces(set, bcheck.CROUCHED) + '\n',
+    `${m} JUMPBUG ${m}`, formatBounces(set, bcheck.JUMPBUG) + '\n'
   ].join('\n'))
 }
