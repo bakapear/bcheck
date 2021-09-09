@@ -5,7 +5,7 @@ let MAXVEL = 3500.0
 let EPSILON = 0.03125
 let OFFSET = { crouched: 20, ceiling: 82 }
 let DRANGE = [0.705078, 0.999999]
-let ARANGE = [5200, 8900]
+let ARANGE = [4000, 8900]
 let PLAYER = {
   uncrouched: { height: 82, view: 68, u: -3, scale: 1 },
   crouched: { height: 62, view: 45, u: 8, scale: 82 / 55 }
@@ -137,10 +137,13 @@ function formatBounceJSON (data) {
     for (let i = 0; i < arr.length; i++) {
       let bounce = arr[i]
       let bulk = []
-      if (i === 0 && bounce.all) {
-        arr.splice(0, 1)
-        data[type] = arr.map(x => { return { ...x, ...bounce.all } })
-        i = 0
+      if (bounce.all) {
+        arr.splice(i, 1)
+        for (let j = i; j < arr.length; j++) {
+          if (arr[j].all) break
+          arr[j] = { ...arr[j], ...bounce.all }
+        }
+        i--
         continue
       }
       if (bounce.weapon === WILDCARD) {
