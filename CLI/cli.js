@@ -1,48 +1,30 @@
-let bcheck = require('../bcheck.js')
+let bcheck = require('../src/bcheck.js')
 
-let data = require('../bounces.json')
+let data = require('../src/bounces.json')
 let { bounces, list } = bcheck.formatBounceJSON(data)
 
-function logBounce (height, bounce, land = { crouched: false, jumpbug: false }, teleheight = 1) {
-  let b = false
-  let ang = []
-
-  if (bounce.ang) ang = bcheck.getBounceAngles(height, bounce, land, teleheight)
-  else b = bcheck.checkBounce(height, bounce, land, teleheight)
-
-  if (b || ang.length) {
-    console.log(
-      (bounce.weapon ? `(${bounce.weapon}) ` : '') +
-      bounce.text +
-      (ang.length ? ` <${ang[0]} - ${ang[1]}>` : '') +
-      ((bounce.double || b === 2) ? ' [double]' : '')
-    )
-  }
-}
-
-function main (height, types = ['default'], weapons = []) {
-  if (!Array.isArray(types)) types = [types]
-  if (!Array.isArray(weapons)) weapons = [weapons]
-  types = types.map(x => x.toLowerCase())
-  weapons = weapons.map(x => x.toLowerCase())
-
-  console.log(`BCHECK: ${height}`)
-  console.log('\n' + '-'.repeat(5), 'UNCROUCHED', '-'.repeat(5))
-
+function formatBounces (bounces, types, weapons, land) {
   let check = (x, y) => !y || (!x.length || x.includes(y.toLowerCase()))
 
+  let strs = []
+
   for (let type in bounces) {
-    if (check(types, type)) for (let bounce of bounces[type]) if (check(weapons, bounce.weapon)) logBounce(height, bounce)
+    if (check(types, type)) {
+      let res = bcheck.getBounces(height, bounces[type], land)
+      for (let bounce of res) {
+        if (check(weapons, bounce.weapon)) {
+          strs.push(
+            (bounce.weapon ? `(${bounce.weapon}) ` : '') +
+            bounce.text +
+            (bounce.ang ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
+            (bounce.double ? ' [double]' : '')
+          )
+        }
+      }
+    }
   }
-  console.log('\n' + '-'.repeat(6), 'CROUCHED', '-'.repeat(6))
-  for (let type in bounces) {
-    if (check(types, type)) for (let bounce of bounces[type]) if (check(weapons, bounce.weapon)) logBounce(height, bounce, { crouched: true })
-  }
-  console.log('\n' + '-'.repeat(6), 'JUMPBUG', '-'.repeat(6))
-  for (let type in bounces) {
-    if (check(types, type)) for (let bounce of bounces[type]) if (check(weapons, bounce.weapon)) logBounce(height, bounce, { jumpbug: true })
-  }
-  console.log('')
+
+  return strs.join('\n')
 }
 
 let args = process.argv.slice(2)
@@ -55,4 +37,21 @@ else {
   if (args[0] === 'types') console.log('Types:', list.types.join(', '))
   else if (args[0] === 'weapons') console.log('Weapons:', list.weapons.join(', '))
   else main(height, types, weapons)
+}
+
+function main (height, types = ['default'], weapons = []) {
+  if (!Array.isArray(types)) types = [types]
+  if (!Array.isArray(weapons)) weapons = [weapons]
+  types = types.map(x => x.toLowerCase())
+  weapons = weapons.map(x => x.toLowerCase())
+
+  console.log([
+    `BCHECK: ${height}`,
+    `${'-'.repeat(5)} UNCROUCHED ${'-'.repeat(5)}`,
+    formatBounces(bounces, types, weapons, bcheck.UNCROUCHED) + '\n',
+    `${'-'.repeat(5)} CROUCHED ${'-'.repeat(5)}`,
+    formatBounces(bounces, types, weapons, bcheck.CROUCHED) + '\n',
+    `${'-'.repeat(5)} JUMPBUG ${'-'.repeat(5)}`,
+    formatBounces(bounces, types, weapons, bcheck.JUMPBUG) + '\n'
+  ].join('\n'))
 }
