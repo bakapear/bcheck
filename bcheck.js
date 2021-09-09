@@ -130,7 +130,12 @@ function formatBounceJSON (data) {
   let WILDCARD = '*'
   let types = Object.keys(data)
   let weapons = new Set()
-  Object.values(data).map(x => x.map(y => y.weapon && y.weapon !== WILDCARD && weapons.add(y.weapon)))
+  Object.values(data).forEach(x => {
+    x.forEach(y => {
+      let w = y.all || y
+      if (w.weapon && w.weapon !== WILDCARD) weapons.add(w.weapon)
+    })
+  })
 
   for (let type in data) {
     let arr = data[type]
