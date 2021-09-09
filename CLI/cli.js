@@ -46,12 +46,9 @@ function main (height, types = ['default'], weapons = []) {
   weapons = weapons.map(x => x.toLowerCase())
 
   console.log([
-    `BCHECK: ${height}`,
-    `${'-'.repeat(5)} UNCROUCHED ${'-'.repeat(5)}`,
-    formatBounces(bounces, types, weapons, bcheck.UNCROUCHED) + '\n',
-    `${'-'.repeat(5)} CROUCHED ${'-'.repeat(5)}`,
-    formatBounces(bounces, types, weapons, bcheck.CROUCHED) + '\n',
-    `${'-'.repeat(5)} JUMPBUG ${'-'.repeat(5)}`,
-    formatBounces(bounces, types, weapons, bcheck.JUMPBUG) + '\n'
+    `BCHECK: ${height}` + '\n',
+    `${'-'.repeat(5)} UNCROUCHED ${'-'.repeat(5)}`, formatBounces(bounces, types, weapons, bcheck.UNCROUCHED) + '\n',
+    `${'-'.repeat(5)} CROUCHED ${'-'.repeat(5)}`, formatBounces(bounces, types, weapons, bcheck.CROUCHED) + '\n',
+    `${'-'.repeat(5)} JUMPBUG ${'-'.repeat(5)}`, formatBounces(bounces, types, weapons, bcheck.JUMPBUG) + '\n'
   ].join('\n'))
 }
