@@ -113,6 +113,28 @@
     { "text": "(*x Ctap) Ctap", "vel": 289, "crouched": true }
   ],
   "jds": [
+	{ "all": { "weapon": "Stock", "offset": 35.9, "crouched": true } },
+	{ "text": "JDS Stand <105 u/s>", "vel": 915.372802 },
+	{ "text": "JDS Forward <362 u/s>", "vel": 900.275207 },
+	{ "text": "JDS Back <304 u/s>", "vel": 909.126892 },
+	{ "text": "JDS Left <429 u/s>", "vel": 880.177124 },
+	{ "text": "JDS Right <232 u/s>", "vel": 929.599121 },
+	{ "text": "JDS Forward+Left <416 u/s>", "vel": 884.554809 },
+	{ "text": "JDS Forward+Right <285 u/s>", "vel": 919.131835 },
+	{ "text": "JDS Back+Left <401 u/s>", "vel": 889.108337 },
+	{ "text": "JDS Back+Right <258 u/s>", "vel": 924.712219 },
+	
+	{ "all": { "weapon": "Stock", "offset": 32.195, "crouched": true } },
+	{ "text": "JDS Stand <112 u/s>", "vel": 937.984741 },
+	{ "text": "JDS Forward <341 u/s>", "vel": 929.539611 },
+	{ "text": "JDS Back <283 u/s>", "vel": 935.684814 },
+	{ "text": "JDS Left <413 u/s>", "vel": 914.154541 },
+	{ "text": "JDS Right <197 u/s>", "vel": 951.544372 },
+	{ "text": "JDS Forward+Left <399 u/s>", "vel": 917.388488 },
+	{ "text": "JDS Forward+Right <257 u/s>", "vel": 943.751220 },
+	{ "text": "JDS Back+Left <383 u/s>", "vel": 920.936706 },
+	{ "text": "JDS Back+Right <227 u/s>", "vel": 947.835876 },
+
     { "all": { "weapon": "Original", "offset": 35.9, "crouched": true } },
     { "text": "JDS Stand <15 u/s>", "vel": 929.686889 },
     { "text": "JDS Forward <350 u/s>", "vel": 913.787658 },
