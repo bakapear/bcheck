@@ -102,7 +102,7 @@ let bcheck = {
       let vel = getVelFromAngle(ang, bounce.crouched, WEAPONS[bounce.weapon])
       let b = this.checkBounce(height, { ...bounce, vel }, land, teleheight)
       if (bounce.double ? b === 2 : b !== 0) {
-        if (prev && (ang - prev).toFixed(2) === '0.01') set.push(ang)
+        if (prev && Math.round((ang - prev) * 1000) / 1000 === 0.01) set.push(ang)
         else if (set.length > 1) {
           angles.push([set.shift(), set.pop()])
           set = []
