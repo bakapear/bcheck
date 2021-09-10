@@ -2,7 +2,7 @@ let bcheck = require('../src/bcheck.js')
 let data = require('../src/bounces.json')
 let { bounces, list } = bcheck.formatBounceJSON(data)
 
-function formatBounces (bounces, types, weapons, land) {
+function formatBounces (height, bounces, land) {
   let strs = []
 
   let res = bcheck.getBounces(height, bounces, land)
@@ -43,8 +43,8 @@ function main (height, types = ['default'], weapons = []) {
 
   console.log([
     `BCHECK: ${height}` + '\n',
-    `${m} UNCROUCHED ${m}`, formatBounces(set, bcheck.UNCROUCHED) + '\n',
-    `${m} CROUCHED ${m}`, formatBounces(set, bcheck.CROUCHED) + '\n',
-    `${m} JUMPBUG ${m}`, formatBounces(set, bcheck.JUMPBUG) + '\n'
+    `${m} UNCROUCHED ${m}`, formatBounces(height, set, bcheck.UNCROUCHED) + '\n',
+    `${m} CROUCHED ${m}`, formatBounces(height, set, bcheck.CROUCHED) + '\n',
+    `${m} JUMPBUG ${m}`, formatBounces(height, set, bcheck.JUMPBUG) + '\n'
   ].join('\n'))
 }
