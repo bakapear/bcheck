@@ -3,87 +3,65 @@ let ph = require('path')
 
 let DIR = 'data'
 
-let files = ['Stock', 'Original', 'Mangler', 'Mangler Charged']
+let WEAPONS = ['Stock', 'Original', 'Mangler', 'Mangler Charged']
+let CROUCHED = ['CROUCH', 'JDS', 'JS']
 
-let full = {}
+let res = {}
 
-for (let file of files) {
-  file = ph.join(DIR, file + '.log')
+for (let weapon of WEAPONS) {
+  let file = ph.join(__dirname, DIR, weapon + '.log')
   if (!fs.existsSync(file)) continue
   let lines = fs.readFileSync(file, 'utf-8').split(/\r?\n/)
-  let res = {}
-  let type = ''
   let setup = []
   let vels = []
 
   let push = () => {
-    if (vels.length) {
-      for (let i = 0; i < vels.length; i++) {
-        let curr = vels[i]
-        let c = vels.findIndex((x, n) => i !== n && x.speedo === curr.speedo && Math.abs(x.vel - curr.vel) < 0.1)
-        if (c !== -1) {
-          let close = vels[c]
+    if (!vels.length) return
+    for (let i = 0; i < vels.length; i++) {
+      let curr = vels[i]
+      let c = vels.findIndex((x, n) => i !== n && x.speedo === curr.speedo && Math.abs(x.vel - curr.vel) < 0.1)
+      if (c !== -1) {
+        let close = vels[c]
 
-          let dom = close.count > curr.count ? close : curr
-          let sub = dom === curr ? close : curr
+        let dom = close.count > curr.count ? close : curr
+        let sub = dom === curr ? close : curr
 
-          let merged = { ...dom, count: dom.count + sub.count }
-          vels.splice(i, 1, merged)
-          vels.splice(c, 1, { delete: true })
-        }
+        let merged = { ...dom, count: dom.count + sub.count }
+        vels.splice(i, 1, merged)
+        vels.splice(c, 1, { delete: true })
       }
-      res[type].push({ setup, vels: vels.filter(x => !x.delete).sort((a, b) => b.count - a.count) })
-      vels = []
-      setup = []
     }
+    let type = setup[setup.length - 1]
+    if (setup[0] === 'STAND' && setup.length > 2) setup[0] = 'WALK'
+    if (type === 'SHOOT') type = 'SPECIAL'
+    if (!res[type]) res[type] = []
+    res[type].push({
+      weapon,
+      setup,
+      crouched: [type, ...setup].some(x => CROUCHED.includes(x)) || undefined,
+      bounces: vels.filter(x => !x.delete).sort((a, b) => b.count - a.count).slice(0, 2).map(x => {
+        if (x.offs === 0) delete x.offs
+        delete x.count
+        return x
+      })
+    })
+    vels = []
+    setup = []
   }
   for (let line of lines) {
-    line = line.slice(23)
-    if (line.trim()) {
-      if (line[0] === '-') {
-        push()
-        type = line.match(/- (.*) -/)[1].toLowerCase()
-        res[type] = []
-      } else if (type) {
-        if (isNaN(line[0])) {
-          push()
-          setup.push(...line.split(' ').filter(x => x))
-        } else {
-          let m = line.match(/(\d+) > \[(\d+) u\/s\] VEL: ([\d.]+.), OFFS: ([\d.]+.)/)
-          vels.push({
-            count: Number(m[1]), speedo: Number(m[2]), vel: Number(m[3]), offs: Number(m[4])
-          })
-        }
-      }
-    }
-  }
-  push()
-
-  full[ph.basename(file).slice(0, -4)] = res
-}
-
-let out = {}
-
-for (let weapon in full) {
-  for (let type in full[weapon]) {
-    for (let bounce of full[weapon][type]) {
-      let key = bounce.setup.pop().toUpperCase()
-      if (!out[key]) out[key] = []
-
-      if (bounce.setup.includes('STAND') && bounce.setup.length !== 1) bounce.setup[0] = 'WALK'
-
-      out[key].push({
-        weapon: weapon,
-        setup: bounce.setup,
-        crouched: [key, ...bounce.setup].some(x => ['CROUCH', 'JDS', 'JS'].includes(x)) || undefined,
-        bounces: bounce.vels.slice(0, 2).map(x => {
-          if (x.offs === 0) delete x.offs
-          delete x.count
-          return x
-        })
+    line = line.slice(23).trim()
+    if (!line || line[0] === '>') continue
+    if (isNaN(line[0])) {
+      push()
+      setup.push(...line.split(' ').filter(x => x).map(x => x.slice(1, -1)))
+    } else {
+      let m = line.match(/(\d+) > \[(\d+) u\/s\] VEL: ([\d.]+.), OFFS: ([\d.]+.)/)
+      vels.push({
+        count: Number(m[1]), speedo: Number(m[2]), vel: Number(m[3]), offs: Number(m[4])
       })
     }
   }
+  push()
 }
 
-fs.writeFileSync('special.json', JSON.stringify(out, null, 2))
+fs.writeFileSync('result.json', JSON.stringify(res, null, 2))
