@@ -1,3 +1,3 @@
 @echo off
 node cli %*
-pause
+if [%1]==[] pause
