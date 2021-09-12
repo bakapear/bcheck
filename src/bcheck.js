@@ -177,6 +177,12 @@ let bcheck = {
           bounce.vel.forEach(vel => {
             bulk.push({ ...bounce, vel, text: bounce.text.replace(WILDCARD, vel) })
           })
+        } else if (bounce.bounces) {
+          bounce.bounces.forEach(b => {
+            let c = Object.assign({}, bounce)
+            delete c.bounces
+            bulk.push({ ...c, ...b })
+          })
         }
         if (bulk.length) arr.splice(i, 1, ...bulk)
       }

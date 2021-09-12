@@ -9,7 +9,7 @@ function formatBounces (height, bounces, land) {
   for (let bounce of res) {
     strs.push(
       (bounce.weapon ? `(${bounce.weapon}) ` : '') +
-      bounce.text +
+      (bounce.text || bounce.setup.join(' ')) +
       (bounce.speedo ? ` <${bounce.speedo} u/s>` : '') +
       (bounce.ang.length ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
       (bounce.double ? ' [double]' : '')
