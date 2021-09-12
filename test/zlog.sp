@@ -1,6 +1,7 @@
 #pragma semicolon 1
 #pragma newdecls required
 
+#include <tf2_stocks>
 #include <sdktools>
 #include <sdkhooks>
 #include <sourcemod>
@@ -73,6 +74,7 @@ public Action sm_reset(int client, int args) {
 public void OnTakeDamagePost(int client, int attacker, int inflictor, float damage, int damagetype, int weapon, float force[3], float pos[3]) {
 	float vel[3]; GetEntPropVector(client, Prop_Data, "m_vecVelocity", vel);
 	float org[3]; GetEntPropVector(client, Prop_Data, "m_vecOrigin", org);
+	TF2_RegeneratePlayer(client);
 	if (vel[2] > 0 && (damagetype == 2359360 || damagetype == 19136576)) {
 		DataPack dp = new DataPack();
 		dp.WriteCell(client);
