@@ -26,6 +26,7 @@ public void OnPluginStart() {
 	RegConsoleCmd("sm_reset", sm_reset);
 	RegConsoleCmd("sm_clear", sm_clear);
 	RegConsoleCmd("sm_list", sm_list);
+	RegConsoleCmd("sm_regen", sm_regen);
 }
 
 public Action sm_zlog(int client, int args) {
@@ -45,6 +46,11 @@ public Action sm_pos(int client, int args) {
 	float org[3]; GetEntPropVector(client, Prop_Data, "m_vecOrigin", org);
 	PrintToChat(client, "POS: %f %f %f", org[0], org[1], org[2]);
 	savpos = org;
+	return Plugin_Handled;
+}
+
+public Action sm_regen(int client, int args) {
+	TF2_RegeneratePlayer(client);
 	return Plugin_Handled;
 }
 
