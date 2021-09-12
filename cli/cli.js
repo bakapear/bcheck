@@ -2,6 +2,22 @@ let bcheck = require('../src/bcheck.js')
 let data = require('../src/bounces.json')
 let { bounces, list } = bcheck.formatBounceJSON(data)
 
+function formatSetup (setup) {
+  let parts = setup.map(x => {
+    if (['JDS', 'JS', 'SHOOT'].includes(x)) return x
+    return x[0].toUpperCase() + x.substr(1).toLowerCase()
+  })
+  let str = ''
+  for (let i = 0; i < parts.length; i++) {
+    if (parts[i] === 'SHOOT') continue
+    if (i !== 0) {
+      str += (i === 2 && parts.length > 3) ? '+' : ' '
+    }
+    str += parts[i]
+  }
+  return str
+}
+
 function formatBounces (height, bounces, land) {
   let strs = []
 
@@ -9,7 +25,7 @@ function formatBounces (height, bounces, land) {
   for (let bounce of res) {
     strs.push(
       (bounce.weapon ? `(${bounce.weapon}) ` : '') +
-      (bounce.text || bounce.setup.join(' ')) +
+      (bounce.text || formatSetup(bounce.setup)) +
       (bounce.speedo ? ` <${bounce.speedo} u/s>` : '') +
       (bounce.ang.length ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
       (bounce.double ? ' [double]' : '')
