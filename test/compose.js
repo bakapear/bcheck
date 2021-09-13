@@ -34,6 +34,16 @@ for (let weapon of WEAPONS) {
     let type = setup[setup.length - 1]
     if (setup[0] === 'STAND' && setup.length > 2) setup[0] = 'WALK'
     if (type === 'SHOOT') type = 'SPECIAL'
+    if (weapon === 'Original') {
+      if (setup.includes('RIGHT')) {
+        vels = []
+        setup = []
+        return
+      } else {
+        let left = setup.indexOf('LEFT')
+        if (left !== -1) setup[left] = 'SIDE'
+      }
+    }
     if (!res[type]) res[type] = []
     res[type].push({
       weapon,

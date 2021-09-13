@@ -5,6 +5,7 @@ let { bounces, list } = bcheck.formatBounceJSON(data)
 function formatSetup (setup) {
   let parts = setup.map(x => {
     if (['JDS', 'JS', 'SHOOT'].includes(x)) return x
+    if (x === 'SIDE') return 'Left/Right'
     return x[0].toUpperCase() + x.substr(1).toLowerCase()
   })
   let str = ''

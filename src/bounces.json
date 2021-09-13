@@ -413,25 +413,7 @@
       "weapon": "Original",
       "setup": [
         "WALK",
-        "LEFT",
-        "SHOOT"
-      ],
-      "bounces": [
-        {
-          "speedo": 330,
-          "vel": 419.643859
-        },
-        {
-          "speedo": 302,
-          "vel": 431.38858
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "RIGHT",
+        "SIDE",
         "SHOOT"
       ],
       "bounces": [
@@ -450,26 +432,7 @@
       "setup": [
         "WALK",
         "FORWARD",
-        "LEFT",
-        "SHOOT"
-      ],
-      "bounces": [
-        {
-          "speedo": 340,
-          "vel": 415.439941
-        },
-        {
-          "speedo": 312,
-          "vel": 427.86618
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "FORWARD",
-        "RIGHT",
+        "SIDE",
         "SHOOT"
       ],
       "bounces": [
@@ -488,26 +451,7 @@
       "setup": [
         "WALK",
         "BACK",
-        "LEFT",
-        "SHOOT"
-      ],
-      "bounces": [
-        {
-          "speedo": 321,
-          "vel": 424.150573
-        },
-        {
-          "speedo": 292,
-          "vel": 435.301727
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "BACK",
-        "RIGHT",
+        "SIDE",
         "SHOOT"
       ],
       "bounces": [
@@ -577,26 +521,7 @@
       "weapon": "Original",
       "setup": [
         "CROUCH",
-        "LEFT",
-        "SHOOT"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 180,
-          "vel": 629.907104
-        },
-        {
-          "speedo": 169,
-          "vel": 631.370727
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "CROUCH",
-        "RIGHT",
+        "SIDE",
         "SHOOT"
       ],
       "crouched": true,
@@ -616,27 +541,7 @@
       "setup": [
         "CROUCH",
         "FORWARD",
-        "LEFT",
-        "SHOOT"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 102,
-          "vel": 640.437683
-        },
-        {
-          "speedo": 102,
-          "vel": 636.55841
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "CROUCH",
-        "FORWARD",
-        "RIGHT",
+        "SIDE",
         "SHOOT"
       ],
       "crouched": true,
@@ -656,27 +561,7 @@
       "setup": [
         "CROUCH",
         "BACK",
-        "LEFT",
-        "SHOOT"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 233,
-          "vel": 620.42218
-        },
-        {
-          "speedo": 217,
-          "vel": 626.455749
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "CROUCH",
-        "BACK",
-        "RIGHT",
+        "SIDE",
         "SHOOT"
       ],
       "crouched": true,
@@ -1638,7 +1523,7 @@
       "weapon": "Original",
       "setup": [
         "WALK",
-        "LEFT",
+        "SIDE",
         "JDS"
       ],
       "crouched": true,
@@ -1659,51 +1544,8 @@
       "weapon": "Original",
       "setup": [
         "WALK",
-        "RIGHT",
-        "JDS"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 309,
-          "vel": 947.807617,
-          "offs": 32.195007
-        },
-        {
-          "speedo": 336,
-          "vel": 917.451354,
-          "offs": 35.899993
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
         "FORWARD",
-        "LEFT",
-        "JDS"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 346,
-          "vel": 914.855651,
-          "offs": 35.899993
-        },
-        {
-          "speedo": 320,
-          "vel": 945.821289,
-          "offs": 32.195007
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "FORWARD",
-        "RIGHT",
+        "SIDE",
         "JDS"
       ],
       "crouched": true,
@@ -1725,7 +1567,7 @@
       "setup": [
         "WALK",
         "BACK",
-        "LEFT",
+        "SIDE",
         "JDS"
       ],
       "crouched": true,
@@ -1739,28 +1581,6 @@
           "speedo": 298,
           "vel": 949.809265,
           "offs": 32.195007
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "BACK",
-        "RIGHT",
-        "JDS"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 298,
-          "vel": 949.809265,
-          "offs": 32.195007
-        },
-        {
-          "speedo": 326,
-          "vel": 920.072509,
-          "offs": 35.899993
         }
       ]
     },
@@ -2216,28 +2036,7 @@
       "weapon": "Original",
       "setup": [
         "WALK",
-        "LEFT",
-        "JS"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 321,
-          "vel": 727.612854,
-          "offs": 15.540008
-        },
-        {
-          "speedo": 299,
-          "vel": 753.970092,
-          "offs": 11.925018
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "RIGHT",
+        "SIDE",
         "JS"
       ],
       "crouched": true,
@@ -2259,29 +2058,7 @@
       "setup": [
         "WALK",
         "FORWARD",
-        "LEFT",
-        "JS"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 329,
-          "vel": 724.690673,
-          "offs": 15.540008
-        },
-        {
-          "speedo": 308,
-          "vel": 751.477722,
-          "offs": 11.925018
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "FORWARD",
-        "RIGHT",
+        "SIDE",
         "JS"
       ],
       "crouched": true,
@@ -2303,29 +2080,7 @@
       "setup": [
         "WALK",
         "BACK",
-        "LEFT",
-        "JS"
-      ],
-      "crouched": true,
-      "bounces": [
-        {
-          "speedo": 312,
-          "vel": 730.615722,
-          "offs": 15.540008
-        },
-        {
-          "speedo": 289,
-          "vel": 756.545776,
-          "offs": 11.925018
-        }
-      ]
-    },
-    {
-      "weapon": "Original",
-      "setup": [
-        "WALK",
-        "BACK",
-        "RIGHT",
+        "SIDE",
         "JS"
       ],
       "crouched": true,
