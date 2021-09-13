@@ -82,7 +82,7 @@ let bcheck = {
     let offs = 0
     if (bounce.crouched) offs -= OFFSET.crouched
     if (bounce.ceiling) offs -= OFFSET.ceiling
-    if (bounce.offset) offs += bounce.offset
+    if (bounce.offs) offs += bounce.offs
 
     if (land === this.CROUCHED) offs += OFFSET.crouched
     height += offs + EPSILON
@@ -169,9 +169,9 @@ let bcheck = {
         }
         if (bounce.weapon === WILDCARD) {
           for (let weapon of weapons) bulk.push({ ...bounce, weapon })
-        } else if (Array.isArray(bounce.offset)) {
-          bounce.offset.forEach((offset, i) => {
-            bulk.push({ ...bounce, offset, text: bounce.text.replace(WILDCARD, i + 1) })
+        } else if (Array.isArray(bounce.offs)) {
+          bounce.offs.forEach((offs, i) => {
+            bulk.push({ ...bounce, offs, text: bounce.text.replace(WILDCARD, i + 1) })
           })
         } else if (Array.isArray(bounce.vel)) {
           bounce.vel.forEach(vel => {

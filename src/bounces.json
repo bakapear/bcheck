@@ -2274,21 +2274,21 @@
     },
     {
       "text": "Bhop",
-      "offset": 0.705002
+      "offs": 0.705002
     },
     {
       "text": "Double Bhop",
-      "offset": 1.410004
+      "offs": 1.410004
     },
     {
       "text": "Double Bhop (Powerful)",
-      "offset": 2.115006
+      "offs": 2.115006
     }
   ],
   "CTAP": [
     {
       "all": {
-        "offset": [
+        "offs": [
           -0.004997,
           -0.009994,
           -0.014991,
