@@ -1784,7 +1784,6 @@
         "STAND",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 88,
@@ -1805,7 +1804,6 @@
         "FORWARD",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 340,
@@ -1826,7 +1824,6 @@
         "BACK",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 288,
@@ -1847,7 +1844,6 @@
         "LEFT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 396,
@@ -1868,7 +1864,6 @@
         "RIGHT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 233,
@@ -1890,7 +1885,6 @@
         "LEFT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 384,
@@ -1912,7 +1906,6 @@
         "RIGHT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 277,
@@ -1934,7 +1927,6 @@
         "LEFT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 372,
@@ -1956,7 +1948,6 @@
         "RIGHT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 256,
@@ -1976,7 +1967,6 @@
         "STAND",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 12,
@@ -1997,7 +1987,6 @@
         "FORWARD",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 332,
@@ -2018,7 +2007,6 @@
         "BACK",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 277,
@@ -2039,7 +2027,6 @@
         "SIDE",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 321,
@@ -2061,7 +2048,6 @@
         "SIDE",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 329,
@@ -2083,7 +2069,6 @@
         "SIDE",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 312,
@@ -2103,7 +2088,6 @@
         "STAND",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 60,
@@ -2124,7 +2108,6 @@
         "FORWARD",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 336,
@@ -2145,7 +2128,6 @@
         "BACK",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 282,
@@ -2166,7 +2148,6 @@
         "LEFT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 373,
@@ -2187,7 +2168,6 @@
         "RIGHT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 263,
@@ -2209,7 +2189,6 @@
         "LEFT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 367,
@@ -2231,7 +2210,6 @@
         "RIGHT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 293,
@@ -2253,7 +2231,6 @@
         "LEFT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 353,
@@ -2275,7 +2252,6 @@
         "RIGHT",
         "JS"
       ],
-      "crouched": true,
       "bounces": [
         {
           "speedo": 273,

@@ -4,7 +4,7 @@ let ph = require('path')
 let DIR = 'data'
 
 let WEAPONS = ['Stock', 'Original', 'Mangler', 'Mangler Charged']
-let CROUCHED = ['CROUCH', 'JDS', 'JS']
+let CROUCHED = ['CROUCH', 'JDS']
 
 let res = {}
 
