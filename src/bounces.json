@@ -1246,17 +1246,8 @@
       }
     },
     {
-      "text": "Steepest Angle",
-      "ang": 1
-    },
-    {
       "text": "Biggest Angle",
       "ang": -1
-    },
-    {
-      "text": "Steepest Angle Crouched",
-      "ang": 1,
-      "crouched": true
     },
     {
       "text": "Biggest Angle Crouched",
