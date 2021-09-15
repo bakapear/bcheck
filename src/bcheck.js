@@ -5,7 +5,7 @@ let MAXVEL = 3500.0
 let EPSILON = 0.03125
 let OFFSET = { crouched: 20, ceiling: 82 }
 let DRANGE = [0.705078, 0.999999]
-let ARANGE = [4000, 8900]
+let ARANGE = [40, 89]
 let PLAYER = {
   uncrouched: { height: 82, view: 68, u: -3, scale: 1 },
   crouched: { height: 62, view: 45, u: 8, scale: 82 / 55 }
@@ -95,22 +95,43 @@ let bcheck = {
   },
   getBounceAngles (height, bounce, land, teleheight) {
     let angles = []
-    let set = []
-    let prev = null
-    for (let i = ARANGE[0]; i <= ARANGE[1]; i++) {
-      let ang = i / 100
+    let l = [0, 1]
+    let step = 0.01
+    let ang = ARANGE[0]
+    let canBounce = ang => {
       let vel = getVelFromAngle(ang, bounce.crouched, WEAPONS[bounce.weapon])
       let b = this.checkBounce(height, { ...bounce, vel }, land, teleheight)
-      if (bounce.double ? b === 2 : b !== 0) {
-        if (prev && Math.round((ang - prev) * 100) / 100 === 0.01) set.push(ang)
-        else if (set.length > 1) {
-          angles.push([set.shift(), set.pop()])
-          set = []
-        }
-        prev = ang
+      return bounce.double ? b === 2 : b !== 0
+    }
+    let hold = null
+    let pushAngle = ang => {
+      ang = Math.round(ang * 1000) / 1000
+      if (!hold) hold = ang
+      else {
+        angles.push([hold, ang])
+        hold = null
       }
     }
-    if (set.length > 1) angles.push([set.shift(), set.pop()])
+    while (!l[0]) {
+      step = 0.01
+      if (canBounce(ang + step - 0.01)) {
+        l[0] = 1
+        pushAngle(ang + 0.01)
+        while (l[1]) {
+          if (ang > ARANGE[1]) break
+          if (canBounce(ang + step)) step += 0.01
+          else {
+            pushAngle(ang + step - 0.01)
+            l = [0, 0]
+            ang += step
+            break
+          }
+        }
+      } else if (ang < ARANGE[1]) ang += 0.01
+      else break
+      if (ang <= ARANGE[1]) l[1] = 1
+      if (ang > ARANGE[1] && angles.length < 2) return []
+    }
     angles = angles.sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]))
 
     if (bounce.ang && angles.length) {
@@ -124,6 +145,7 @@ let bcheck = {
       }
       return ang
     }
+
     return angles
   },
   getBounces (height, bounces, land, teleheight) {
