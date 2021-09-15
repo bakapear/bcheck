@@ -43,14 +43,17 @@ let weapons = args[2] && args[2].split(',')
 
 if (args[0] === 'find') {
   args = args.slice(1)
-  if (args.length < 2) console.log('bfind <height> <bounce> [type] | types: UNCROUCHED,CROUCHED,JUMPBUG')
+  if (args[0] === 'types') console.log('Types:', 'uncrouched, crouched, jumpbug')
+  else if (args.length < 2) console.log('bfind <height> <bounce> [type] | bfind types')
   else seek(Number(args[0]), args[1], (args[2] || '').toUpperCase())
 } else {
   if (!args.length) console.log('bcheck <height> [type] [weapon] | bcheck <types/weapons>')
   else {
     if (args[0] === 'types') console.log('Types:', list.types.join(', '))
     else if (args[0] === 'weapons') console.log('Weapons:', list.weapons.join(', '))
-    else check(height, types, weapons)
+    else {
+      check(height, types, weapons)
+    }
   }
 }
 
@@ -74,6 +77,12 @@ function check (height, types = ['default'], weapons = []) {
 }
 
 function seek (height, txt, type) {
+  let double = txt.match(/\[double\]/)
+  if (double) {
+    txt = txt.substr(0, double.index - 1)
+    double = true
+  }
+
   let set = []
 
   let strs = Object.entries(bounces).map(x => {
@@ -99,14 +108,17 @@ function seek (height, txt, type) {
     let o = h + (z ? i : -i)
     let b = {}
     if (type) {
-      b[type] = formatBounces(o, set, type).split('\n')
+      b[type] = bcheck.getBounces(o, set, type)
     } else {
-      b.UNCROUCHED = formatBounces(o, set, bcheck.UNCROUCHED).split('\n')
-      b.CROUCHED = formatBounces(o, set, bcheck.CROUCHED).split('\n')
-      b.JUMPBUG = formatBounces(o, set, bcheck.JUMPBUG).split('\n')
+      b.UNCROUCHED = bcheck.getBounces(o, set, bcheck.UNCROUCHED)
+      b.CROUCHED = bcheck.getBounces(o, set, bcheck.CROUCHED)
+      b.JUMPBUG = bcheck.getBounces(o, set, bcheck.JUMPBUG)
     }
     for (let type in b) {
-      if (b[type].filter(x => x).length) res.push(`${type} - ${b[type][0]}`)
+      for (let bounce of b[type]) {
+        if (double && !bounce.double) continue
+        res.push(`${type} - ${formatText(bounce)}`)
+      }
     }
     if (res.length) break
   }
