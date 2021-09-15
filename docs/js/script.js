@@ -27,7 +27,8 @@ function handleInput (input, button) {
   button = document.getElementById(button)
 
   let forward = () => {
-    STATE.set('height', Number(input.value) || null)
+    let val = Number(input.value)
+    STATE.set('height', isNaN(val) ? null : val)
   }
 
   button.onclick = forward
