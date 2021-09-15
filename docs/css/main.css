@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Poppins";
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf);
+    src: url(fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: "Poppins";
     font-weight: 200;
-    src: url(/fonts/Poppins-ExtraLight.ttf);
+    src: url(fonts/Poppins-ExtraLight.ttf);
 }
 
 :root {
