@@ -2600,6 +2600,23 @@
     {
       "text": "Double Bhop (Powerful)",
       "offs": 2.115006
+    },
+    {
+      "all": {
+        "vel": 289
+      }
+    },
+    {
+      "text": "Crouch Bhop",
+      "offs": 0.705002
+    },
+    {
+      "text": "Crouch Double Bhop",
+      "offs": 1.410004
+    },
+    {
+      "text": "Crouch Double Bhop (Powerful)",
+      "offs": 2.115006
     }
   ],
   "CTAP": [
