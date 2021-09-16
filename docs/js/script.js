@@ -16,10 +16,25 @@ window.onload = () => {
     uncrouched: document.getElementById('list_uncrouched'),
     crouched: document.getElementById('list_crouched')
   }
+
+  addTags('switch_types', BOUNCES.list.types)
+  addTags('switch_weps', BOUNCES.list.weapons)
   handleInput('input_height', 'button_check')
-  handleSwitches('switch_types', 'types', 'data-type', 1)
-  handleSwitches('switch_weps', 'weapons', 'data-weapon')
+  handleSwitches('switch_types', 'types', 1)
+  handleSwitches('switch_weps', 'weapons')
   handleJumpbug('switch_jb', 1)
+}
+
+function addTags (node, tags) {
+  let parent = document.getElementById(node)
+
+  for (let tag of tags) {
+    let button = document.createElement('button')
+    button.className = 'button disabled'
+    button.setAttribute('data-id', tag)
+    button.innerText = tag.split(' ').pop()
+    parent.appendChild(button)
+  }
 }
 
 function handleInput (input, button) {
@@ -38,14 +53,14 @@ function handleInput (input, button) {
   }
 }
 
-function handleSwitches (switches, prop, attr, def) {
+function handleSwitches (switches, prop, def) {
   switches = Array.from(document.getElementById(switches).children)
   switches.forEach(s => {
     s.onclick = e => {
       if (e.ctrlKey) switches.forEach(t => t.classList.add('disabled'))
       s.classList.toggle('disabled')
       let sws = switches.filter(x => !x.classList.contains('disabled'))
-      STATE.set(prop, sws.map(x => x.getAttribute(attr)))
+      STATE.set(prop, sws.map(x => x.getAttribute('data-id')))
     }
   })
 
