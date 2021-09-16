@@ -104,6 +104,11 @@ input[type=number] {
     background: #36304e
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .tags .button {
     font-size: 12px;
     padding: 5px 10px;
@@ -266,12 +271,18 @@ button {
     }
 
     .col {
-        flex: 0 0 calc(50% - 5px);
+        flex: 1 1 calc(50% - 5px);
         max-width: 50%
     }
 
     .col:last-child {
         margin-top: 0
+    }
+}
+
+@media (max-width:600px) {
+    .tags .button {
+        flex: 1 1 20%;
     }
 }
 
