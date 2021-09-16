@@ -289,7 +289,7 @@ function createBounceItem (bounce) {
 
   addBounceItemTag(item, 'angle', bounce.ang, null, Math.abs(bounce.ang[0] - bounce.ang[1]).toFixed(2))
 
-  let speedo = addBounceItemTag(item, 'speedo', bounce.speedo, null, bounce.chance + '%')
+  let speedo = addBounceItemTag(item, 'speedo', bounce.speedo, null, bounce.chance ? bounce.chance + '%' : null)
   if (speedo) speedo.style.webkitFilter = `saturate(${Math.min(bounce.chance * 1.8, 150)}%)`
 
   if (!bounce.setup) addBounceItemTag(item, 'double', bounce.double, 'D', 'Double Bhop')
