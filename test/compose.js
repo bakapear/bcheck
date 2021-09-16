@@ -46,15 +46,16 @@ for (let weapon of WEAPONS) {
     }
     if (!res[type]) res[type] = []
     vels = vels.filter(x => !x.delete).sort((a, b) => b.count - a.count)
-    let total = vels.reduce((a,b) => a + b.count, 0)
+    let total = vels.reduce((a, b) => a + b.count, 0)
     res[type].push({
       weapon,
       setup,
       crouched: [type, ...setup].some(x => CROUCHED.includes(x)) || undefined,
-      bounces: vels.slice(0, 2).map(x => {
+      bounces: vels.slice(0, 2).map((x, i) => {
         if (x.offs === 0) delete x.offs
-	x.chance = Number((x.count / total * 100).toFixed(2))
-	delete x.count
+        x.chance = Number((x.count / total * 100).toFixed(2))
+        delete x.count
+        if (i !== 0) x.alt = true
         return x
       })
     })
