@@ -281,8 +281,18 @@ button {
 }
 
 @media (max-width:600px) {
+    .button.check {
+        max-width: 100px
+    }
     .tags .button {
         flex: 1 1 20%;
+    }
+    .sep {
+        width: 90%;
+        border-radius: 100px;
+        height: 2px;
+        margin: 5px auto;
+        background: rgb(255,255,255,.05);
     }
 }
 
