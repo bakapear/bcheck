@@ -37,7 +37,15 @@ body {
 }
 
 .title {
-    user-select: none
+    user-select: none;
+    margin-bottom: 40px
+}
+
+.title a {
+    display: table;
+    overflow: hidden;
+    height: 64px;
+    padding-right:5px;
 }
 
 .title .big {
@@ -50,7 +58,6 @@ body {
 .title .small {
     padding-left: 4px;
     font-weight: lighter;
-    margin-bottom: 40px
 }
 
 .row {
