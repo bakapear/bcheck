@@ -85,7 +85,7 @@ let bcheck = {
     if (bounce.offs) offs += bounce.offs
 
     if (land === this.CROUCHED) offs += OFFSET.crouched
-    height += offs + EPSILON
+    height += offs + (bounce.ceiling ? -EPSILON : EPSILON)
 
     let interval = [land === this.JUMPBUG ? Math.max(0, teleheight - 283 * TICK) : teleheight, 2]
 
