@@ -2598,8 +2598,9 @@ window.BOUNCES = {
       offs: 1.410004
     },
     {
-      text: 'Double Bhop (Powerful)',
-      offs: 2.115006
+      text: 'Double Bhop (Max Speed)',
+      speedo: 300,
+      offs: 1.571274
     },
     {
       all: {
@@ -2613,10 +2614,6 @@ window.BOUNCES = {
     {
       text: 'Crouch Double Bhop',
       offs: 1.410004
-    },
-    {
-      text: 'Crouch Double Bhop (Powerful)',
-      offs: 2.115006
     }
   ],
   CTAP: [
