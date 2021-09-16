@@ -1,13 +1,14 @@
 let bcheck = window.bcheck
 let BOUNCES = bcheck.formatBounceJSON(window.BOUNCES)
 let STATE = { height: null, folds: {} }
+let OPTIONS = {}
 let LIST = {}
 
 Object.defineProperty(STATE, 'set', {
   enumerable: false,
   value: function (prop, value) {
     this[prop] = value
-    displayBounces()
+    updateBounces()
   }
 })
 
@@ -17,12 +18,95 @@ window.onload = () => {
     crouched: document.getElementById('list_crouched')
   }
 
+  let opts = 'options'
+  loadSettings()
+  addSetting(opts, 'ang', 'Custom Angle', [40, 89, 60])
+  addSetting(opts, 'hidelow', 'Hide bounces with lower probability')
+  // addSetting(opts, 'wepicons', 'Use weapon icons')
+  // addSetting(opts, 'hell', 'Activate Light Mode')
+  handleSettings('button_settings')
+
+  handleInput('input_height', 'button_check')
+
   addTags('switch_types', BOUNCES.list.types)
   addTags('switch_weps', BOUNCES.list.weapons)
-  handleInput('input_height', 'button_check')
   handleSwitches('switch_types', 'types', 1)
   handleSwitches('switch_weps', 'weapons')
+
   handleJumpbug('switch_jb', 1)
+}
+
+function loadSettings () {
+  let opts = JSON.parse(window.localStorage.getItem('opts'))
+  for (let o in opts) OPTIONS[o] = opts[o]
+}
+
+function saveSettings () {
+  window.localStorage.setItem('opts', JSON.stringify(OPTIONS))
+}
+
+function updateSettings () {
+  saveSettings()
+  updateBounces()
+}
+
+function addSetting (box, prop, text, range) {
+  box = document.getElementById(box)
+
+  let item = document.createElement('div')
+  item.className = 'item'
+
+  let check = document.createElement('input')
+  check.type = 'checkbox'
+
+  let span = document.createElement('span')
+  span.innerText = text
+
+  item.appendChild(check)
+  item.appendChild(span)
+
+  if (range) {
+    let [slider, val] = createAngSlider(range[0], range[1], OPTIONS[prop] || range[2])
+    slider.oninput = () => {
+      val.innerText = slider.value
+      if (check.checked) OPTIONS[prop] = Number(slider.value)
+    }
+    slider.onchange = updateSettings
+
+    item.appendChild(slider)
+    item.appendChild(val)
+
+    check.onclick = () => {
+      OPTIONS[prop] = check.checked ? Number(slider.value) : false
+      updateSettings()
+    }
+  } else {
+    check.onclick = () => {
+      OPTIONS[prop] = check.checked
+      updateSettings()
+    }
+  }
+
+  if (OPTIONS[prop]) check.click()
+
+  box.appendChild(item)
+}
+
+function createAngSlider (min, max, def) {
+  let slider = document.createElement('input')
+  slider.type = 'range'
+  slider.min = min
+  slider.max = max
+  slider.value = def
+  let val = document.createElement('span')
+  val.className = 'deg'
+  val.innerText = def
+  return [slider, val]
+}
+
+function handleSettings (button) {
+  button = document.getElementById(button)
+  button.onclick = () => button.parentElement.classList.toggle('open')
 }
 
 function addTags (node, tags) {
@@ -86,7 +170,7 @@ function handleJumpbug (types, def) {
   if (def) types[def - 1].click()
 }
 
-function displayBounces () {
+function updateBounces () {
   LIST.uncrouched.innerHTML = ''
   LIST.crouched.innerHTML = ''
 
@@ -110,12 +194,32 @@ function displayBounces () {
   handleSeparators()
 }
 
+function makeCustomAngles (ang) {
+  let res = bcheck.formatBounceJSON({
+    ANGLES: [{
+      weapon: '*',
+      text: `Custom Angle (${ang})`,
+      ang
+    },
+    {
+      weapon: '*',
+      crouched: true,
+      text: `Custom Angle Crouched (${ang})`,
+      ang
+    }]
+  }, BOUNCES.list.weapons)
+  return res.bounces.ANGLES
+}
+
 function getBounces (height, types = [], weapons = [], jumpbug) {
-  let bounces = BOUNCES.bounces
+  let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
+  if (OPTIONS.ang) bounces.ANGLES.push(...makeCustomAngles(OPTIONS.ang))
+
   let set = []
   for (let type in bounces) {
     if (!types.length || types.includes(type)) {
       for (let bounce of bounces[type]) {
+        if (OPTIONS.hidelow && bounce.alt) continue
         if (!bounce.weapon || !weapons.length || weapons.includes(bounce.weapon)) set.push({ ...bounce, type })
       }
     }

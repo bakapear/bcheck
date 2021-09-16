@@ -97,11 +97,94 @@ input[type=number] {
     max-width: 150px
 }
 
-.button.settings {
+.settings {
+    position: relative;
+}
+
+.settings .button {
     display: flex;
+    width: initial;
     padding: 10px;
-    max-width: fit-content;
     background: #36304e
+}
+
+.settings .box,
+.settings .button .close,
+.settings.open .button .tune {
+    display: none;
+}
+
+.settings .box {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    width: 320px;
+    background: #36304e;
+    border-radius: 5px;
+    background-clip: border-box;
+    box-shadow: 0 0 0 8px var(--dark);
+    padding: 5px;
+}
+
+.settings .box .item {
+    border-radius:4px;
+    background:rgba(0, 0, 0, 0.2);
+    padding:5px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.settings .box .item input[type=checkbox] {
+    position:relative;
+    top:-1px;
+    height:12px;
+    width:12px;
+    cursor:pointer;
+}
+
+.settings .box .item input[type=range] {
+    margin-left:8px;
+    margin-right:5px;
+}
+
+input[type=range] {
+    appearance: none;
+    background: none;
+}
+
+span.deg:after {
+    content: "°";
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5.2px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius:100px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    cursor: pointer;
+    width: 10px;
+    height: 15px;
+    background: rgb(113, 89, 218);
+    border-radius:2px;
+    position: relative;
+    top:-5px;
+}
+
+.settings.open .box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.settings.open .button .close {
+    display: block;
 }
 
 .tags {
@@ -188,6 +271,8 @@ button {
 .list,.list .item {
     gap: 5px
 }
+
+
 
 .list .item span {
     text-align: center;
