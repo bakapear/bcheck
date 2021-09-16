@@ -272,7 +272,11 @@ button {
     gap: 5px
 }
 
-
+.list .none {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.5;
+}
 
 .list .item span {
     text-align: center;

@@ -188,6 +188,12 @@ function updateBounces () {
       }
       LIST[t].appendChild(createBounceItem(bounce))
     }
+    if (!LIST[t].children.length) {
+      let none = document.createElement('div')
+      none.className = 'none'
+      none.innerText = '- No bounces found -'
+      LIST[t].appendChild(none)
+    }
     type = null
   }
 
@@ -287,7 +293,7 @@ function createBounceItem (bounce) {
   let normal = addBounceItemTag(item, 'normal', bounce.text || formatBounceSetup(bounce.setup))
   normal.onclick = () => navigator.clipboard.writeText(formatBounceText(bounce))
 
-  addBounceItemTag(item, 'angle', bounce.ang, null, Math.abs(bounce.ang[0] - bounce.ang[1]).toFixed(2))
+  if (bounce.ang) addBounceItemTag(item, 'angle', bounce.ang, null, Math.abs(bounce.ang[0] - bounce.ang[1]).toFixed(2))
 
   let speedo = addBounceItemTag(item, 'speedo', bounce.speedo, null, bounce.chance ? bounce.chance + '%' : null)
   if (speedo) speedo.style.webkitFilter = `saturate(${Math.min(bounce.chance * 1.8, 150)}%)`
