@@ -45,7 +45,7 @@ body {
     display: table;
     overflow: hidden;
     height: 64px;
-    padding-right:5px;
+    padding-right: 5px
 }
 
 .title .big {
@@ -57,7 +57,7 @@ body {
 
 .title .small {
     padding-left: 4px;
-    font-weight: lighter;
+    font-weight: lighter
 }
 
 .row {
@@ -105,7 +105,7 @@ input[type=number] {
 }
 
 .settings {
-    position: relative;
+    position: relative
 }
 
 .settings .button {
@@ -115,10 +115,8 @@ input[type=number] {
     background: #36304e
 }
 
-.settings .box,
-.settings .button .close,
-.settings.open .button .tune {
-    display: none;
+.settings .box,.settings .button .close,.settings.open .button .tune,.tags.weapons .button img,.tags.wepicons .button span {
+    display: none
 }
 
 .settings .box {
@@ -132,45 +130,45 @@ input[type=number] {
     border-radius: 5px;
     background-clip: border-box;
     box-shadow: 0 0 0 8px var(--dark);
-    padding: 5px;
+    padding: 5px
 }
 
 .settings .box .item {
-    border-radius:4px;
-    background:rgba(0, 0, 0, 0.2);
-    padding:5px 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.2);
+    padding: 5px 10px;
     font-size: 14px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 5px
 }
 
 .settings .box .item input[type=checkbox] {
-    position:relative;
-    top:-1px;
-    height:12px;
-    width:12px;
-    cursor:pointer;
+    position: relative;
+    top: -1px;
+    height: 12px;
+    width: 12px;
+    cursor: pointer
 }
 
 .settings .box .item input[type=range] {
-    margin-left:8px;
-    margin-right:5px;
+    margin-left: 8px;
+    margin-right: 5px
 }
 
 input[type=range] {
     appearance: none;
-    background: none;
+    background: 0 0
 }
 
 span.deg:after {
-    content: "°";
+    content: "°"
 }
 
 input[type=range]::-webkit-slider-runnable-track {
     height: 5.2px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius:100px;
+    background: rgba(0,0,0,.2);
+    border-radius: 100px
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -178,35 +176,41 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     width: 10px;
     height: 15px;
-    background: rgb(113, 89, 218);
-    border-radius:2px;
+    background: #7159da;
+    border-radius: 2px;
     position: relative;
-    top:-5px;
+    top: -5px
 }
 
 .settings.open .box {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 5px
 }
 
 .settings.open .button .close {
-    display: block;
+    display: block
 }
 
 .tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .tags .button {
     font-size: 12px;
-    padding: 5px 10px;
+    padding: 5px 10px
 }
 
 button {
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    user-select: none;
+    background: 0 0;
+    color: var(--light);
+    font-family: var(--font);
+    font-size: 16px;
+    border: 0
 }
 
 .tags.types .button {
@@ -217,16 +221,11 @@ button {
     background: #772828;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.tags.weapons .button img,
-.tags.wepicons .button span {
-    display: none;
+    justify-content: center
 }
 
 .tags.wepicons .button img {
-    display: initial;
+    display: initial
 }
 
 .tags .button.disabled {
@@ -260,15 +259,6 @@ button {
     user-select: none
 }
 
-button {
-    user-select: none;
-    background: 0 0;
-    color: var(--light);
-    font-family: var(--font);
-    font-size: 16px;
-    border: 0
-}
-
 .stripe>div button.disabled {
     opacity: .2
 }
@@ -297,7 +287,7 @@ button {
 .list .none {
     margin-top: 20px;
     text-align: center;
-    opacity: 0.5;
+    opacity: .5
 }
 
 .list .item span {
@@ -395,18 +385,21 @@ button {
     .button.check {
         max-width: 100px
     }
+
     .tags .button {
-        flex: 1 1 20%;
+        flex: 1 1 20%
     }
+
     .sep {
         width: 90%;
         border-radius: 100px;
         height: 2px;
         margin: 5px auto;
-        background: rgb(255,255,255,.05);
+        background: rgb(255,255,255,.05)
     }
-    .tags.weapons .button > img {
-        width: 100%;
+
+    .tags.weapons .button>img {
+        width: 100%
     }
 }
 
