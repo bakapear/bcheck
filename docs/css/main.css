@@ -202,6 +202,9 @@ input[type=range]::-webkit-slider-thumb {
 .tags .button {
     font-size: 12px;
     padding: 5px 10px;
+}
+
+button {
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -211,7 +214,19 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .tags.weapons .button {
-    background: #772828
+    background: #772828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tags.weapons .button img,
+.tags.wepicons .button span {
+    display: none;
+}
+
+.tags.wepicons .button img {
+    display: initial;
 }
 
 .tags .button.disabled {
@@ -389,6 +404,9 @@ button {
         height: 2px;
         margin: 5px auto;
         background: rgb(255,255,255,.05);
+    }
+    .tags.weapons .button > img {
+        width: 100%;
     }
 }
 

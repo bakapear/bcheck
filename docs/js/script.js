@@ -22,18 +22,20 @@ window.onload = () => {
   loadSettings()
   addSetting(opts, 'ang', 'Custom Angle', [40, 89, 60])
   addSetting(opts, 'hidelow', 'Hide bounces with lower probability')
-  // addSetting(opts, 'wepicons', 'Use weapon icons')
+  addSetting(opts, 'wepicons', 'Use weapon icons')
   // addSetting(opts, 'hell', 'Activate Light Mode')
   handleSettings('button_settings')
 
   handleInput('input_height', 'button_check')
 
   addTags('switch_types', BOUNCES.list.types)
-  addTags('switch_weps', BOUNCES.list.weapons)
+  addTags('switch_weps', BOUNCES.list.weapons, true)
   handleSwitches('switch_types', 'types', 1)
   handleSwitches('switch_weps', 'weapons')
 
   handleJumpbug('switch_jb', 1)
+
+  updateSettings()
 }
 
 function loadSettings () {
@@ -47,6 +49,11 @@ function saveSettings () {
 
 function updateSettings () {
   saveSettings()
+
+  let weps = document.getElementById('switch_weps')
+  if (OPTIONS.wepicons) weps.classList.add('wepicons')
+  else weps.classList.remove('wepicons')
+
   updateBounces()
 }
 
@@ -109,14 +116,26 @@ function handleSettings (button) {
   button.onclick = () => button.parentElement.classList.toggle('open')
 }
 
-function addTags (node, tags) {
+function addTags (node, tags, imgs) {
   let parent = document.getElementById(node)
 
   for (let tag of tags) {
     let button = document.createElement('button')
     button.className = 'button disabled'
     button.setAttribute('data-id', tag)
-    button.innerText = tag.split(' ').pop()
+
+    let text = tag.split(' ').pop()
+
+    let span = document.createElement('span')
+    span.innerText = text
+    button.appendChild(span)
+
+    if (imgs) {
+      let img = document.createElement('img')
+      img.src = `icons/${text.toLowerCase()}.png`
+      button.appendChild(img)
+    }
+
     parent.appendChild(button)
   }
 }
