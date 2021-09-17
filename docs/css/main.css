@@ -225,6 +225,7 @@ button {
 }
 
 .tags.wepicons .button img {
+    -webkit-user-drag: none;
     display: initial
 }
 
