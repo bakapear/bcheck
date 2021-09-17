@@ -238,7 +238,7 @@ function makeCustomAngles (ang) {
 
 function getBounces (height, types = [], weapons = [], jumpbug) {
   let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
-  if (OPTIONS.ang) bounces.ANGLES.push(...makeCustomAngles(OPTIONS.ang))
+  if (OPTIONS.ang) bounces.ANGLES.unshift(...makeCustomAngles(OPTIONS.ang))
 
   let set = []
   for (let type in bounces) {
