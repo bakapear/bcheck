@@ -132,6 +132,7 @@ function addTags (node, tags, imgs) {
 
     if (imgs) {
       let img = document.createElement('img')
+      img.alt = tag
       img.src = `icons/${text.toLowerCase()}.png`
       button.appendChild(img)
     }

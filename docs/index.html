@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TF2 Bounce Checker</title>
+	<meta name="description" content="A tool which allows you to check various bounce heights for Team Fortress 2.">
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/bounces.js"></script>
@@ -15,14 +16,14 @@
 <body>
 	<div class="wrapper">
 		<div class="title">
-			<a href=""><span class="big">bcheck</span></a>
+			<a href="/"><span class="big">bcheck</span></a>
 			<span class="small">TF2 Bounce Checker</span>
 		</div>
 		<div class="row">
 			<input id="input_height" class="input" type="number" placeholder="Bounce Height">
-			<button id="button_check" class="button check">Check</button>
+			<button id="button_check" class="button check" aria-label="Check">Check</button>
 			<div class="settings">
-				<button id="button_settings" class="button">
+				<button id="button_settings" class="button" aria-label="Settings">
 					<svg class="tune" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
 						fill="var(--light)">
 						<path d="M0 0h24v24H0V0z" fill="none" />
@@ -61,7 +62,7 @@
 		</div>
 	</div>
 	<footer>
-		<a tabindex="-1" href="https://github.com/bakapear/bcheck" target="_blank">
+		<a tabindex="-1" href="https://github.com/bakapear/bcheck" rel="noreferrer" target="_blank">
 			made with <span class="heart">❤</span> by <span class="fruit">pear</span></a>
 		</a>
 	</footer>
