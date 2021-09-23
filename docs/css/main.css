@@ -154,6 +154,8 @@ input[type=number] {
 }
 
 .settings .box .item input[type=range] {
+    width: 100px;
+    flex-grow: 1;
     margin-left: 8px;
     margin-right: 5px
 }
@@ -161,6 +163,11 @@ input[type=number] {
 input[type=range] {
     appearance: none;
     background: 0 0
+}
+
+span.deg {
+    text-align: right;
+    width: 22px
 }
 
 span.deg:after {
@@ -182,6 +189,30 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 2px;
     position: relative;
     top: -5px
+}
+
+@supports (-moz-appearance:none) {
+    .settings .box .item input[type=checkbox] {
+        top: 0
+    }
+
+    input[type=range]::-moz-range-track {
+        height: 5.2px;
+        background: rgba(0,0,0,.2);
+        border-radius: 100px
+    }
+
+    input[type=range]::-moz-range-thumb {
+        appearance: none;
+        cursor: pointer;
+        width: 10px;
+        height: 15px;
+        background: #7159da;
+        border-radius: 2px;
+        position: relative;
+        border: 0;
+        top: -5px
+    }
 }
 
 .settings.open .box {
