@@ -1,6 +1,6 @@
 let bcheck = window.bcheck
 let BOUNCES = bcheck.formatBounceJSON(window.BOUNCES)
-let STATE = { height: null, folds: {} }
+let STATE = { height: null, folds: {}, teleheight: 1 }
 let OPTIONS = { wepicons: true }
 let LIST = {}
 
@@ -11,6 +11,8 @@ Object.defineProperty(STATE, 'set', {
     updateBounces()
   }
 })
+
+window.STATE = STATE
 
 window.onload = () => {
   LIST = {
@@ -251,8 +253,8 @@ function getBounces (height, types = [], weapons = [], jumpbug) {
     }
   }
 
-  let uncrouched = bcheck.getBounces(height, set, STATE.jumpbug ? bcheck.JUMPBUG : bcheck.UNCROUCHED)
-  let crouched = bcheck.getBounces(height, set, bcheck.CROUCHED)
+  let uncrouched = bcheck.getBounces(height, set, STATE.jumpbug ? bcheck.JUMPBUG : bcheck.UNCROUCHED, STATE.teleheight)
+  let crouched = bcheck.getBounces(height, set, bcheck.CROUCHED, STATE.teleheight)
   return { uncrouched, crouched }
 }
 
