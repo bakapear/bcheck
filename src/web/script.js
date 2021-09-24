@@ -1,7 +1,7 @@
 let bcheck = window.bcheck
 let BOUNCES = bcheck.formatBounceJSON(window.BOUNCES)
 let STATE = { height: null, folds: {} }
-let OPTIONS = {}
+let OPTIONS = { wepicons: true }
 let LIST = {}
 
 Object.defineProperty(STATE, 'set', {
