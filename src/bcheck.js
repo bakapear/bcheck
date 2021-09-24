@@ -74,7 +74,7 @@ function getVelFromAngle (angle, crouched, [y, radius]) {
     ((p.height / 2) + 9)) / (Math.sqrt((p.height ** 2) + 4 * l2 + 36 * p.height + 324))
 }
 
-let bcheck = {
+module.exports = {
   UNCROUCHED: 0,
   CROUCHED: 1,
   JUMPBUG: 2,
@@ -215,5 +215,3 @@ let bcheck = {
     return { bounces: data, list: { types, weapons: Array.from(weapons) } }
   }
 }
-
-module.exports = bcheck
