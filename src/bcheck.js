@@ -53,6 +53,7 @@ function getMaxVelTickFromStartZVel (vel) {
 
 function getLandTickFromStartZVel (height, vel) {
   let tick0 = getMaxVelTickFromStartZVel(vel) - 1
+  if (tick0 === -1) tick0 = 0
   let z0 = getZFromTick(vel, tick0, height)
   if (z0 <= 0.0) return -(vel + Math.sqrt(vel * vel - 2.0 * GRAVITY * height)) / TICKGRAV
   return height / (MAXVEL * TICK) + (1 + vel / MAXVEL) * tick0 + 0.5 * TICKGRAV / MAXVEL * tick0 * tick0
