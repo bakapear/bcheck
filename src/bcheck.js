@@ -20,12 +20,13 @@ let WEAPONS = {
 function canBounce (height, vel, interval) {
   let heightmax = getValidHeight(vel, height - interval[0])
   let heightmin = getValidHeight(vel, height - interval[1])
+
   let tickmax = Math.floor(getLandTickFromStartZVel(heightmax, vel))
   let tickmin = Math.ceil(getLandTickFromStartZVel(heightmin, vel))
 
   let b = (height - interval[0] >= heightmax || height - interval[1] >= heightmin) && (tickmax - tickmin) >= 0.0
   if (b) {
-    let raw = -getZFromTick(vel, tickmin) % 1
+    let raw = -getZFromTick(vel, tickmin, 0) % 1
     if (raw >= DRANGE[0] && raw <= DRANGE[1]) return 2
   }
   return Number(b)
@@ -33,15 +34,15 @@ function canBounce (height, vel, interval) {
 
 function getValidHeight (vel, height) {
   let ticktop = Math.ceil(-vel / TICKGRAV)
-  let maxzrel = ticktop >= 0 ? getZFromTick(vel, ticktop) : 0.0
+  let maxzrel = ticktop >= 0 ? getZFromTick(vel, ticktop, 0) : 0.0
 
   return Math.max(height, -maxzrel)
 }
 
-function getZFromTick (vel, tick) {
+function getZFromTick (vel, tick, height) {
   let maxveltick = getMaxVelTickFromStartZVel(vel)
   let tick0 = tick < maxveltick ? tick : (maxveltick - 1)
-  let z = 0.5 * TICKGRAV * TICK * tick0 * tick0 + vel * TICK * tick0
+  let z = height + 0.5 * TICKGRAV * TICK * tick0 * tick0 + vel * TICK * tick0
   if (tick >= maxveltick) z -= MAXVEL * TICK * (tick - tick0)
   return z
 }
@@ -52,7 +53,7 @@ function getMaxVelTickFromStartZVel (vel) {
 
 function getLandTickFromStartZVel (height, vel) {
   let tick0 = getMaxVelTickFromStartZVel(vel) - 1
-  let z0 = getZFromTick(vel, tick0)
+  let z0 = getZFromTick(vel, tick0, height)
   if (z0 <= 0.0) return -(vel + Math.sqrt(vel * vel - 2.0 * GRAVITY * height)) / TICKGRAV
   return height / (MAXVEL * TICK) + (1 + vel / MAXVEL) * tick0 + 0.5 * TICKGRAV / MAXVEL * tick0 * tick0
 }
