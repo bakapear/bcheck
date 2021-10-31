@@ -240,6 +240,8 @@ function makeCustomAngles (ang) {
 }
 
 function getBounces (height, types = [], weapons = [], jumpbug) {
+  if (height >= 1234567890) return { uncrouched: [], crouched: [] }
+
   let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
   if (OPTIONS.ang) bounces.ANGLES.unshift(...makeCustomAngles(OPTIONS.ang))
 
