@@ -24,6 +24,7 @@ window.onload = () => {
   addSetting(opts, 'teleheight', 'Override Teleheight', [0, 62, 10], 'digit', x => (x / 10).toFixed(1))
   addSetting(opts, 'hidelow', 'Hide bounces with lower probability')
   addSetting(opts, 'wepicons', 'Use weapon icons')
+  addSetting(opts, 'perinput', 'Update bounces on keystroke')
   // addSetting(opts, 'hell', 'Activate Light Mode')
   handleSettings('button_settings')
 
@@ -54,6 +55,10 @@ function updateSettings () {
   let weps = document.getElementById('switch_weps')
   if (OPTIONS.wepicons) weps.classList.add('wepicons')
   else weps.classList.remove('wepicons')
+
+  let check = document.getElementById('button_check')
+  if (OPTIONS.perinput) check.classList.add('hidden')
+  else check.classList.remove('hidden')
 
   updateBounces()
 }
@@ -155,7 +160,7 @@ function handleInput (input, button) {
   button.onclick = forward
   input.onkeydown = e => {
     if (e.keyCode === 69) return false
-    if (e.keyCode === 13) forward()
+    if (e.keyCode === 13 || OPTIONS.perinput) setTimeout(forward)
   }
 }
 
