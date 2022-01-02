@@ -165,13 +165,18 @@ input[type=range] {
     background: 0 0
 }
 
-span.deg {
+.deg {
     text-align: right;
     width: 22px
 }
 
-span.deg:after {
+.deg:after {
     content: "°"
+}
+
+.digit {
+    text-align: center;
+    width: 10px
 }
 
 input[type=range]::-webkit-slider-runnable-track {

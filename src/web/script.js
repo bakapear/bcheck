@@ -1,6 +1,6 @@
 let bcheck = window.bcheck
 let BOUNCES = bcheck.formatBounceJSON(window.BOUNCES)
-let STATE = { height: null, folds: {}, teleheight: 1 }
+let STATE = { height: null, folds: {} }
 let OPTIONS = { wepicons: true }
 let LIST = {}
 
@@ -22,7 +22,8 @@ window.onload = () => {
 
   let opts = 'options'
   loadSettings()
-  addSetting(opts, 'ang', 'Custom Angle', [40, 89, 60])
+  addSetting(opts, 'ang', 'Custom Angle', [40, 89, 60], 'deg')
+  addSetting(opts, 'teleheight', 'Override Teleheight', [1, 6, 1], 'digit')
   addSetting(opts, 'hidelow', 'Hide bounces with lower probability')
   addSetting(opts, 'wepicons', 'Use weapon icons')
   // addSetting(opts, 'hell', 'Activate Light Mode')
@@ -59,7 +60,7 @@ function updateSettings () {
   updateBounces()
 }
 
-function addSetting (box, prop, text, range) {
+function addSetting (box, prop, text, range, extra) {
   box = document.getElementById(box)
 
   let item = document.createElement('div')
@@ -75,7 +76,7 @@ function addSetting (box, prop, text, range) {
   item.appendChild(span)
 
   if (range) {
-    let [slider, val] = createAngSlider(range[0], range[1], OPTIONS[prop] || range[2])
+    let [slider, val] = createAngSlider(range[0], range[1], OPTIONS[prop] || range[2], extra)
     slider.oninput = () => {
       val.innerText = slider.value
       if (check.checked) OPTIONS[prop] = Number(slider.value)
@@ -101,14 +102,15 @@ function addSetting (box, prop, text, range) {
   box.appendChild(item)
 }
 
-function createAngSlider (min, max, def) {
+function createAngSlider (min, max, def, extra) {
   let slider = document.createElement('input')
   slider.type = 'range'
   slider.min = min
   slider.max = max
   slider.value = def
   let val = document.createElement('span')
-  val.className = 'deg'
+  val.className = 'val'
+  if (extra) val.classList.add(extra)
   val.innerText = def
   return [slider, val]
 }
@@ -244,6 +246,7 @@ function getBounces (height, types = [], weapons = []) {
 
   let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
   if (OPTIONS.ang) bounces.ANGLES.unshift(...makeCustomAngles(OPTIONS.ang))
+  let teleheight = OPTIONS.teleheight || 1
 
   let set = []
   for (let type in bounces) {
@@ -255,8 +258,8 @@ function getBounces (height, types = [], weapons = []) {
     }
   }
 
-  let uncrouched = bcheck.getBounces(height, set, STATE.jumpbug ? bcheck.JUMPBUG : bcheck.UNCROUCHED, STATE.teleheight)
-  let crouched = bcheck.getBounces(height, set, bcheck.CROUCHED, STATE.teleheight)
+  let uncrouched = bcheck.getBounces(height, set, STATE.jumpbug ? bcheck.JUMPBUG : bcheck.UNCROUCHED, teleheight)
+  let crouched = bcheck.getBounces(height, set, bcheck.CROUCHED, teleheight)
   return { uncrouched, crouched }
 }
 
