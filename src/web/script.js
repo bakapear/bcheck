@@ -198,7 +198,7 @@ function updateBounces () {
 
   if (STATE.height === null) return
 
-  let bounces = getBounces(STATE.height, STATE.types, STATE.weapons, STATE.jumpbug)
+  let bounces = getBounces(STATE.height, STATE.types, STATE.weapons)
 
   let type = null
 
@@ -239,7 +239,7 @@ function makeCustomAngles (ang) {
   return res.bounces.ANGLES
 }
 
-function getBounces (height, types = [], weapons = [], jumpbug) {
+function getBounces (height, types = [], weapons = []) {
   if (height >= 1234567890) return { uncrouched: [], crouched: [] }
 
   let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
