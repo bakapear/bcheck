@@ -21,7 +21,7 @@ window.onload = () => {
   let opts = 'options'
   loadSettings()
   addSetting(opts, 'ang', 'Custom Angle', [40, 89, 60], 'deg')
-  addSetting(opts, 'teleheight', 'Override Teleheight', [1, 6, 1], 'digit')
+  addSetting(opts, 'teleheight', 'Override Teleheight', [0, 62, 10], 'digit', x => (x / 10).toFixed(1))
   addSetting(opts, 'hidelow', 'Hide bounces with lower probability')
   addSetting(opts, 'wepicons', 'Use weapon icons')
   // addSetting(opts, 'hell', 'Activate Light Mode')
@@ -58,7 +58,7 @@ function updateSettings () {
   updateBounces()
 }
 
-function addSetting (box, prop, text, range, extra) {
+function addSetting (box, prop, text, range, name, fn) {
   box = document.getElementById(box)
 
   let item = document.createElement('div')
@@ -74,9 +74,9 @@ function addSetting (box, prop, text, range, extra) {
   item.appendChild(span)
 
   if (range) {
-    let [slider, val] = createAngSlider(range[0], range[1], OPTIONS[prop] || range[2], extra)
+    let [slider, val] = createAngSlider(range[0], range[1], OPTIONS[prop] || range[2], name, fn)
     slider.oninput = () => {
-      val.innerText = slider.value
+      val.innerText = fn ? fn(slider.value) : slider.value
       if (check.checked) OPTIONS[prop] = Number(slider.value)
     }
     slider.onchange = updateSettings
@@ -100,7 +100,7 @@ function addSetting (box, prop, text, range, extra) {
   box.appendChild(item)
 }
 
-function createAngSlider (min, max, def, extra) {
+function createAngSlider (min, max, def, name, fn) {
   let slider = document.createElement('input')
   slider.type = 'range'
   slider.min = min
@@ -108,8 +108,8 @@ function createAngSlider (min, max, def, extra) {
   slider.value = def
   let val = document.createElement('span')
   val.className = 'val'
-  if (extra) val.classList.add(extra)
-  val.innerText = def
+  if (name) val.classList.add(name)
+  val.innerText = fn ? fn(def) : def
   return [slider, val]
 }
 
@@ -244,7 +244,7 @@ function getBounces (height, types = [], weapons = []) {
 
   let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
   if (OPTIONS.ang) bounces.ANGLES.unshift(...makeCustomAngles(OPTIONS.ang))
-  let teleheight = OPTIONS.teleheight || 1
+  let teleheight = OPTIONS.teleheight !== false ? OPTIONS.teleheight / 10 : 1
 
   let set = []
   for (let type in bounces) {

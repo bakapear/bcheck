@@ -176,7 +176,7 @@ input[type=range] {
 
 .digit {
     text-align: center;
-    width: 10px
+    width: 16px
 }
 
 input[type=range]::-webkit-slider-runnable-track {
