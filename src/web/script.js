@@ -12,8 +12,6 @@ Object.defineProperty(STATE, 'set', {
   }
 })
 
-window.STATE = STATE
-
 window.onload = () => {
   LIST = {
     uncrouched: document.getElementById('list_uncrouched'),
