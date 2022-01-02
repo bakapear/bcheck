@@ -1,7 +1,7 @@
 let bcheck = window.bcheck
 let BOUNCES = bcheck.formatBounceJSON(window.BOUNCES)
 let STATE = { height: null, folds: {} }
-let OPTIONS = { wepicons: true, teleheight: false }
+let OPTIONS = { wepicons: true }
 let LIST = {}
 
 Object.defineProperty(STATE, 'set', {
@@ -249,7 +249,7 @@ function getBounces (height, types = [], weapons = []) {
 
   let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
   if (OPTIONS.ang) bounces.ANGLES.unshift(...makeCustomAngles(OPTIONS.ang))
-  let teleheight = OPTIONS.teleheight !== false ? OPTIONS.teleheight / 10 : 1
+  let teleheight = typeof OPTIONS.teleheight === 'number' ? OPTIONS.teleheight / 10 : 1
 
   let set = []
   for (let type in bounces) {
