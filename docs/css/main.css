@@ -92,6 +92,10 @@ input[type=number] {
     background: #6174c9
 }
 
+.button:disabled {
+    background: #1a1e31;
+}
+
 .button:hover {
     filter: brightness(125%);
     cursor: pointer

@@ -152,15 +152,19 @@ function handleInput (input, button) {
   input = document.getElementById(input)
   button = document.getElementById(button)
 
-  let forward = () => {
+  let val = () => {
     let val = input.value.trim()
-    STATE.set('height', val === '' ? null : Number(val))
+    val = val === '' ? null : Number(val)
+    return val
   }
+  let check = () => { button.disabled = STATE.height === val() }
+  let forward = () => { STATE.set('height', val()) || check() }
 
   button.onclick = forward
   input.onkeydown = e => {
+    setTimeout(check)
     if (e.keyCode === 69) return false
-    if (e.keyCode === 13 || OPTIONS.perinput) setTimeout(forward)
+    if (OPTIONS.perinput || e.keyCode === 13) setTimeout(forward)
   }
 }
 
