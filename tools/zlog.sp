@@ -29,8 +29,10 @@ enum struct ZClient {
     int afterButtons;
     float delay;
     int iters;
+    int total;
+    char cmd[128];
 
-    void init(int client, int bb, float delay, int ab, int iters) {
+    void init(int client, int bb, float delay, int ab, int iters, char[] cmd) {
         this.client = client;
 
         GetClientAbsOrigin(client, this.pos);
@@ -40,6 +42,8 @@ enum struct ZClient {
         this.afterButtons = ab;
         this.delay = delay;
         this.iters = iters;
+        this.total = iters;
+        strcopy(this.cmd, 128, cmd);
 
         this.logs = new ArrayList(sizeof(ZData));
 
@@ -58,7 +62,10 @@ enum struct ZClient {
         TF2_RegeneratePlayer(this.client);
 
         if(this.iters-- == 0) this.done();
-        else CreateTimer(0.4, ToBefore, this.client);
+        else {
+            PrintHintText(this.client, "%s\n%i/%i", this.cmd, this.total - this.iters, this.total);
+            CreateTimer(0.4, ToBefore, this.client);
+        }
     }
 
     void before() {
@@ -136,7 +143,12 @@ public Action sm_zlog(int client, int args) {
             PrintChat(client, "Invalid iteration count! Must be at least 1.");
             return Plugin_Handled;
         }
-        zclients[client].init(client, bb, delay, ab, iters);
+
+        char arg1[8]; GetCmdArg(1, arg1, sizeof(arg1));
+        char arg2[8]; GetCmdArg(3, arg2, sizeof(arg2));
+        char cmd[32];  Format(cmd, sizeof(cmd), "%s > %s", arg1, arg2);
+        
+        zclients[client].init(client, bb, delay, ab, iters, cmd);
     }
     return Plugin_Handled;
 }
