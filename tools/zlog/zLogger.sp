@@ -4,6 +4,12 @@
 #include <tf2_stocks>
 #include <sdkhooks>
 
+// custom server command to send
+char CMD_NEXT[] = "zlog_next";
+
+// log progress to server
+bool LOG_SERVER = true;
+
 public Plugin myinfo = { 
     name = "zLogger",
     author = "pear"
@@ -15,6 +21,8 @@ enum struct ZData {
     float vel;
     float offs;
 }
+
+int zclient;
 
 enum struct ZClient {
     int client;
@@ -58,23 +66,18 @@ enum struct ZClient {
     void run() {
         if(this.client == 0) return;
         this.buttons = 0;
+        if(this.beforeButtons & IN_DUCK) this.buttons = IN_DUCK;
         TeleportEntity(this.client, this.pos, this.ang, view_as<float>({0.0, 0.0, 0.0})); 
         TF2_RegeneratePlayer(this.client);
 
         if(this.iters-- == 0) this.done();
         else {
             PrintHintText(this.client, "%s\n%i/%i", this.cmd, this.total - this.iters, this.total);
-            CreateTimer(0.4, ToBefore, this.client);
-        }
-    }
-
-    void before() {
-        SDKHook(this.client, SDKHook_OnTakeDamagePost, OnTakeDamagePost);
-        if(this.delay > 0) {
+            if(LOG_SERVER) PrintToServer("(%i): %s [%i/%i]", this.client, this.cmd, this.total - this.iters, this.total);
+            
+            SDKHook(this.client, SDKHook_OnTakeDamagePost, OnTakeDamagePost);
             this.buttons = this.beforeButtons;
-            CreateTimer(this.delay, ToAfter, this.client);
-        } else {
-            this.buttons = this.afterButtons;
+            CreateTimer(this.delay, AfterDelay, this.client);
         }
     }
 
@@ -85,18 +88,24 @@ enum struct ZClient {
         for(int i = 0; i < this.logs.Length; i++) {
             ZData ld; this.logs.GetArray(i, ld);
             char buffer[64]; 
-            Format(buffer, sizeof(buffer), "SPEEDO: %f, VEL: %f, OFFS: %f", ld.speedo, ld.vel, ld.offs);
+            Format(buffer, sizeof(buffer), "SPEEDO: %.2f, VEL: %f, OFFS: %f", ld.speedo, ld.vel, ld.offs);
             total += ld.count;
             PrintToConsole(this.client, "%i > %s", ld.count, buffer);
         }
-        PrintChat(this.client, "Printed %i logs to console.", total);
+        if(zclient == this.client) {
+            if(CMD_NEXT[0]) ServerCommand(CMD_NEXT);
+            char buffer[128]; Format(buffer, sizeof(buffer), "[%i] %s", total, this.cmd);
+            PrintToChat(this.client, buffer);
+        }
+        else PrintChat(this.client, "Printed %i logs to console.", total);
+
         this.destroy();
     }
 
     void log(float speedo, float vel, float offs) {
         for(int i = 0; i < this.logs.Length; i++) {
             ZData ld; this.logs.GetArray(i, ld); 
-            if(ld.speedo == speedo && ld.vel == vel && ld.offs == offs) {
+            if(AlmostEqual(ld.speedo, speedo) && AlmostEqual(ld.vel, vel) && ld.offs == offs) {
                 ld.count++;
                 this.logs.SetArray(i, ld);
                 return;
@@ -115,19 +124,36 @@ enum struct ZClient {
 ZClient zclients[MAXPLAYERS + 1];
 
 public void OnPluginStart() {
+    LoadTranslations("common.phrases");
+
     RegConsoleCmd("sm_zlog", sm_zlog, "Log rocket jump velocities and stuff");
+    RegServerCmd("sm_zclient", sm_zclient, "Set client as zLog target");
+}
+
+public Action sm_zclient(int args) {
+    char name[128]; GetCmdArg(1, name, sizeof(name));
+    zclient = FindTarget(0, name, false, false);
+    if(zclient > 0) PrintToServer("Set zClient to: (%i) %N", zclient, zclient);
 }
 
 public Action sm_zlog(int client, int args) {
+    int reply = client;
+    if(client == 0) {
+        client = zclient;
+        if(client <= 0) {
+            PrintChat(reply, "No zClient set!");
+            return Plugin_Handled;
+        }
+    } else zclient = 0;
     if(zclients[client].client > 0) {
         zclients[client].done();
     } else if(args < 3) {
-        PrintChat(client, "Usage:\nsm_zlog <buttons> <delay> <buttons> <iterations>");
+        PrintChat(reply, "Usage:\nsm_zlog <buttons> <delay> <buttons> <iterations>");
     } else {
         int bb = GetButtons(1);
         float delay = GetDelay(2);
         if(delay == -1.0) {
-            PrintChat(client, "Invalid delay! Must be at least 0.");
+            PrintChat(reply, "Invalid delay! Must be bigger than 0.");
             return Plugin_Handled;
         }
         int ab = GetButtons(3);
@@ -135,12 +161,12 @@ public Action sm_zlog(int client, int args) {
             !(bb & IN_ATTACK) && !(bb & IN_ATTACK2) &&
             !(ab & IN_ATTACK) && !(ab & IN_ATTACK2)
         ) {
-            PrintChat(client, "One of the buttons must include an attack input.");
+            PrintChat(reply, "One of the buttons must include an attack input.");
             return Plugin_Handled;
         }
         int iters = GetIterCount(4);
         if(iters == -1) {
-            PrintChat(client, "Invalid iteration count! Must be at least 1.");
+            PrintChat(reply, "Invalid iteration count! Must be at least 1.");
             return Plugin_Handled;
         }
 
@@ -165,19 +191,21 @@ public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3
         
         float GameTime = GetGameTime();
         int wep = GetEntPropEnt(client, Prop_Data, "m_hActiveWeapon");
-        float atk = GetEntPropFloat(wep, Prop_Send, "m_flNextPrimaryAttack");
-        float next = ((atk - GameTime) - 0.08) + GameTime;
-        SetEntPropFloat(wep, Prop_Send, "m_flNextPrimaryAttack", next);
+        if(IsValidEntity(wep)) {
+            float atk = GetEntPropFloat(wep, Prop_Send, "m_flNextPrimaryAttack");
+            float next = ((atk - GameTime) - 0.08) + GameTime;
+            SetEntPropFloat(wep, Prop_Send, "m_flNextPrimaryAttack", next);
 
-        char cname[128]; GetEntityClassname(wep, cname, sizeof(cname));
-        if(StrEqual(cname, "tf_weapon_particle_cannon")) {
-            float charge = GetEntPropFloat(wep, Prop_Send, "m_flChargeBeginTime");
-            float chargemod = charge - 4.0;
-            if (charge != 0 && zclients[client].lastCharge != chargemod) {
-                zclients[client].lastCharge = chargemod;
-                SetEntPropFloat(wep, Prop_Send, "m_flChargeBeginTime", chargemod);
+            char cname[128]; GetEntityClassname(wep, cname, sizeof(cname));
+            if(StrEqual(cname, "tf_weapon_particle_cannon")) {
+                float charge = GetEntPropFloat(wep, Prop_Send, "m_flChargeBeginTime");
+                float chargemod = charge - 4.0;
+                if (charge != 0 && zclients[client].lastCharge != chargemod) {
+                    zclients[client].lastCharge = chargemod;
+                    SetEntPropFloat(wep, Prop_Send, "m_flChargeBeginTime", chargemod);
+                }
+                SetEntPropFloat(wep, Prop_Send, "m_flEnergy", 20.0);
             }
-            SetEntPropFloat(wep, Prop_Send, "m_flEnergy", 20.0);
         }
     }
 }
@@ -185,7 +213,8 @@ public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3
 public void PrintChat(int client, const char[] format, any ...) {
     char buffer[254];
     VFormat(buffer, sizeof(buffer), format, 3);
-    PrintToChat(client, "[zLogger] %s", buffer);
+    if(client == 0) PrintToServer("[zLogger] %s", buffer);
+    else PrintToChat(client, "[zLogger] %s", buffer);
 }
 
 public int GetButtons(int arg) {
@@ -209,7 +238,7 @@ public int GetButtons(int arg) {
 public float GetDelay(int arg) {
     char str[8]; GetCmdArg(arg, str, sizeof(str));
     float res = StringToFloat(str);
-    return res >= 0.0 ? res : -1.0;
+    return res > 0.0 ? res : -1.0;
 }
 
 public int GetIterCount(int arg) {
@@ -263,5 +292,10 @@ public void KillRockets(int client) {
     }
 }
 
-public Action ToBefore(Handle timer, int client) { zclients[client].before(); }
-public Action ToAfter(Handle timer, int client) { zclients[client].after(); }
+public bool AlmostEqual(float a, float b) {
+    char buf1[32]; Format(buf1, sizeof(buf1), "%.3f", a);
+    char buf2[32]; Format(buf2, sizeof(buf2), "%.3f", b);
+    return StrEqual(buf1, buf2);
+}
+
+public Action AfterDelay(Handle timer, int client) { zclients[client].after(); }
