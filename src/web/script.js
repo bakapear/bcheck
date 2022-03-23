@@ -1,8 +1,14 @@
-let bcheck = window.bcheck
-let BOUNCES = bcheck.formatBounceJSON(window.BOUNCES)
 let STATE = { height: null, folds: {} }
 let OPTIONS = { wepicons: true }
 let LIST = {}
+
+let bcheck = window.bcheck
+
+let total = window.BOUNCES
+if (window.location.search === '?EXPERIMENTAL') {
+  Object.assign(total, { EXPERIMENTAL: window.EXPERIMENTAL })
+}
+let BOUNCES = bcheck.formatBounceJSON(total)
 
 Object.defineProperty(STATE, 'set', {
   enumerable: false,
@@ -332,7 +338,7 @@ function createBounceItem (bounce) {
   let speedo = addBounceItemTag(item, 'speedo', bounce.speedo, null, bounce.chance ? bounce.chance + '%' : null)
   if (speedo) speedo.style.webkitFilter = `saturate(${Math.min(bounce.chance * 1.8, 150)}%)`
 
-  if (!bounce.setup) addBounceItemTag(item, 'double', bounce.double, 'D', 'Double Bhop')
+  if (!bounce.setup && bounce.type !== 'EXPERIMENTAL') addBounceItemTag(item, 'double', bounce.double, 'D', 'Double Bhop')
 
   return item
 }
