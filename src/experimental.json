@@ -1,34 +1,29 @@
 [
   {
     "weapon": "Stock",
-    "text": "N > NS",
-    "bounces": [
-      {
-        "crouched": false,
-        "speedo": 98,
-        "vel": 416.319,
-        "offs": 0,
-        "chance": "100.00"
-      }
-    ]
-  },
-  {
-    "weapon": "Stock",
     "text": "F > FS",
     "bounces": [
       {
         "crouched": false,
         "speedo": 285,
-        "vel": 402.107727,
+        "vel": 402.107818,
         "offs": 0,
-        "chance": "85.00"
+        "chance": "81.00"
       },
       {
         "crouched": false,
         "speedo": 265,
         "vel": 408.776763,
         "offs": 0,
-        "chance": "12.00",
+        "chance": "9.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 265,
+        "vel": 408.776885,
+        "offs": 0,
+        "chance": "5.00",
         "alt": true
       },
       {
@@ -36,7 +31,15 @@
         "speedo": 304,
         "vel": 393.959777,
         "offs": 0,
-        "chance": "3.00",
+        "chance": "4.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 353,
+        "vel": 363.491516,
+        "offs": 0,
+        "chance": "1.00",
         "alt": true
       }
     ]
@@ -50,14 +53,14 @@
         "speedo": 260,
         "vel": 410.131927,
         "offs": 0,
-        "chance": "76.00"
+        "chance": "82.00"
       },
       {
         "crouched": false,
         "speedo": 240,
         "vel": 414.48825,
         "offs": 0,
-        "chance": "20.00",
+        "chance": "10.00",
         "alt": true
       },
       {
@@ -65,7 +68,7 @@
         "speedo": 280,
         "vel": 403.871368,
         "offs": 0,
-        "chance": "4.00",
+        "chance": "8.00",
         "alt": true
       }
     ]
@@ -79,14 +82,14 @@
         "speedo": 341,
         "vel": 382.196319,
         "offs": 0,
-        "chance": "83.00"
+        "chance": "73.00"
       },
       {
         "crouched": false,
         "speedo": 324,
-        "vel": 394.224365,
+        "vel": 394.224395,
         "offs": 0,
-        "chance": "14.00",
+        "chance": "20.00",
         "alt": true
       },
       {
@@ -94,13 +97,21 @@
         "speedo": 357,
         "vel": 369.745483,
         "offs": 0,
-        "chance": "2.00",
+        "chance": "5.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 371,
+        "vel": 357.03012,
+        "offs": 0,
+        "chance": "1.00",
         "alt": true
       },
       {
         "crouched": false,
         "speedo": 305,
-        "vel": 405.65863,
+        "vel": 405.65866,
         "offs": 0,
         "chance": "1.00",
         "alt": true
@@ -114,32 +125,24 @@
       {
         "crouched": false,
         "speedo": 159,
-        "vel": 441.590728,
+        "vel": 441.590759,
         "offs": 0,
         "chance": "77.00"
       },
       {
         "crouched": false,
         "speedo": 135,
-        "vel": 434.548919,
+        "vel": 434.54895,
         "offs": 0,
-        "chance": "16.00",
+        "chance": "19.00",
         "alt": true
       },
       {
         "crouched": false,
         "speedo": 183,
-        "vel": 445.858215,
+        "vel": 445.858367,
         "offs": 0,
-        "chance": "6.00",
-        "alt": true
-      },
-      {
-        "crouched": false,
-        "speedo": 112,
-        "vel": 426.018035,
-        "offs": 0,
-        "chance": "1.00",
+        "chance": "4.00",
         "alt": true
       }
     ]
@@ -151,32 +154,24 @@
       {
         "crouched": false,
         "speedo": 357,
-        "vel": 382.354064,
+        "vel": 382.354003,
         "offs": 0,
-        "chance": "78.00"
+        "chance": "71.00"
       },
       {
         "crouched": false,
         "speedo": 338,
-        "vel": 394.804962,
+        "vel": 394.80487,
         "offs": 0,
-        "chance": "12.00",
+        "chance": "21.00",
         "alt": true
       },
       {
         "crouched": false,
         "speedo": 375,
-        "vel": 369.188385,
+        "vel": 369.188262,
         "offs": 0,
-        "chance": "9.00",
-        "alt": true
-      },
-      {
-        "crouched": false,
-        "speedo": 317,
-        "vel": 406.245544,
-        "offs": 0,
-        "chance": "1.00",
+        "chance": "8.00",
         "alt": true
       }
     ]
@@ -188,24 +183,32 @@
       {
         "crouched": false,
         "speedo": 242,
-        "vel": 423.580139,
+        "vel": 423.580169,
         "offs": 0,
-        "chance": "82.00"
+        "chance": "66.00"
       },
       {
         "crouched": false,
         "speedo": 217,
-        "vel": 424.430847,
+        "vel": 424.430877,
         "offs": 0,
-        "chance": "15.00",
+        "chance": "27.00",
         "alt": true
       },
       {
         "crouched": false,
         "speedo": 267,
-        "vel": 419.468933,
+        "vel": 419.468902,
         "offs": 0,
-        "chance": "3.00",
+        "chance": "5.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 267,
+        "vel": 419.468872,
+        "offs": 0,
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -217,24 +220,24 @@
       {
         "crouched": false,
         "speedo": 344,
-        "vel": 387.497222,
+        "vel": 387.497192,
         "offs": 0,
-        "chance": "82.00"
+        "chance": "66.00"
       },
       {
         "crouched": false,
         "speedo": 324,
         "vel": 398.62622,
         "offs": 0,
-        "chance": "14.00",
+        "chance": "32.00",
         "alt": true
       },
       {
         "crouched": false,
         "speedo": 363,
-        "vel": 375.354522,
+        "vel": 375.354492,
         "offs": 0,
-        "chance": "4.00",
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -248,14 +251,14 @@
         "speedo": 216,
         "vel": 432.448272,
         "offs": 0,
-        "chance": "80.00"
+        "chance": "64.00"
       },
       {
         "crouched": false,
         "speedo": 190,
         "vel": 430.246093,
         "offs": 0,
-        "chance": "14.00",
+        "chance": "33.00",
         "alt": true
       },
       {
@@ -263,21 +266,8 @@
         "speedo": 242,
         "vel": 430.572387,
         "offs": 0,
-        "chance": "6.00",
+        "chance": "3.00",
         "alt": true
-      }
-    ]
-  },
-  {
-    "weapon": "Stock",
-    "text": "ND > NDS",
-    "bounces": [
-      {
-        "crouched": true,
-        "speedo": 217,
-        "vel": 591.278015,
-        "offs": 0,
-        "chance": "100.00"
       }
     ]
   },
@@ -287,39 +277,31 @@
     "bounces": [
       {
         "crouched": true,
+        "speedo": 179,
+        "vel": 595.195983,
+        "offs": 0,
+        "chance": "37.00"
+      },
+      {
+        "crouched": true,
         "speedo": 181,
         "vel": 601.916076,
         "offs": 0,
-        "chance": "40.00"
+        "chance": "32.00",
+        "alt": true
       },
       {
         "crouched": true,
         "speedo": 180,
-        "vel": 598.750305,
+        "vel": 598.750366,
         "offs": 0,
-        "chance": "31.00",
+        "chance": "30.00",
         "alt": true
       },
       {
         "crouched": true,
-        "speedo": 179,
-        "vel": 595.195983,
-        "offs": 0,
-        "chance": "26.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 177,
-        "vel": 591.278015,
-        "offs": 0,
-        "chance": "2.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 267,
-        "vel": 408.038726,
+        "speedo": 181,
+        "vel": 604.668823,
         "offs": 0,
         "chance": "1.00",
         "alt": true
@@ -332,17 +314,17 @@
     "bounces": [
       {
         "crouched": true,
-        "speedo": 276,
-        "vel": 582.452636,
+        "speedo": 285,
+        "vel": 577.594909,
         "offs": 0,
-        "chance": "39.00"
+        "chance": "36.00"
       },
       {
         "crouched": true,
-        "speedo": 285,
-        "vel": 577.59497,
+        "speedo": 276,
+        "vel": 582.452636,
         "offs": 0,
-        "chance": "32.00",
+        "chance": "34.00",
         "alt": true
       },
       {
@@ -356,7 +338,15 @@
       {
         "crouched": true,
         "speedo": 259,
-        "vel": 591.278015,
+        "vel": 591.277832,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 294,
+        "vel": 572.4729,
         "offs": 0,
         "chance": "1.00",
         "alt": true
@@ -370,16 +360,16 @@
       {
         "crouched": true,
         "speedo": 290,
-        "vel": 579.647277,
+        "vel": 579.647216,
         "offs": 0,
-        "chance": "38.00"
+        "chance": "47.00"
       },
       {
         "crouched": true,
         "speedo": 300,
         "vel": 573.51715,
         "offs": 0,
-        "chance": "31.00",
+        "chance": "41.00",
         "alt": true
       },
       {
@@ -387,13 +377,13 @@
         "speedo": 280,
         "vel": 585.575317,
         "offs": 0,
-        "chance": "30.00",
+        "chance": "11.00",
         "alt": true
       },
       {
         "crouched": true,
-        "speedo": 270,
-        "vel": 591.278015,
+        "speedo": 309,
+        "vel": 567.207092,
         "offs": 0,
         "chance": "1.00",
         "alt": true
@@ -406,17 +396,17 @@
     "bounces": [
       {
         "crouched": true,
-        "speedo": 135,
-        "vel": 606.780456,
-        "offs": 0,
-        "chance": "42.00"
-      },
-      {
-        "crouched": true,
         "speedo": 134,
         "vel": 601.907287,
         "offs": 0,
-        "chance": "29.00",
+        "chance": "52.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 135,
+        "vel": 606.780395,
+        "offs": 0,
+        "chance": "45.00",
         "alt": true
       },
       {
@@ -424,13 +414,13 @@
         "speedo": 133,
         "vel": 596.730651,
         "offs": 0,
-        "chance": "28.00",
+        "chance": "2.00",
         "alt": true
       },
       {
         "crouched": true,
         "speedo": 136,
-        "vel": 611.320983,
+        "vel": 611.320922,
         "offs": 0,
         "chance": "1.00",
         "alt": true
@@ -443,17 +433,17 @@
     "bounces": [
       {
         "crouched": true,
-        "speedo": 251,
-        "vel": 587.868774,
-        "offs": 0,
-        "chance": "44.00"
-      },
-      {
-        "crouched": true,
         "speedo": 259,
         "vel": 585.395446,
         "offs": 0,
-        "chance": "29.00",
+        "chance": "55.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 251,
+        "vel": 587.868835,
+        "offs": 0,
+        "chance": "40.00",
         "alt": true
       },
       {
@@ -461,29 +451,13 @@
         "speedo": 244,
         "vel": 589.835815,
         "offs": 0,
-        "chance": "24.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 318,
-        "vel": 405.699859,
-        "offs": 0,
-        "chance": "1.00",
+        "chance": "4.00",
         "alt": true
       },
       {
         "crouched": true,
         "speedo": 267,
-        "vel": 582.437561,
-        "offs": 0,
-        "chance": "1.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 238,
-        "vel": 591.278015,
+        "vel": 582.437622,
         "offs": 0,
         "chance": "1.00",
         "alt": true
@@ -497,38 +471,38 @@
       {
         "crouched": true,
         "speedo": 45,
+        "vel": 613.169128,
+        "offs": 0,
+        "chance": "66.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 45,
         "vel": 606.107971,
         "offs": 0,
-        "chance": "35.00"
+        "chance": "31.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 45,
+        "vel": 606.108032,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
       },
       {
         "crouched": true,
         "speedo": 45,
         "vel": 598.80194,
         "offs": 0,
-        "chance": "31.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 45,
-        "vel": 613.169128,
-        "offs": 0,
-        "chance": "31.00",
+        "chance": "1.00",
         "alt": true
       },
       {
         "crouched": true,
         "speedo": 45,
         "vel": 619.958007,
-        "offs": 0,
-        "chance": "2.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 44,
-        "vel": 591.278015,
         "offs": 0,
         "chance": "1.00",
         "alt": true
@@ -542,40 +516,24 @@
       {
         "crouched": true,
         "speedo": 322,
-        "vel": 567.657653,
+        "vel": 567.657775,
         "offs": 0,
-        "chance": "45.00"
-      },
-      {
-        "crouched": true,
-        "speedo": 298,
-        "vel": 583.562438,
-        "offs": 0,
-        "chance": "30.00",
-        "alt": true
+        "chance": "65.00"
       },
       {
         "crouched": true,
         "speedo": 310,
         "vel": 575.680725,
         "offs": 0,
-        "chance": "22.00",
+        "chance": "30.00",
         "alt": true
       },
       {
         "crouched": true,
-        "speedo": 332,
-        "vel": 559.516967,
+        "speedo": 298,
+        "vel": 583.562438,
         "offs": 0,
-        "chance": "2.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 323,
-        "vel": 398.471954,
-        "offs": 0,
-        "chance": "1.00",
+        "chance": "5.00",
         "alt": true
       }
     ]
@@ -586,78 +544,33 @@
     "bounces": [
       {
         "crouched": true,
-        "speedo": 230,
-        "vel": 592.342102,
+        "speedo": 225,
+        "vel": 592.537536,
         "offs": 0,
-        "chance": "33.00"
+        "chance": "51.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 230,
+        "vel": 592.342163,
+        "offs": 0,
+        "chance": "43.00",
+        "alt": true
       },
       {
         "crouched": true,
         "speedo": 221,
         "vel": 592.181518,
         "offs": 0,
-        "chance": "32.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 225,
-        "vel": 592.537475,
-        "offs": 0,
-        "chance": "31.00",
+        "chance": "5.00",
         "alt": true
       },
       {
         "crouched": true,
         "speedo": 236,
-        "vel": 591.597412,
-        "offs": 0,
-        "chance": "2.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 240,
-        "vel": 431.034423,
+        "vel": 591.597473,
         "offs": 0,
         "chance": "1.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 218,
-        "vel": 591.278015,
-        "offs": 0,
-        "chance": "1.00",
-        "alt": true
-      }
-    ]
-  },
-  {
-    "weapon": "Stock",
-    "text": "N > NJS",
-    "bounces": [
-      {
-        "crouched": false,
-        "speedo": 88,
-        "vel": 725.269836,
-        "offs": 15.539993,
-        "chance": "87.00"
-      },
-      {
-        "crouched": false,
-        "speedo": 94,
-        "vel": 742.135742,
-        "offs": 11.924995,
-        "chance": "9.00",
-        "alt": true
-      },
-      {
-        "crouched": false,
-        "speedo": 83,
-        "vel": 707.919677,
-        "offs": 18.97499,
-        "chance": "4.00",
         "alt": true
       }
     ]
@@ -669,24 +582,24 @@
       {
         "crouched": false,
         "speedo": 274,
-        "vel": 714.481811,
+        "vel": 714.481933,
         "offs": 15.539993,
-        "chance": "77.00"
-      },
-      {
-        "crouched": false,
-        "speedo": 261,
-        "vel": 735.773071,
-        "offs": 11.924995,
-        "chance": "22.00",
-        "alt": true
+        "chance": "88.00"
       },
       {
         "crouched": false,
         "speedo": 286,
         "vel": 692.3833,
         "offs": 18.97499,
-        "chance": "1.00",
+        "chance": "8.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 261,
+        "vel": 735.773132,
+        "offs": 11.924995,
+        "chance": "4.00",
         "alt": true
       }
     ]
@@ -700,15 +613,7 @@
         "speedo": 252,
         "vel": 720.475341,
         "offs": 15.539993,
-        "chance": "70.00"
-      },
-      {
-        "crouched": false,
-        "speedo": 237,
-        "vel": 740.472778,
-        "offs": 11.924995,
-        "chance": "23.00",
-        "alt": true
+        "chance": "91.00"
       },
       {
         "crouched": false,
@@ -716,6 +621,14 @@
         "vel": 699.2677,
         "offs": 18.97499,
         "chance": "7.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 237,
+        "vel": 740.472778,
+        "offs": 11.924995,
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -729,14 +642,14 @@
         "speedo": 329,
         "vel": 697.945922,
         "offs": 15.539993,
-        "chance": "69.00"
+        "chance": "83.00"
       },
       {
         "crouched": false,
         "speedo": 320,
         "vel": 722.704223,
         "offs": 11.924995,
-        "chance": "21.00",
+        "chance": "12.00",
         "alt": true
       },
       {
@@ -744,7 +657,7 @@
         "speedo": 337,
         "vel": 673.443176,
         "offs": 18.97499,
-        "chance": "10.00",
+        "chance": "5.00",
         "alt": true
       }
     ]
@@ -758,22 +671,22 @@
         "speedo": 162,
         "vel": 740.743774,
         "offs": 15.539993,
-        "chance": "87.00"
+        "chance": "81.00"
       },
       {
         "crouched": false,
         "speedo": 138,
         "vel": 756.217041,
         "offs": 11.924995,
-        "chance": "8.00",
+        "chance": "17.00",
         "alt": true
       },
       {
         "crouched": false,
         "speedo": 184,
-        "vel": 722.548217,
+        "vel": 722.548278,
         "offs": 18.97499,
-        "chance": "5.00",
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -785,9 +698,9 @@
       {
         "crouched": false,
         "speedo": 345,
-        "vel": 698.168334,
+        "vel": 698.168212,
         "offs": 15.539993,
-        "chance": "76.00"
+        "chance": "77.00"
       },
       {
         "crouched": false,
@@ -800,9 +713,9 @@
       {
         "crouched": false,
         "speedo": 355,
-        "vel": 673.093261,
+        "vel": 673.0932,
         "offs": 18.97499,
-        "chance": "3.00",
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -814,24 +727,40 @@
       {
         "crouched": false,
         "speedo": 237,
-        "vel": 730.525878,
+        "vel": 730.525939,
         "offs": 15.539993,
-        "chance": "79.00"
+        "chance": "60.00"
       },
       {
         "crouched": false,
         "speedo": 216,
-        "vel": 748.844848,
+        "vel": 748.84497,
         "offs": 11.924995,
         "chance": "15.00",
         "alt": true
       },
       {
         "crouched": false,
+        "speedo": 237,
+        "vel": 730.525878,
+        "offs": 15.539993,
+        "chance": "12.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 216,
+        "vel": 748.844848,
+        "offs": 11.924995,
+        "chance": "9.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
         "speedo": 256,
-        "vel": 710.033325,
+        "vel": 710.033447,
         "offs": 18.97499,
-        "chance": "6.00",
+        "chance": "4.00",
         "alt": true
       }
     ]
@@ -845,14 +774,14 @@
         "speedo": 333,
         "vel": 702.314514,
         "offs": 15.539993,
-        "chance": "72.00"
+        "chance": "76.00"
       },
       {
         "crouched": false,
         "speedo": 320,
         "vel": 726.604858,
         "offs": 11.924995,
-        "chance": "23.00",
+        "chance": "20.00",
         "alt": true
       },
       {
@@ -861,14 +790,6 @@
         "vel": 677.814331,
         "offs": 18.97499,
         "chance": "4.00",
-        "alt": true
-      },
-      {
-        "crouched": false,
-        "speedo": 305,
-        "vel": 750.17041,
-        "offs": 8.129997,
-        "chance": "1.00",
         "alt": true
       }
     ]
@@ -882,14 +803,14 @@
         "speedo": 215,
         "vel": 735.966796,
         "offs": 15.539993,
-        "chance": "76.00"
+        "chance": "80.00"
       },
       {
         "crouched": false,
         "speedo": 191,
         "vel": 753.091247,
         "offs": 11.924995,
-        "chance": "20.00",
+        "chance": "19.00",
         "alt": true
       },
       {
@@ -897,51 +818,6 @@
         "speedo": 236,
         "vel": 716.240478,
         "offs": 18.97499,
-        "chance": "3.00",
-        "alt": true
-      },
-      {
-        "crouched": false,
-        "speedo": 165,
-        "vel": 765.756591,
-        "offs": 8.129997,
-        "chance": "1.00",
-        "alt": true
-      }
-    ]
-  },
-  {
-    "weapon": "Stock",
-    "text": "N > NJDS",
-    "bounces": [
-      {
-        "crouched": true,
-        "speedo": 105,
-        "vel": 915.372558,
-        "offs": 35.900009,
-        "chance": "76.00"
-      },
-      {
-        "crouched": true,
-        "speedo": 112,
-        "vel": 937.984741,
-        "offs": 32.195007,
-        "chance": "17.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 98,
-        "vel": 893.028503,
-        "offs": 39.42501,
-        "chance": "6.00",
-        "alt": true
-      },
-      {
-        "crouched": true,
-        "speedo": 120,
-        "vel": 960.745239,
-        "offs": 28.310005,
         "chance": "1.00",
         "alt": true
       }
@@ -954,24 +830,24 @@
       {
         "crouched": true,
         "speedo": 294,
-        "vel": 905.462341,
+        "vel": 905.462524,
         "offs": 35.900009,
-        "chance": "79.00"
+        "chance": "72.00"
       },
       {
         "crouched": true,
         "speedo": 278,
-        "vel": 932.347778,
+        "vel": 932.347839,
         "offs": 32.195007,
-        "chance": "19.00",
+        "chance": "22.00",
         "alt": true
       },
       {
         "crouched": true,
         "speedo": 308,
-        "vel": 878.283203,
+        "vel": 878.283325,
         "offs": 39.42501,
-        "chance": "2.00",
+        "chance": "6.00",
         "alt": true
       }
     ]
@@ -985,22 +861,22 @@
         "speedo": 267,
         "vel": 911.029602,
         "offs": 35.900009,
-        "chance": "83.00"
+        "chance": "81.00"
       },
       {
         "crouched": true,
         "speedo": 250,
-        "vel": 936.530578,
+        "vel": 936.530517,
         "offs": 32.195007,
-        "chance": "15.00",
+        "chance": "13.00",
         "alt": true
       },
       {
         "crouched": true,
         "speedo": 283,
-        "vel": 884.925415,
+        "vel": 884.925354,
         "offs": 39.42501,
-        "chance": "2.00",
+        "chance": "6.00",
         "alt": true
       }
     ]
@@ -1014,14 +890,14 @@
         "speedo": 359,
         "vel": 889.345764,
         "offs": 35.900009,
-        "chance": "76.00"
+        "chance": "95.00"
       },
       {
         "crouched": true,
         "speedo": 347,
         "vel": 920.131408,
         "offs": 32.195007,
-        "chance": "17.00",
+        "chance": "3.00",
         "alt": true
       },
       {
@@ -1029,7 +905,7 @@
         "speedo": 369,
         "vel": 859.18048,
         "offs": 39.42501,
-        "chance": "7.00",
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -1043,14 +919,14 @@
         "speedo": 158,
         "vel": 928.540954,
         "offs": 35.900009,
-        "chance": "84.00"
+        "chance": "95.00"
       },
       {
         "crouched": true,
         "speedo": 129,
         "vel": 949.559448,
         "offs": 32.195007,
-        "chance": "15.00",
+        "chance": "3.00",
         "alt": true
       },
       {
@@ -1058,7 +934,7 @@
         "speedo": 184,
         "vel": 905.968383,
         "offs": 39.42501,
-        "chance": "1.00",
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -1072,14 +948,14 @@
         "speedo": 374,
         "vel": 889.570922,
         "offs": 35.900009,
-        "chance": "80.00"
+        "chance": "94.00"
       },
       {
         "crouched": true,
         "speedo": 360,
         "vel": 920.708923,
         "offs": 32.195007,
-        "chance": "17.00",
+        "chance": "4.00",
         "alt": true
       },
       {
@@ -1087,7 +963,7 @@
         "speedo": 387,
         "vel": 858.819824,
         "offs": 39.42501,
-        "chance": "3.00",
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -1101,15 +977,7 @@
         "speedo": 244,
         "vel": 920.000244,
         "offs": 35.900009,
-        "chance": "83.00"
-      },
-      {
-        "crouched": true,
-        "speedo": 220,
-        "vel": 943.672302,
-        "offs": 32.195007,
-        "chance": "11.00",
-        "alt": true
+        "chance": "92.00"
       },
       {
         "crouched": true,
@@ -1117,6 +985,14 @@
         "vel": 894.961975,
         "offs": 39.42501,
         "chance": "6.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 220,
+        "vel": 943.672363,
+        "offs": 32.195007,
+        "chance": "2.00",
         "alt": true
       }
     ]
@@ -1128,24 +1004,32 @@
       {
         "crouched": true,
         "speedo": 360,
-        "vel": 893.697509,
+        "vel": 893.697448,
         "offs": 35.900009,
-        "chance": "80.00"
+        "chance": "96.00"
       },
       {
         "crouched": true,
         "speedo": 344,
         "vel": 923.856262,
         "offs": 32.195007,
-        "chance": "17.00",
+        "chance": "2.00",
         "alt": true
       },
       {
         "crouched": true,
         "speedo": 373,
-        "vel": 863.683166,
+        "vel": 863.682922,
         "offs": 39.42501,
-        "chance": "3.00",
+        "chance": "1.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 385,
+        "vel": 833.956115,
+        "offs": 42.770011,
+        "chance": "1.00",
         "alt": true
       }
     ]
@@ -1159,14 +1043,14 @@
         "speedo": 217,
         "vel": 924.624023,
         "offs": 35.900009,
-        "chance": "82.00"
+        "chance": "92.00"
       },
       {
         "crouched": true,
         "speedo": 190,
         "vel": 947.111022,
         "offs": 32.195007,
-        "chance": "13.00",
+        "chance": "4.00",
         "alt": true
       },
       {
@@ -1174,7 +1058,7 @@
         "speedo": 242,
         "vel": 900.512512,
         "offs": 39.42501,
-        "chance": "5.00",
+        "chance": "4.00",
         "alt": true
       }
     ]
