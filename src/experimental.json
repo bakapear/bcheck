@@ -1,3233 +1,1182 @@
 [
-    {
-        "weapon": "Stock",
-        "text": "N > NS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "99",
-                "vel": 416.319,
-                "offs": 0,
-                "chance": "100.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "F > FS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "352",
-                "vel": 395.33374,
-                "offs": 0,
-                "chance": "81.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "327",
-                "vel": 405.235382,
-                "offs": 0,
-                "chance": "14.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "375",
-                "vel": 383.428192,
-                "offs": 0,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "B > BS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "273",
-                "vel": 413.381652,
-                "offs": 0,
-                "chance": "17.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "297",
-                "vel": 407.481567,
-                "offs": 0,
-                "chance": "78.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "320",
-                "vel": 399.264068,
-                "offs": 0,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "L > LS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "408",
-                "vel": 371.735748,
-                "offs": 0,
-                "chance": "73.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "387",
-                "vel": 387.535522,
-                "offs": 0,
-                "chance": "22.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "426",
-                "vel": 355.461334,
-                "offs": 0,
-                "chance": "4.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "364",
-                "vel": 402.52008,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "R > RS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "232",
-                "vel": 445.529541,
-                "offs": 0,
-                "chance": "80.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "264",
-                "vel": 442.882781,
-                "offs": 0,
-                "chance": "4.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "201",
-                "vel": 438.719512,
-                "offs": 0,
-                "chance": "15.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "171",
-                "vel": 428.539978,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FL > FLS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "397",
-                "vel": 376.54483,
-                "offs": 0,
-                "chance": "88.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "375",
-                "vel": 391.18811,
-                "offs": 0,
-                "chance": "6.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "416",
-                "vel": 361.112457,
-                "offs": 0,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FR > FRS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "254",
-                "vel": 424.538757,
-                "offs": 0,
-                "chance": "11.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "311",
-                "vel": 415.696655,
-                "offs": 0,
-                "chance": "5.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "283",
-                "vel": 422.118041,
-                "offs": 0,
-                "chance": "83.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "226",
-                "vel": 422.461364,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BL > BLS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "361",
-                "vel": 395.437713,
-                "offs": 0,
-                "chance": "9.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "383",
-                "vel": 382.178802,
-                "offs": 0,
-                "chance": "86.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "404",
-                "vel": 367.765563,
-                "offs": 0,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BR > BRS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "258",
-                "vel": 432.108093,
-                "offs": 0,
-                "chance": "82.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "228",
-                "vel": 431.310668,
-                "offs": 0,
-                "chance": "12.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "288",
-                "vel": 427.695739,
-                "offs": 0,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > NDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "218",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "100.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FD > FDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "181",
-                "vel": 600.57666,
-                "offs": 0,
-                "chance": "42.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "179",
-                "vel": 596.23114,
-                "offs": 0,
-                "chance": "26.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "182",
-                "vel": 604.261962,
-                "offs": 0,
-                "chance": "31.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "183",
-                "vel": 607.237915,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BD > BDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "308",
-                "vel": 573.299499,
-                "offs": 0,
-                "chance": "36.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "296",
-                "vel": 579.760253,
-                "offs": 0,
-                "chance": "39.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "284",
-                "vel": 585.770141,
-                "offs": 0,
-                "chance": "23.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "319",
-                "vel": 566.4375,
-                "offs": 0,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "LD > LDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "364",
-                "vel": 402.017181,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "324",
-                "vel": 568.216003,
-                "offs": 0,
-                "chance": "40.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "299",
-                "vel": 583.93341,
-                "offs": 0,
-                "chance": "28.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "312",
-                "vel": 576.230163,
-                "offs": 0,
-                "chance": "26.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "286",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "2.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "336",
-                "vel": 559.935974,
-                "offs": 0,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "RD > RDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "171",
-                "vel": 428.136688,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "136",
-                "vel": 610.626403,
-                "offs": 0,
-                "chance": "27.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "134",
-                "vel": 598.212219,
-                "offs": 0,
-                "chance": "23.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "135",
-                "vel": 604.681518,
-                "offs": 0,
-                "chance": "49.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FLD > FLDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "398",
-                "vel": 375.786834,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "260",
-                "vel": 587.184143,
-                "offs": 0,
-                "chance": "54.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "269",
-                "vel": 584.132446,
-                "offs": 0,
-                "chance": "20.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "251",
-                "vel": 589.575744,
-                "offs": 0,
-                "chance": "24.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "279",
-                "vel": 580.455444,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FRD > FRDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "227",
-                "vel": 421.753051,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "46",
-                "vel": 616.237304,
-                "offs": 0,
-                "chance": "39.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "45",
-                "vel": 599.904357,
-                "offs": 0,
-                "chance": "26.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "45",
-                "vel": 608.237792,
-                "offs": 0,
-                "chance": "33.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "46",
-                "vel": 623.860473,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BLD > BLDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "324",
-                "vel": 573.304992,
-                "offs": 0,
-                "chance": "41.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "337",
-                "vel": 564.034179,
-                "offs": 0,
-                "chance": "36.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "311",
-                "vel": 582.39862,
-                "offs": 0,
-                "chance": "23.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BRD > BRDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "226",
-                "vel": 431.435546,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "225",
-                "vel": 592.269409,
-                "offs": 0,
-                "chance": "29.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "237",
-                "vel": 592.077026,
-                "offs": 0,
-                "chance": "42.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "231",
-                "vel": 592.536987,
-                "offs": 0,
-                "chance": "27.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "220",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > NJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "88",
-                "vel": 725.269836,
-                "offs": 15.539993,
-                "chance": "77.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "83",
-                "vel": 707.919677,
-                "offs": 18.97499,
-                "chance": "3.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "95",
-                "vel": 742.135742,
-                "offs": 11.924995,
-                "chance": "18.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "101",
-                "vel": 757.976196,
-                "offs": 8.129997,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "F > FJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "341",
-                "vel": 709.042175,
-                "offs": 15.539993,
-                "chance": "78.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "323",
-                "vel": 732.690734,
-                "offs": 11.924995,
-                "chance": "17.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "356",
-                "vel": 684.417358,
-                "offs": 18.97499,
-                "chance": "4.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "302",
-                "vel": 754.306335,
-                "offs": 8.129997,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "B > BJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "289",
-                "vel": 718.4104,
-                "offs": 15.539993,
-                "chance": "84.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "271",
-                "vel": 739.513061,
-                "offs": 11.924995,
-                "chance": "11.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "304",
-                "vel": 695.937866,
-                "offs": 18.97499,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "L > LJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "396",
-                "vel": 688.942871,
-                "offs": 15.539993,
-                "chance": "82.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "384",
-                "vel": 716.578735,
-                "offs": 11.924995,
-                "chance": "15.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "406",
-                "vel": 661.690795,
-                "offs": 18.97499,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "R > RJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "260",
-                "vel": 721.745788,
-                "offs": 18.97499,
-                "chance": "5.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "233",
-                "vel": 742.068176,
-                "offs": 15.539993,
-                "chance": "82.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "203",
-                "vel": 758.832153,
-                "offs": 11.924995,
-                "chance": "13.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FL > FLJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "385",
-                "vel": 693.208129,
-                "offs": 15.539993,
-                "chance": "81.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "371",
-                "vel": 720.014038,
-                "offs": 11.924995,
-                "chance": "13.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "396",
-                "vel": 666.503295,
-                "offs": 18.97499,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FR > FRJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "277",
-                "vel": 729.526123,
-                "offs": 15.539993,
-                "chance": "86.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "253",
-                "vel": 748.940429,
-                "offs": 11.924995,
-                "chance": "10.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "299",
-                "vel": 707.623779,
-                "offs": 18.97499,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BL > BLJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "372",
-                "vel": 697.816528,
-                "offs": 15.539993,
-                "chance": "74.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "358",
-                "vel": 723.715515,
-                "offs": 11.924995,
-                "chance": "19.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "385",
-                "vel": 671.70996,
-                "offs": 18.97499,
-                "chance": "5.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "340",
-                "vel": 748.831176,
-                "offs": 8.129997,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BR > BRJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "256",
-                "vel": 735.739257,
-                "offs": 15.539993,
-                "chance": "77.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "229",
-                "vel": 753.844238,
-                "offs": 11.924995,
-                "chance": "17.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "280",
-                "vel": 714.636779,
-                "offs": 18.97499,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > NJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "112",
-                "vel": 937.984741,
-                "offs": 32.195007,
-                "chance": "21.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "105",
-                "vel": 915.372802,
-                "offs": 35.900009,
-                "chance": "70.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "99",
-                "vel": 893.028503,
-                "offs": 39.42501,
-                "chance": "9.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "F > FJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "341",
-                "vel": 929.539611,
-                "offs": 32.195007,
-                "chance": "17.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "363",
-                "vel": 900.275085,
-                "offs": 35.900009,
-                "chance": "79.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "382",
-                "vel": 870.387084,
-                "offs": 39.42501,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "B > BJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "305",
-                "vel": 909.126892,
-                "offs": 35.900009,
-                "chance": "70.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "284",
-                "vel": 935.684814,
-                "offs": 32.195007,
-                "chance": "18.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "323",
-                "vel": 881.730346,
-                "offs": 39.42501,
-                "chance": "12.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "L > LJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "430",
-                "vel": 880.177124,
-                "offs": 35.900009,
-                "chance": "78.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "413",
-                "vel": 914.154541,
-                "offs": 32.195007,
-                "chance": "15.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "443",
-                "vel": 846.807861,
-                "offs": 39.42501,
-                "chance": "7.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "R > RJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "232",
-                "vel": 929.599121,
-                "offs": 35.900009,
-                "chance": "76.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "197",
-                "vel": 951.544433,
-                "offs": 32.195007,
-                "chance": "16.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "263",
-                "vel": 905.285827,
-                "offs": 39.42501,
-                "chance": "8.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FL > FLJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "416",
-                "vel": 884.554809,
-                "offs": 35.900009,
-                "chance": "70.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "399",
-                "vel": 917.526245,
-                "offs": 32.195007,
-                "chance": "21.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "431",
-                "vel": 851.921203,
-                "offs": 39.42501,
-                "chance": "9.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FR > FRJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "286",
-                "vel": 919.131896,
-                "offs": 35.900009,
-                "chance": "69.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "257",
-                "vel": 943.75122,
-                "offs": 32.195007,
-                "chance": "22.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "311",
-                "vel": 892.758605,
-                "offs": 39.42501,
-                "chance": "9.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BL > BLJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "401",
-                "vel": 889.213439,
-                "offs": 35.900009,
-                "chance": "78.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "382",
-                "vel": 921.101867,
-                "offs": 32.195007,
-                "chance": "17.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "417",
-                "vel": 857.376342,
-                "offs": 39.42501,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BR > BRJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "229",
-                "vel": 947.707031,
-                "offs": 32.195007,
-                "chance": "14.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "260",
-                "vel": 924.43341,
-                "offs": 35.900009,
-                "chance": "76.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "288",
-                "vel": 899.093505,
-                "offs": 39.42501,
-                "chance": "10.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > NS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "99",
-                "vel": 416.319,
-                "offs": 0,
-                "chance": "100.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "201",
-                "vel": 411.270996,
-                "offs": 0,
-                "chance": "78.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "163",
-                "vel": 414.124816,
-                "offs": 0,
-                "chance": "16.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "242",
-                "vel": 406.561889,
-                "offs": 0,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "177",
-                "vel": 415.767364,
-                "offs": 0,
-                "chance": "81.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "141",
-                "vel": 416.719848,
-                "offs": 0,
-                "chance": "12.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "218",
-                "vel": 413.157806,
-                "offs": 0,
-                "chance": "6.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "115",
-                "vel": 416.703643,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > LS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "255",
-                "vel": 399.605926,
-                "offs": 0,
-                "chance": "84.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "212",
-                "vel": 407.153411,
-                "offs": 0,
-                "chance": "13.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "298",
-                "vel": 389.943572,
-                "offs": 0,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > RS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "64",
-                "vel": 430.757476,
-                "offs": 0,
-                "chance": "86.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "111",
-                "vel": 437.288177,
-                "offs": 0,
-                "chance": "5.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "33",
-                "vel": 424.766601,
-                "offs": 0,
-                "chance": "9.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FLS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "244",
-                "vel": 402.052856,
-                "offs": 0,
-                "chance": "79.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "202",
-                "vel": 408.640289,
-                "offs": 0,
-                "chance": "16.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "287",
-                "vel": 393.381958,
-                "offs": 0,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FRS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "131",
-                "vel": 423.228179,
-                "offs": 0,
-                "chance": "83.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "98",
-                "vel": 420.868713,
-                "offs": 0,
-                "chance": "13.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "171",
-                "vel": 424.510559,
-                "offs": 0,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BLS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "231",
-                "vel": 404.875213,
-                "offs": 0,
-                "chance": "82.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "191",
-                "vel": 410.340148,
-                "offs": 0,
-                "chance": "16.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "154",
-                "vel": 414.03955,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "274",
-                "vel": 397.376708,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BRS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "101",
-                "vel": 427.055328,
-                "offs": 0,
-                "chance": "79.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "70",
-                "vel": 422.89566,
-                "offs": 0,
-                "chance": "18.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "143",
-                "vel": 430.706665,
-                "offs": 0,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > NDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "218",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "100.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > FDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "178",
-                "vel": 592.442565,
-                "offs": 0,
-                "chance": "30.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "179",
-                "vel": 593.950805,
-                "offs": 0,
-                "chance": "49.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "179",
-                "vel": 595.762207,
-                "offs": 0,
-                "chance": "21.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > BDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "175",
-                "vel": 415.651367,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "231",
-                "vel": 590.085144,
-                "offs": 0,
-                "chance": "36.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "238",
-                "vel": 588.452148,
-                "offs": 0,
-                "chance": "34.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "246",
-                "vel": 586.344421,
-                "offs": 0,
-                "chance": "29.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > LDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "212",
-                "vel": 406.740173,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "244",
-                "vel": 587.469848,
-                "offs": 0,
-                "chance": "47.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "235",
-                "vel": 589.659301,
-                "offs": 0,
-                "chance": "27.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "253",
-                "vel": 584.684875,
-                "offs": 0,
-                "chance": "21.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "227",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "264",
-                "vel": 581.275634,
-                "offs": 0,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > RDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "34",
-                "vel": 424.362915,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "132",
-                "vel": 592.875793,
-                "offs": 0,
-                "chance": "29.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "133",
-                "vel": 594.973022,
-                "offs": 0,
-                "chance": "40.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "133",
-                "vel": 597.538818,
-                "offs": 0,
-                "chance": "24.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "134",
-                "vel": 600.532348,
-                "offs": 0,
-                "chance": "5.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "132",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > FLDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "245",
-                "vel": 401.46405,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "225",
-                "vel": 590.471679,
-                "offs": 0,
-                "chance": "39.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "229",
-                "vel": 589.777282,
-                "offs": 0,
-                "chance": "23.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "222",
-                "vel": 590.956237,
-                "offs": 0,
-                "chance": "32.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "233",
-                "vel": 588.815673,
-                "offs": 0,
-                "chance": "4.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "220",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > FRDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "133",
-                "vel": 422.606384,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "45",
-                "vel": 593.242309,
-                "offs": 0,
-                "chance": "35.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "45",
-                "vel": 595.840759,
-                "offs": 0,
-                "chance": "38.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "45",
-                "vel": 599.054077,
-                "offs": 0,
-                "chance": "25.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "45",
-                "vel": 602.856323,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > BLDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "190",
-                "vel": 409.977722,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "239",
-                "vel": 589.300781,
-                "offs": 0,
-                "chance": "35.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "260",
-                "vel": 583.296813,
-                "offs": 0,
-                "chance": "19.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "249",
-                "vel": 586.645324,
-                "offs": 0,
-                "chance": "44.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "229",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > BRDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "68",
-                "vel": 422.567199,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "217",
-                "vel": 591.563598,
-                "offs": 0,
-                "chance": "30.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "217",
-                "vel": 591.888122,
-                "offs": 0,
-                "chance": "42.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "217",
-                "vel": 592.4458,
-                "offs": 0,
-                "chance": "2.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "217",
-                "vel": 592.202758,
-                "offs": 0,
-                "chance": "23.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "217",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > NJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "88",
-                "vel": 725.269836,
-                "offs": 15.539993,
-                "chance": "66.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "95",
-                "vel": 742.135742,
-                "offs": 11.924995,
-                "chance": "22.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "83",
-                "vel": 707.919677,
-                "offs": 18.97499,
-                "chance": "11.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "78",
-                "vel": 690.39685,
-                "offs": 22.229988,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "106",
-                "vel": 741.640258,
-                "offs": 11.924995,
-                "chance": "26.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "102",
-                "vel": 724.552124,
-                "offs": 15.539993,
-                "chance": "61.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "98",
-                "vel": 706.993408,
-                "offs": 18.97499,
-                "chance": "12.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "111",
-                "vel": 757.720947,
-                "offs": 8.129997,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "93",
-                "vel": 725.575256,
-                "offs": 15.539993,
-                "chance": "65.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "98",
-                "vel": 742.421875,
-                "offs": 11.924995,
-                "chance": "29.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "88",
-                "vel": 708.197998,
-                "offs": 18.97499,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > LJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "128",
-                "vel": 721.526123,
-                "offs": 15.539993,
-                "chance": "68.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "131",
-                "vel": 739.323242,
-                "offs": 11.924995,
-                "chance": "26.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "125",
-                "vel": 703.433959,
-                "offs": 18.97499,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > RJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "33",
-                "vel": 728.713684,
-                "offs": 15.539993,
-                "chance": "75.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "33",
-                "vel": 744.813354,
-                "offs": 11.924995,
-                "chance": "24.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "33",
-                "vel": 759.541015,
-                "offs": 8.129997,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FLJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "119",
-                "vel": 704.223083,
-                "offs": 18.97499,
-                "chance": "7.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "126",
-                "vel": 739.838012,
-                "offs": 11.924995,
-                "chance": "33.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "122",
-                "vel": 722.197387,
-                "offs": 15.539993,
-                "chance": "60.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FRJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "82",
-                "vel": 743.708251,
-                "offs": 11.924995,
-                "chance": "16.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "77",
-                "vel": 727.262023,
-                "offs": 15.539993,
-                "chance": "81.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "73",
-                "vel": 710.185302,
-                "offs": 18.97499,
-                "chance": "2.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "87",
-                "vel": 758.909545,
-                "offs": 8.129997,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BLJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "117",
-                "vel": 722.905151,
-                "offs": 15.539993,
-                "chance": "80.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "125",
-                "vel": 756.992553,
-                "offs": 8.129997,
-                "chance": "1.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "120",
-                "vel": 740.380187,
-                "offs": 11.924995,
-                "chance": "17.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "113",
-                "vel": 705.055419,
-                "offs": 18.97499,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BRJS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "61",
-                "vel": 728.002441,
-                "offs": 15.539993,
-                "chance": "82.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "64",
-                "vel": 744.272277,
-                "offs": 11.924995,
-                "chance": "17.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "59",
-                "vel": 711.058227,
-                "offs": 18.97499,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > NJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "99",
-                "vel": 893.028503,
-                "offs": 39.42501,
-                "chance": "5.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "112",
-                "vel": 937.984741,
-                "offs": 32.195007,
-                "chance": "28.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "105",
-                "vel": 915.372802,
-                "offs": 35.900009,
-                "chance": "67.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "118",
-                "vel": 914.730529,
-                "offs": 35.900009,
-                "chance": "60.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "124",
-                "vel": 937.554016,
-                "offs": 32.195007,
-                "chance": "36.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "114",
-                "vel": 892.17633,
-                "offs": 39.42501,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "108",
-                "vel": 915.644836,
-                "offs": 35.900009,
-                "chance": "76.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "115",
-                "vel": 938.232482,
-                "offs": 32.195007,
-                "chance": "20.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "103",
-                "vel": 893.283325,
-                "offs": 39.42501,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > LJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "146",
-                "vel": 911.993164,
-                "offs": 35.900009,
-                "chance": "74.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "150",
-                "vel": 935.519775,
-                "offs": 32.195007,
-                "chance": "22.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "143",
-                "vel": 888.866699,
-                "offs": 39.42501,
-                "chance": "3.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "154",
-                "vel": 959.380432,
-                "offs": 28.310005,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > RJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "33",
-                "vel": 918.419921,
-                "offs": 35.900009,
-                "chance": "77.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "34",
-                "vel": 940.288146,
-                "offs": 32.195007,
-                "chance": "22.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "33",
-                "vel": 896.646667,
-                "offs": 39.42501,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FLJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "140",
-                "vel": 912.60437,
-                "offs": 35.900009,
-                "chance": "55.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "145",
-                "vel": 935.974426,
-                "offs": 32.195007,
-                "chance": "42.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "137",
-                "vel": 889.605224,
-                "offs": 39.42501,
-                "chance": "2.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "149",
-                "vel": 959.63739,
-                "offs": 28.310005,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > FRJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "95",
-                "vel": 939.342956,
-                "offs": 32.195007,
-                "chance": "41.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "89",
-                "vel": 917.143127,
-                "offs": 35.900009,
-                "chance": "57.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "85",
-                "vel": 895.098388,
-                "offs": 39.42501,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BLJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "131",
-                "vel": 890.380187,
-                "offs": 39.42501,
-                "chance": "2.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "139",
-                "vel": 936.451171,
-                "offs": 32.195007,
-                "chance": "43.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "134",
-                "vel": 913.245544,
-                "offs": 35.900009,
-                "chance": "43.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "144",
-                "vel": 959.906555,
-                "offs": 28.310005,
-                "chance": "12.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > BRJDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "74",
-                "vel": 939.825927,
-                "offs": 32.195007,
-                "chance": "42.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "70",
-                "vel": 917.795349,
-                "offs": 35.900009,
-                "chance": "46.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "78",
-                "vel": 961.806213,
-                "offs": 28.310005,
-                "chance": "9.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "67",
-                "vel": 895.88916,
-                "offs": 39.42501,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "99",
-                "vel": 416.319,
-                "offs": 0,
-                "chance": "100.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "F > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "296",
-                "vel": 392.764404,
-                "offs": 0,
-                "chance": "9.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "281",
-                "vel": 407.60675,
-                "offs": 0,
-                "chance": "34.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "289",
-                "vel": 400.624359,
-                "offs": 0,
-                "chance": "53.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "271",
-                "vel": 413.104827,
-                "offs": 0,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "B > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "232",
-                "vel": 414.567474,
-                "offs": 0,
-                "chance": "3.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "241",
-                "vel": 410.784881,
-                "offs": 0,
-                "chance": "65.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "232",
-                "vel": 414.567474,
-                "offs": 0,
-                "chance": "24.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "248",
-                "vel": 405.786468,
-                "offs": 0,
-                "chance": "5.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "223",
-                "vel": 416.598541,
-                "offs": 0,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "L > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "340",
-                "vel": 391.917297,
-                "offs": 0,
-                "chance": "24.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "345",
-                "vel": 379.795471,
-                "offs": 0,
-                "chance": "74.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "348",
-                "vel": 368.0419,
-                "offs": 0,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "R > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "164",
-                "vel": 442.728515,
-                "offs": 0,
-                "chance": "66.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "152",
-                "vel": 436.055755,
-                "offs": 0,
-                "chance": "24.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "140",
-                "vel": 427.212097,
-                "offs": 0,
-                "chance": "3.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "176",
-                "vel": 445.980438,
-                "offs": 0,
-                "chance": "7.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FL > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "334",
-                "vel": 384.064086,
-                "offs": 0,
-                "chance": "69.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "328",
-                "vel": 395.17102,
-                "offs": 0,
-                "chance": "23.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "338",
-                "vel": 373.069091,
-                "offs": 0,
-                "chance": "8.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FR > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "219",
-                "vel": 423.89154,
-                "offs": 0,
-                "chance": "71.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "208",
-                "vel": 424.402465,
-                "offs": 0,
-                "chance": "27.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "229",
-                "vel": 420.969207,
-                "offs": 0,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BL > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "321",
-                "vel": 389.049194,
-                "offs": 0,
-                "chance": "65.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "314",
-                "vel": 398.946685,
-                "offs": 0,
-                "chance": "30.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "326",
-                "vel": 378.966003,
-                "offs": 0,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BR > S",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "193",
-                "vel": 432.387847,
-                "offs": 0,
-                "chance": "77.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "181",
-                "vel": 430.118774,
-                "offs": 0,
-                "chance": "22.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "204",
-                "vel": 431.525939,
-                "offs": 0,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "ND > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "218",
-                "vel": 591.277832,
-                "offs": 0,
-                "chance": "100.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "273",
-                "vel": 412.49475,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "183",
-                "vel": 595.525756,
-                "offs": 0,
-                "chance": "32.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "182",
-                "vel": 599.021667,
-                "offs": 0,
-                "chance": "41.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "181",
-                "vel": 604.094177,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "182",
-                "vel": 601.849182,
-                "offs": 0,
-                "chance": "25.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "231",
-                "vel": 414.562194,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "280",
-                "vel": 577.707519,
-                "offs": 0,
-                "chance": "39.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "277",
-                "vel": 582.069519,
-                "offs": 0,
-                "chance": "28.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "273",
-                "vel": 586.629638,
-                "offs": 0,
-                "chance": "32.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "LD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "294",
-                "vel": 573.657409,
-                "offs": 0,
-                "chance": "36.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "286",
-                "vel": 585.059143,
-                "offs": 0,
-                "chance": "32.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "291",
-                "vel": 579.157836,
-                "offs": 0,
-                "chance": "32.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "RD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "163",
-                "vel": 442.175109,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "160",
-                "vel": 597.200378,
-                "offs": 0,
-                "chance": "30.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "157",
-                "vel": 602.313781,
-                "offs": 0,
-                "chance": "22.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "155",
-                "vel": 606.674072,
-                "offs": 0,
-                "chance": "47.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FLD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "335",
-                "vel": 383.343566,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "244",
-                "vel": 589.875549,
-                "offs": 0,
-                "chance": "35.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "247",
-                "vel": 588.160034,
-                "offs": 0,
-                "chance": "33.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "250",
-                "vel": 586.263183,
-                "offs": 0,
-                "chance": "31.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FRD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "210",
-                "vel": 423.694335,
-                "offs": 0,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "133",
-                "vel": 605.149597,
-                "offs": 0,
-                "chance": "32.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "139",
-                "vel": 598.62799,
-                "offs": 0,
-                "chance": "30.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "128",
-                "vel": 610.87622,
-                "offs": 0,
-                "chance": "15.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "128",
-                "vel": 610.87622,
-                "offs": 0,
-                "chance": "16.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "139",
-                "vel": 598.628112,
-                "offs": 0,
-                "chance": "6.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BLD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "297",
-                "vel": 583.745056,
-                "offs": 0,
-                "chance": "36.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "305",
-                "vel": 570.30957,
-                "offs": 0,
-                "chance": "21.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "302",
-                "vel": 576.737792,
-                "offs": 0,
-                "chance": "43.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BRD > DS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "221",
-                "vel": 592.166625,
-                "offs": 0,
-                "chance": "29.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "225",
-                "vel": 592.467224,
-                "offs": 0,
-                "chance": "19.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "223",
-                "vel": 592.52185,
-                "offs": 0,
-                "chance": "52.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "95",
-                "vel": 742.135742,
-                "offs": 11.924995,
-                "chance": "25.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "88",
-                "vel": 725.269836,
-                "offs": 15.539993,
-                "chance": "73.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "83",
-                "vel": 707.919677,
-                "offs": 18.97499,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "F > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "341",
-                "vel": 709.042175,
-                "offs": 15.539993,
-                "chance": "79.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "323",
-                "vel": 732.690734,
-                "offs": 11.924995,
-                "chance": "19.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "356",
-                "vel": 684.417358,
-                "offs": 18.97499,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "B > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "289",
-                "vel": 718.4104,
-                "offs": 15.539993,
-                "chance": "69.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "271",
-                "vel": 739.513061,
-                "offs": 11.924995,
-                "chance": "30.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "304",
-                "vel": 695.937866,
-                "offs": 18.97499,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "L > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "396",
-                "vel": 688.942871,
-                "offs": 15.539993,
-                "chance": "69.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "384",
-                "vel": 716.578735,
-                "offs": 11.924995,
-                "chance": "27.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "406",
-                "vel": 661.690795,
-                "offs": 18.97499,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "R > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "233",
-                "vel": 742.068176,
-                "offs": 15.539993,
-                "chance": "72.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "203",
-                "vel": 758.832153,
-                "offs": 11.924995,
-                "chance": "27.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "260",
-                "vel": 721.745788,
-                "offs": 18.97499,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FL > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "385",
-                "vel": 693.20819,
-                "offs": 15.539993,
-                "chance": "72.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "371",
-                "vel": 720.014038,
-                "offs": 11.924995,
-                "chance": "24.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "396",
-                "vel": 666.503295,
-                "offs": 18.97499,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FR > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "253",
-                "vel": 748.940429,
-                "offs": 11.924995,
-                "chance": "26.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "277",
-                "vel": 729.526123,
-                "offs": 15.539993,
-                "chance": "73.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "299",
-                "vel": 707.623779,
-                "offs": 18.97499,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BL > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "372",
-                "vel": 697.816528,
-                "offs": 15.539993,
-                "chance": "76.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "358",
-                "vel": 723.715515,
-                "offs": 11.924995,
-                "chance": "20.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "385",
-                "vel": 671.70996,
-                "offs": 18.97499,
-                "chance": "4.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BR > JS",
-        "bounces": [
-            {
-                "crouched": false,
-                "speedo": "256",
-                "vel": 735.739257,
-                "offs": 15.539993,
-                "chance": "69.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "229",
-                "vel": 753.844238,
-                "offs": 11.924995,
-                "chance": "26.00"
-            },
-            {
-                "crouched": false,
-                "speedo": "280",
-                "vel": 714.636779,
-                "offs": 18.97499,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "N > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "105",
-                "vel": 915.372802,
-                "offs": 35.900009,
-                "chance": "83.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "112",
-                "vel": 937.984741,
-                "offs": 32.195007,
-                "chance": "15.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "99",
-                "vel": 893.028503,
-                "offs": 39.42501,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "F > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "363",
-                "vel": 900.275085,
-                "offs": 35.900009,
-                "chance": "81.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "341",
-                "vel": 929.539611,
-                "offs": 32.195007,
-                "chance": "17.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "86",
-                "vel": 827.924377,
-                "offs": 48.920013,
-                "chance": "1.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "382",
-                "vel": 870.387084,
-                "offs": 39.42501,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "B > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "305",
-                "vel": 909.126892,
-                "offs": 35.900009,
-                "chance": "78.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "284",
-                "vel": 935.684814,
-                "offs": 32.195007,
-                "chance": "17.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "323",
-                "vel": 881.730346,
-                "offs": 39.42501,
-                "chance": "5.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "L > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "430",
-                "vel": 880.177124,
-                "offs": 35.900009,
-                "chance": "76.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "413",
-                "vel": 914.154541,
-                "offs": 32.195007,
-                "chance": "22.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "443",
-                "vel": 846.807861,
-                "offs": 39.42501,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "R > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "232",
-                "vel": 929.599121,
-                "offs": 35.900009,
-                "chance": "87.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "197",
-                "vel": 951.544372,
-                "offs": 32.195007,
-                "chance": "13.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FL > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "416",
-                "vel": 884.554809,
-                "offs": 35.900009,
-                "chance": "82.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "399",
-                "vel": 917.526245,
-                "offs": 32.195007,
-                "chance": "17.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "431",
-                "vel": 851.921203,
-                "offs": 39.42501,
-                "chance": "1.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "FR > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "286",
-                "vel": 919.131896,
-                "offs": 35.900009,
-                "chance": "78.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "257",
-                "vel": 943.75122,
-                "offs": 32.195007,
-                "chance": "20.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "311",
-                "vel": 892.758605,
-                "offs": 39.42501,
-                "chance": "2.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BL > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "401",
-                "vel": 889.213439,
-                "offs": 35.900009,
-                "chance": "70.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "382",
-                "vel": 921.101867,
-                "offs": 32.195007,
-                "chance": "27.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "417",
-                "vel": 857.376342,
-                "offs": 39.42501,
-                "chance": "3.00"
-            }
-        ]
-    },
-    {
-        "weapon": "Stock",
-        "text": "BR > JDS",
-        "bounces": [
-            {
-                "crouched": true,
-                "speedo": "260",
-                "vel": 924.43341,
-                "offs": 35.900009,
-                "chance": "87.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "229",
-                "vel": 947.707031,
-                "offs": 32.195007,
-                "chance": "12.00"
-            },
-            {
-                "crouched": true,
-                "speedo": "288",
-                "vel": 899.093505,
-                "offs": 39.42501,
-                "chance": "1.00"
-            }
-        ]
-    }
+  {
+    "weapon": "Stock",
+    "text": "N > NS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 98,
+        "vel": 416.319,
+        "offs": 0,
+        "chance": "100.00"
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "F > FS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 285,
+        "vel": 402.107727,
+        "offs": 0,
+        "chance": "85.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 265,
+        "vel": 408.776763,
+        "offs": 0,
+        "chance": "12.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 304,
+        "vel": 393.959777,
+        "offs": 0,
+        "chance": "3.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "B > BS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 260,
+        "vel": 410.131927,
+        "offs": 0,
+        "chance": "76.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 240,
+        "vel": 414.48825,
+        "offs": 0,
+        "chance": "20.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 280,
+        "vel": 403.871368,
+        "offs": 0,
+        "chance": "4.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "L > LS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 341,
+        "vel": 382.196319,
+        "offs": 0,
+        "chance": "83.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 324,
+        "vel": 394.224365,
+        "offs": 0,
+        "chance": "14.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 357,
+        "vel": 369.745483,
+        "offs": 0,
+        "chance": "2.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 305,
+        "vel": 405.65863,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "R > RS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 159,
+        "vel": 441.590728,
+        "offs": 0,
+        "chance": "77.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 135,
+        "vel": 434.548919,
+        "offs": 0,
+        "chance": "16.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 183,
+        "vel": 445.858215,
+        "offs": 0,
+        "chance": "6.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 112,
+        "vel": 426.018035,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FL > FLS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 357,
+        "vel": 382.354064,
+        "offs": 0,
+        "chance": "78.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 338,
+        "vel": 394.804962,
+        "offs": 0,
+        "chance": "12.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 375,
+        "vel": 369.188385,
+        "offs": 0,
+        "chance": "9.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 317,
+        "vel": 406.245544,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FR > FRS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 242,
+        "vel": 423.580139,
+        "offs": 0,
+        "chance": "82.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 217,
+        "vel": 424.430847,
+        "offs": 0,
+        "chance": "15.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 267,
+        "vel": 419.468933,
+        "offs": 0,
+        "chance": "3.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BL > BLS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 344,
+        "vel": 387.497222,
+        "offs": 0,
+        "chance": "82.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 324,
+        "vel": 398.62622,
+        "offs": 0,
+        "chance": "14.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 363,
+        "vel": 375.354522,
+        "offs": 0,
+        "chance": "4.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BR > BRS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 216,
+        "vel": 432.448272,
+        "offs": 0,
+        "chance": "80.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 190,
+        "vel": 430.246093,
+        "offs": 0,
+        "chance": "14.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 242,
+        "vel": 430.572387,
+        "offs": 0,
+        "chance": "6.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "ND > NDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 217,
+        "vel": 591.278015,
+        "offs": 0,
+        "chance": "100.00"
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FD > FDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 181,
+        "vel": 601.916076,
+        "offs": 0,
+        "chance": "40.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 180,
+        "vel": 598.750305,
+        "offs": 0,
+        "chance": "31.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 179,
+        "vel": 595.195983,
+        "offs": 0,
+        "chance": "26.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 177,
+        "vel": 591.278015,
+        "offs": 0,
+        "chance": "2.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 267,
+        "vel": 408.038726,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BD > BDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 276,
+        "vel": 582.452636,
+        "offs": 0,
+        "chance": "39.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 285,
+        "vel": 577.59497,
+        "offs": 0,
+        "chance": "32.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 268,
+        "vel": 587.02185,
+        "offs": 0,
+        "chance": "28.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 259,
+        "vel": 591.278015,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "LD > LDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 290,
+        "vel": 579.647277,
+        "offs": 0,
+        "chance": "38.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 300,
+        "vel": 573.51715,
+        "offs": 0,
+        "chance": "31.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 280,
+        "vel": 585.575317,
+        "offs": 0,
+        "chance": "30.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 270,
+        "vel": 591.278015,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "RD > RDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 135,
+        "vel": 606.780456,
+        "offs": 0,
+        "chance": "42.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 134,
+        "vel": 601.907287,
+        "offs": 0,
+        "chance": "29.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 133,
+        "vel": 596.730651,
+        "offs": 0,
+        "chance": "28.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 136,
+        "vel": 611.320983,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FLD > FLDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 251,
+        "vel": 587.868774,
+        "offs": 0,
+        "chance": "44.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 259,
+        "vel": 585.395446,
+        "offs": 0,
+        "chance": "29.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 244,
+        "vel": 589.835815,
+        "offs": 0,
+        "chance": "24.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 318,
+        "vel": 405.699859,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 267,
+        "vel": 582.437561,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 238,
+        "vel": 591.278015,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FRD > FRDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 45,
+        "vel": 606.107971,
+        "offs": 0,
+        "chance": "35.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 45,
+        "vel": 598.80194,
+        "offs": 0,
+        "chance": "31.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 45,
+        "vel": 613.169128,
+        "offs": 0,
+        "chance": "31.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 45,
+        "vel": 619.958007,
+        "offs": 0,
+        "chance": "2.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 44,
+        "vel": 591.278015,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BLD > BLDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 322,
+        "vel": 567.657653,
+        "offs": 0,
+        "chance": "45.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 298,
+        "vel": 583.562438,
+        "offs": 0,
+        "chance": "30.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 310,
+        "vel": 575.680725,
+        "offs": 0,
+        "chance": "22.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 332,
+        "vel": 559.516967,
+        "offs": 0,
+        "chance": "2.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 323,
+        "vel": 398.471954,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BRD > BRDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 230,
+        "vel": 592.342102,
+        "offs": 0,
+        "chance": "33.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 221,
+        "vel": 592.181518,
+        "offs": 0,
+        "chance": "32.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 225,
+        "vel": 592.537475,
+        "offs": 0,
+        "chance": "31.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 236,
+        "vel": 591.597412,
+        "offs": 0,
+        "chance": "2.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 240,
+        "vel": 431.034423,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 218,
+        "vel": 591.278015,
+        "offs": 0,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "N > NJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 88,
+        "vel": 725.269836,
+        "offs": 15.539993,
+        "chance": "87.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 94,
+        "vel": 742.135742,
+        "offs": 11.924995,
+        "chance": "9.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 83,
+        "vel": 707.919677,
+        "offs": 18.97499,
+        "chance": "4.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "F > FJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 274,
+        "vel": 714.481811,
+        "offs": 15.539993,
+        "chance": "77.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 261,
+        "vel": 735.773071,
+        "offs": 11.924995,
+        "chance": "22.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 286,
+        "vel": 692.3833,
+        "offs": 18.97499,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "B > BJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 252,
+        "vel": 720.475341,
+        "offs": 15.539993,
+        "chance": "70.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 237,
+        "vel": 740.472778,
+        "offs": 11.924995,
+        "chance": "23.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 266,
+        "vel": 699.2677,
+        "offs": 18.97499,
+        "chance": "7.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "L > LJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 329,
+        "vel": 697.945922,
+        "offs": 15.539993,
+        "chance": "69.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 320,
+        "vel": 722.704223,
+        "offs": 11.924995,
+        "chance": "21.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 337,
+        "vel": 673.443176,
+        "offs": 18.97499,
+        "chance": "10.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "R > RJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 162,
+        "vel": 740.743774,
+        "offs": 15.539993,
+        "chance": "87.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 138,
+        "vel": 756.217041,
+        "offs": 11.924995,
+        "chance": "8.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 184,
+        "vel": 722.548217,
+        "offs": 18.97499,
+        "chance": "5.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FL > FLJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 345,
+        "vel": 698.168334,
+        "offs": 15.539993,
+        "chance": "76.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 334,
+        "vel": 723.302734,
+        "offs": 11.924995,
+        "chance": "21.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 355,
+        "vel": 673.093261,
+        "offs": 18.97499,
+        "chance": "3.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FR > FRJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 237,
+        "vel": 730.525878,
+        "offs": 15.539993,
+        "chance": "79.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 216,
+        "vel": 748.844848,
+        "offs": 11.924995,
+        "chance": "15.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 256,
+        "vel": 710.033325,
+        "offs": 18.97499,
+        "chance": "6.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BL > BLJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 333,
+        "vel": 702.314514,
+        "offs": 15.539993,
+        "chance": "72.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 320,
+        "vel": 726.604858,
+        "offs": 11.924995,
+        "chance": "23.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 344,
+        "vel": 677.814331,
+        "offs": 18.97499,
+        "chance": "4.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 305,
+        "vel": 750.17041,
+        "offs": 8.129997,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BR > BRJS",
+    "bounces": [
+      {
+        "crouched": false,
+        "speedo": 215,
+        "vel": 735.966796,
+        "offs": 15.539993,
+        "chance": "76.00"
+      },
+      {
+        "crouched": false,
+        "speedo": 191,
+        "vel": 753.091247,
+        "offs": 11.924995,
+        "chance": "20.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 236,
+        "vel": 716.240478,
+        "offs": 18.97499,
+        "chance": "3.00",
+        "alt": true
+      },
+      {
+        "crouched": false,
+        "speedo": 165,
+        "vel": 765.756591,
+        "offs": 8.129997,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "N > NJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 105,
+        "vel": 915.372558,
+        "offs": 35.900009,
+        "chance": "76.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 112,
+        "vel": 937.984741,
+        "offs": 32.195007,
+        "chance": "17.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 98,
+        "vel": 893.028503,
+        "offs": 39.42501,
+        "chance": "6.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 120,
+        "vel": 960.745239,
+        "offs": 28.310005,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "F > FJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 294,
+        "vel": 905.462341,
+        "offs": 35.900009,
+        "chance": "79.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 278,
+        "vel": 932.347778,
+        "offs": 32.195007,
+        "chance": "19.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 308,
+        "vel": 878.283203,
+        "offs": 39.42501,
+        "chance": "2.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "B > BJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 267,
+        "vel": 911.029602,
+        "offs": 35.900009,
+        "chance": "83.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 250,
+        "vel": 936.530578,
+        "offs": 32.195007,
+        "chance": "15.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 283,
+        "vel": 884.925415,
+        "offs": 39.42501,
+        "chance": "2.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "L > LJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 359,
+        "vel": 889.345764,
+        "offs": 35.900009,
+        "chance": "76.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 347,
+        "vel": 920.131408,
+        "offs": 32.195007,
+        "chance": "17.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 369,
+        "vel": 859.18048,
+        "offs": 39.42501,
+        "chance": "7.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "R > RJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 158,
+        "vel": 928.540954,
+        "offs": 35.900009,
+        "chance": "84.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 129,
+        "vel": 949.559448,
+        "offs": 32.195007,
+        "chance": "15.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 184,
+        "vel": 905.968383,
+        "offs": 39.42501,
+        "chance": "1.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FL > FLJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 374,
+        "vel": 889.570922,
+        "offs": 35.900009,
+        "chance": "80.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 360,
+        "vel": 920.708923,
+        "offs": 32.195007,
+        "chance": "17.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 387,
+        "vel": 858.819824,
+        "offs": 39.42501,
+        "chance": "3.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "FR > FRJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 244,
+        "vel": 920.000244,
+        "offs": 35.900009,
+        "chance": "83.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 220,
+        "vel": 943.672302,
+        "offs": 32.195007,
+        "chance": "11.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 266,
+        "vel": 894.961975,
+        "offs": 39.42501,
+        "chance": "6.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BL > BLJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 360,
+        "vel": 893.697509,
+        "offs": 35.900009,
+        "chance": "80.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 344,
+        "vel": 923.856262,
+        "offs": 32.195007,
+        "chance": "17.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 373,
+        "vel": 863.683166,
+        "offs": 39.42501,
+        "chance": "3.00",
+        "alt": true
+      }
+    ]
+  },
+  {
+    "weapon": "Stock",
+    "text": "BR > BRJDS",
+    "bounces": [
+      {
+        "crouched": true,
+        "speedo": 217,
+        "vel": 924.624023,
+        "offs": 35.900009,
+        "chance": "82.00"
+      },
+      {
+        "crouched": true,
+        "speedo": 190,
+        "vel": 947.111022,
+        "offs": 32.195007,
+        "chance": "13.00",
+        "alt": true
+      },
+      {
+        "crouched": true,
+        "speedo": 242,
+        "vel": 900.512512,
+        "offs": 39.42501,
+        "chance": "5.00",
+        "alt": true
+      }
+    ]
+  }
 ]
