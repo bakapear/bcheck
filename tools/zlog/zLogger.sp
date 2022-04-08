@@ -7,9 +7,6 @@
 // custom server command to send
 char CMD_NEXT[] = "zlog_next";
 
-// log progress to server
-bool LOG_SERVER = true;
-
 public Plugin myinfo = { 
     name = "zLogger",
     author = "pear"
@@ -22,14 +19,11 @@ enum struct ZData {
     float offs;
 }
 
-int zclient;
-
 enum struct ZClient {
     int client;
     float pos[3];
     float ang[3];
 
-    int buttons;
     ArrayList logs;
 
     float lastCharge;
@@ -39,6 +33,8 @@ enum struct ZClient {
     int iters;
     int total;
     char cmd[128];
+
+    Handle timer;
 
     void init(int client, int bb, float delay, int ab, int iters, char[] cmd) {
         this.client = client;
@@ -55,33 +51,37 @@ enum struct ZClient {
 
         this.logs = new ArrayList(sizeof(ZData));
 
+        ResetKeys();
         this.run();
     }
 
     void destroy() {
+        if(this.timer != INVALID_HANDLE) KillTimer(this.timer);
+        ResetKeys();
         SDKUnhook(this.client, SDKHook_OnTakeDamagePost, OnTakeDamagePost);   
         this.client = 0;
     }
 
     void run() {
         if(this.client == 0) return;
-        this.buttons = 0;
-        if(this.beforeButtons & IN_DUCK) this.buttons = IN_DUCK;
+        if(this.beforeButtons & IN_DUCK) Key(IN_DUCK, true);
         TeleportEntity(this.client, this.pos, this.ang, view_as<float>({0.0, 0.0, 0.0})); 
         TF2_RegeneratePlayer(this.client);
 
         if(this.iters-- == 0) this.done();
         else {
             PrintHintText(this.client, "%s\n%i/%i", this.cmd, this.total - this.iters, this.total);
-            if(LOG_SERVER) PrintToServer("(%i): %s [%i/%i]", this.client, this.cmd, this.total - this.iters, this.total);
-            
             SDKHook(this.client, SDKHook_OnTakeDamagePost, OnTakeDamagePost);
-            this.buttons = this.beforeButtons;
-            CreateTimer(this.delay, AfterDelay, this.client);
+            Key(this.beforeButtons, true);
+            this.timer = CreateTimer(this.delay, AfterDelay, this.client);
         }
     }
 
-    void after() { this.buttons = this.afterButtons; }
+    void after() { 
+        this.timer = INVALID_HANDLE;
+        ResetKeys();
+        Key(this.afterButtons, true);
+    }
 
     void done() {
         int total;
@@ -92,8 +92,9 @@ enum struct ZClient {
             total += ld.count;
             PrintToConsole(this.client, "%i > %s", ld.count, buffer);
         }
-        if(zclient == this.client) {
-            if(CMD_NEXT[0]) ServerCommand(CMD_NEXT);
+        
+        if(CMD_NEXT[0]) {
+            ServerCommand(CMD_NEXT);
             char buffer[128]; Format(buffer, sizeof(buffer), "[%i] %s", total, this.cmd);
             PrintToChat(this.client, buffer);
         }
@@ -124,36 +125,24 @@ enum struct ZClient {
 ZClient zclients[MAXPLAYERS + 1];
 
 public void OnPluginStart() {
-    LoadTranslations("common.phrases");
-
     RegConsoleCmd("sm_zlog", sm_zlog, "Log rocket jump velocities and stuff");
-    RegServerCmd("sm_zclient", sm_zclient, "Set client as zLog target");
-}
-
-public Action sm_zclient(int args) {
-    char name[128]; GetCmdArg(1, name, sizeof(name));
-    zclient = FindTarget(0, name, false, false);
-    if(zclient > 0) PrintToServer("Set zClient to: (%i) %N", zclient, zclient);
 }
 
 public Action sm_zlog(int client, int args) {
-    int reply = client;
-    if(client == 0) {
-        client = zclient;
-        if(client <= 0) {
-            PrintChat(reply, "No zClient set!");
-            return Plugin_Handled;
-        }
-    } else zclient = 0;
+    client = 1; // should always just be local
+    if(!IsValidEntity(client)) {
+        PrintToServer("Could not find client.");
+        return Plugin_Handled;
+    }
     if(zclients[client].client > 0) {
         zclients[client].done();
     } else if(args < 3) {
-        PrintChat(reply, "Usage:\nsm_zlog <buttons> <delay> <buttons> <iterations>");
+        PrintChat(client, "Usage:\nsm_zlog <buttons> <delay> <buttons> <iterations>");
     } else {
         int bb = GetButtons(1);
         float delay = GetDelay(2);
         if(delay == -1.0) {
-            PrintChat(reply, "Invalid delay! Must be bigger than 0.");
+            PrintChat(client, "Invalid delay! Must be bigger than 0.");
             return Plugin_Handled;
         }
         int ab = GetButtons(3);
@@ -161,12 +150,12 @@ public Action sm_zlog(int client, int args) {
             !(bb & IN_ATTACK) && !(bb & IN_ATTACK2) &&
             !(ab & IN_ATTACK) && !(ab & IN_ATTACK2)
         ) {
-            PrintChat(reply, "One of the buttons must include an attack input.");
+            PrintChat(client, "One of the buttons must include an attack input.");
             return Plugin_Handled;
         }
         int iters = GetIterCount(4);
         if(iters == -1) {
-            PrintChat(reply, "Invalid iteration count! Must be at least 1.");
+            PrintChat(client, "Invalid iteration count! Must be at least 1.");
             return Plugin_Handled;
         }
 
@@ -180,15 +169,7 @@ public Action sm_zlog(int client, int args) {
 }
 
 public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3]) {
-    if(zclients[client].client > 0) {
-        buttons |= zclients[client].buttons;
-
-        float speed = 400.0;
-        if(buttons & IN_FORWARD) vel[0] = speed;
-        if(buttons & IN_BACK) vel[0] = -speed;
-        if(buttons & IN_MOVERIGHT) vel[1] = speed;
-        if(buttons & IN_MOVELEFT) vel[1] = -speed;
-        
+    if(zclients[client].client > 0) {        
         float GameTime = GetGameTime();
         int wep = GetEntPropEnt(client, Prop_Data, "m_hActiveWeapon");
         if(IsValidEntity(wep)) {
@@ -230,6 +211,7 @@ public int GetButtons(int arg) {
             case 'J': res |= IN_JUMP;
             case 'D': res |= IN_DUCK;
             case 'C': res |= IN_ATTACK2;
+            case 'W': res |= IN_WALK; // moveup actually
         }
     }
     return res;
@@ -252,8 +234,7 @@ public void OnTakeDamagePost(int client, int attacker, int inflictor, float dama
     float vel[3]; GetEntPropVector(client, Prop_Data, "m_vecVelocity", vel);
     float org[3]; GetEntPropVector(client, Prop_Data, "m_vecOrigin", org);
 
-    zclients[client].buttons &= ~IN_ATTACK;
-    zclients[client].buttons &= ~IN_ATTACK2;
+    ResetKeys();
 
     KillRockets(client);
 
@@ -299,3 +280,25 @@ public bool AlmostEqual(float a, float b) {
 }
 
 public Action AfterDelay(Handle timer, int client) { zclients[client].after(); }
+
+public void ResetKeys() {
+    Key(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT + IN_ATTACK + IN_JUMP + IN_DUCK + IN_ATTACK2 + IN_WALK, false);
+}
+
+public void Key(int keys, bool press) {
+    char cmd[256];
+    if(keys & IN_FORWARD) AddKey("forward", press, cmd, sizeof(cmd));
+    if(keys & IN_BACK) AddKey("back", press, cmd, sizeof(cmd));
+    if(keys & IN_MOVELEFT) AddKey("moveleft", press, cmd, sizeof(cmd));
+    if(keys & IN_MOVERIGHT) AddKey("moveright", press, cmd, sizeof(cmd));
+    if(keys & IN_ATTACK) AddKey("attack", press, cmd, sizeof(cmd));
+    if(keys & IN_JUMP) AddKey("jump", press, cmd, sizeof(cmd));
+    if(keys & IN_DUCK) AddKey("duck", press, cmd, sizeof(cmd));
+    if(keys & IN_ATTACK2) AddKey("attack2", press, cmd, sizeof(cmd));
+    if(keys & IN_WALK) AddKey("moveup", press, cmd, sizeof(cmd));
+    ServerCommand(cmd);
+}
+
+public void AddKey(char[] key, bool press, char[] cmd, int size) {
+    Format(cmd, size, "%s%s%s;", cmd, (press ? '+' : '-'), key);
+}
