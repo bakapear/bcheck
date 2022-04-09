@@ -64,7 +64,6 @@ enum struct ZClient {
 
     void run() {
         if(this.client == 0) return;
-        if(this.beforeButtons & IN_DUCK) Key(IN_DUCK, true);
         TeleportEntity(this.client, this.pos, this.ang, view_as<float>({0.0, 0.0, 0.0})); 
         TF2_RegeneratePlayer(this.client);
 
@@ -235,6 +234,7 @@ public void OnTakeDamagePost(int client, int attacker, int inflictor, float dama
     float org[3]; GetEntPropVector(client, Prop_Data, "m_vecOrigin", org);
 
     ResetKeys();
+    if(zclients[client].beforeButtons & IN_DUCK) Key(IN_DUCK, true);
 
     KillRockets(client);
 
