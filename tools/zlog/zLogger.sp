@@ -26,6 +26,7 @@ enum struct ZClient {
 
     ArrayList logs;
 
+    bool started;
     float lastCharge;
     int beforeButtons;
     int afterButtons;
@@ -38,6 +39,7 @@ enum struct ZClient {
 
     void init(int client, int bb, float delay, int ab, int iters, char[] cmd) {
         this.client = client;
+        this.started = false;
 
         GetClientAbsOrigin(client, this.pos);
         this.ang = view_as<float>({90.0, 0.0, 0.0});
@@ -52,7 +54,13 @@ enum struct ZClient {
         this.logs = new ArrayList(sizeof(ZData));
 
         ResetKeys();
-        this.run();
+
+        if(this.beforeButtons & IN_DUCK) {
+            Key(IN_DUCK, true);
+            this.timer = CreateTimer(0.2, AfterDelay, this.client);
+        } else {
+            this.run();
+        }
     }
 
     void destroy() {
@@ -63,6 +71,7 @@ enum struct ZClient {
     }
 
     void run() {
+        this.started = true;
         if(this.client == 0) return;
         TeleportEntity(this.client, this.pos, this.ang, view_as<float>({0.0, 0.0, 0.0})); 
         TF2_RegeneratePlayer(this.client);
@@ -78,8 +87,11 @@ enum struct ZClient {
 
     void after() { 
         this.timer = INVALID_HANDLE;
-        ResetKeys();
-        Key(this.afterButtons, true);
+        if(!this.started) this.run();
+        else {
+            ResetKeys();
+            Key(this.afterButtons, true);
+        }
     }
 
     void done() {
