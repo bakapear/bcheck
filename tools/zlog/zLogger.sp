@@ -74,7 +74,10 @@ enum struct ZClient {
         this.started = true;
         if(this.client == 0) return;
         TeleportEntity(this.client, this.pos, this.ang, view_as<float>({0.0, 0.0, 0.0})); 
+
         TF2_RegeneratePlayer(this.client);
+        int wep = GetEntPropEnt(this.client, Prop_Data, "m_hActiveWeapon");
+        if(wep != -1) SetEntProp(wep, Prop_Data, "m_iClip1", 2); // for reload setups
 
         if(this.iters-- == 0) this.done();
         else {
@@ -222,6 +225,7 @@ public int GetButtons(int arg) {
             case 'J': res |= IN_JUMP;
             case 'D': res |= IN_DUCK;
             case 'C': res |= IN_ATTACK2;
+            case 'A': res |= IN_RELOAD;
             case 'W': res |= IN_WALK; // moveup actually
         }
     }
@@ -294,7 +298,7 @@ public bool AlmostEqual(float a, float b) {
 public Action AfterDelay(Handle timer, int client) { zclients[client].after(); }
 
 public void ResetKeys() {
-    Key(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT + IN_ATTACK + IN_JUMP + IN_DUCK + IN_ATTACK2 + IN_WALK, false);
+    Key(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT + IN_ATTACK + IN_JUMP + IN_DUCK + IN_ATTACK2 + IN_RELOAD + IN_WALK, false);
 }
 
 public void Key(int keys, bool press) {
@@ -307,6 +311,7 @@ public void Key(int keys, bool press) {
     if(keys & IN_JUMP) AddKey("jump", press, cmd, sizeof(cmd));
     if(keys & IN_DUCK) AddKey("duck", press, cmd, sizeof(cmd));
     if(keys & IN_ATTACK2) AddKey("attack2", press, cmd, sizeof(cmd));
+    if(keys & IN_RELOAD) AddKey("reload", press, cmd, sizeof(cmd));
     if(keys & IN_WALK) AddKey("moveup", press, cmd, sizeof(cmd));
     ServerCommand(cmd);
 }
