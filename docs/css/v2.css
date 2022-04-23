@@ -1,0 +1,522 @@
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url(../fonts/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 200;
+    src: url(../fonts/Poppins-ExtraLight.ttf)
+}
+
+:root {
+    --dark: #0e0e0e;
+    --light: #d6d6d6;
+    --font: "Poppins", "Courier New", sans-serif
+}
+
+::-webkit-scrollbar {
+    background: 0 0;
+    width: 5px
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(50,50,50,.3);
+    border-radius: 100px
+}
+
+body {
+    background: var(--dark);
+    color: var(--light);
+    font-family: var(--font)
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 90vw;
+    margin: 50px auto
+}
+
+.title {
+    user-select: none;
+    margin-bottom: 40px
+}
+
+.title a {
+    display: table;
+    overflow: hidden;
+    height: 64px;
+    padding-right: 5px
+}
+
+.title .big {
+    font-weight: 400;
+    font-size: 64px;
+    height: 64px;
+    line-height: 64px
+}
+
+.title .small {
+    padding-left: 4px;
+    font-weight: lighter
+}
+
+.row {
+    padding: 5px 0;
+    display: flex;
+    gap: 10px
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+.button,.input {
+    background: rgba(255,255,255,.05);
+    width: 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    font-family: var(--font);
+    color: var(--light);
+    flex-grow: 1
+}
+
+.button {
+    background: #6174c9
+}
+
+.button:disabled {
+    background: #1a1e31;
+}
+
+.button:hover {
+    filter: brightness(125%);
+    cursor: pointer
+}
+
+.button:active {
+    position: relative;
+    top: 1px
+}
+
+.button.check {
+    max-width: 150px
+}
+
+.settings {
+    position: relative
+}
+
+.settings .button {
+    display: flex;
+    width: initial;
+    padding: 10px;
+    background: #36304e
+}
+
+.settings .box,.settings .button .close,.settings.open .button .tune,.tags.weapons .button img,.tags.wepicons .button span {
+    display: none
+}
+
+.settings .box {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    width: 320px;
+    background: #36304e;
+    border-radius: 5px;
+    background-clip: border-box;
+    box-shadow: 0 0 0 8px var(--dark);
+    padding: 5px
+}
+
+.settings .box .item {
+    border-radius: 4px;
+    background: rgba(0,0,0,.2);
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.settings .box .item input[type=checkbox] {
+    position: relative;
+    top: -1px;
+    height: 12px;
+    width: 12px;
+    cursor: pointer
+}
+
+.settings .box .item input[type=range] {
+    width: 100px;
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-right: 5px
+}
+
+input[type=range] {
+    appearance: none;
+    background: 0 0
+}
+
+.deg {
+    text-align: right;
+    width: 22px
+}
+
+.deg:after {
+    content: "°"
+}
+
+.digit {
+    text-align: center;
+    width: 16px
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5.2px;
+    background: rgba(0,0,0,.2);
+    border-radius: 100px
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    cursor: pointer;
+    width: 10px;
+    height: 15px;
+    background: #7159da;
+    border-radius: 2px;
+    position: relative;
+    top: -5px
+}
+
+@supports (-moz-appearance:none) {
+    .settings .box .item input[type=checkbox] {
+        top: 0
+    }
+
+    input[type=range]::-moz-range-track {
+        height: 5.2px;
+        background: rgba(0,0,0,.2);
+        border-radius: 100px
+    }
+
+    input[type=range]::-moz-range-thumb {
+        appearance: none;
+        cursor: pointer;
+        width: 10px;
+        height: 15px;
+        background: #7159da;
+        border-radius: 2px;
+        position: relative;
+        border: 0;
+        top: -5px
+    }
+}
+
+.settings.open .box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.settings.open .button .close {
+    display: block
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.tags .button {
+    font-size: 12px;
+    padding: 5px 10px
+}
+
+button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+    background: 0 0;
+    color: var(--light);
+    font-family: var(--font);
+    font-size: 16px;
+    border: 0
+}
+
+.tags.types .button {
+    background: #477270
+}
+
+.tags.weapons .button {
+    background: #772828;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.tags.wepicons .button img {
+    -webkit-user-drag: none;
+    display: initial
+}
+
+.tags .button.disabled {
+    background: rgb(255,255,255,.1);
+    opacity: .2
+}
+
+.result {
+    margin-top: 10px
+}
+
+.col:last-child {
+    margin-top: 20px
+}
+
+.stripe {
+    position: relative;
+    top: 12px;
+    height: 5px;
+    background: #639;
+    text-align: center
+}
+
+.stripe>div {
+    display: inline-flex;
+    gap: 5px;
+    position: relative;
+    top: -10px;
+    padding: 0 20px;
+    background: var(--dark);
+    user-select: none
+}
+
+.stripe>div button.disabled {
+    opacity: .2
+}
+
+.stripe>div button.disabled:hover {
+    cursor: pointer;
+    opacity: .4
+}
+
+.list {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column
+}
+
+.list .item,.list .item span {
+    display: flex;
+    border-radius: 4px
+}
+
+.list,.list .item {
+    gap: 5px
+}
+
+.list .none {
+    margin-top: 20px;
+    text-align: center;
+    opacity: .5
+}
+
+.list .item span {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px
+}
+
+.list .item span.normal {
+    background: rgba(255,255,255,.05);
+    flex-grow: 1;
+    cursor: pointer
+}
+
+.list .item span.normal:hover {
+    filter: brightness(80%)
+}
+
+.list .item span.normal:active {
+    filter: brightness(50%)
+}
+
+.list .item:nth-child(odd) span.normal {
+    background: rgba(100,100,100,.08)
+}
+
+.list .item span.weapon {
+    background: #a7672c;
+    width: 5px
+}
+
+.list .item span.speedo {
+    background: #b9434c;
+    width: 25px
+}
+
+.list .item span.mod {
+    background: #1f1f1f;
+    width: 5px
+}
+
+.list .item span.alt {
+    background: #a78089
+}
+
+.list .item span.angle {
+    white-space: nowrap;
+    background: #975936;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px
+}
+
+.list .item span.angle>span {
+    padding: 0
+}
+
+.list .item span.double {
+    background: #445988;
+    width: 5px
+}
+
+.list .separator {
+    text-align: center;
+    background: #000;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 2px 0
+}
+
+.list .separator:hover {
+    background: rgba(0,0,0,.5)
+}
+
+.hidden {
+    display: none!important
+}
+
+@media (min-width:705px) {
+    .result {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+
+    .col {
+        flex: 1 1 calc(50% - 5px);
+        max-width: 50%
+    }
+
+    .col:last-child {
+        margin-top: 0
+    }
+}
+
+@media (max-width:600px) {
+    .button.check {
+        max-width: 100px
+    }
+
+    .tags .button {
+        flex: 1 1 20%
+    }
+
+    .swap {
+        width: 100% !important;
+    }
+    
+    /*
+    .sep {
+        border-radius: 100px;
+        height: 2px;
+        margin: 5px auto;
+        background: rgb(255,255,255,.05)
+    }
+    */
+
+    .tags.weapons .button>img {
+        width: 100%
+    }
+}
+
+.sep {
+    border-radius: 100px;
+    height: 2px;
+    margin: 5px auto;
+    background: rgb(255,255,255,.05)
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: opacity .1s ease;
+    user-select: none;
+    opacity: .2;
+    font-weight: 100
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+footer:hover {
+    opacity: 1
+}
+
+footer .heart {
+    position: relative;
+    top: 1px;
+    color: #e25555
+}
+
+footer .fruit {
+    color: #eabc10
+}
+
+.swap {
+    display: flex;
+    width: 50%;
+    border-radius: 5px;
+    overflow:hidden;
+    background: #131313;
+}
+
+.swap > button {
+    background: 0 !important;
+}
+
+.swap > button:not(.disabled) {
+    background: rgb(53, 95, 53) !important;
+}
+
+.modifiers > button {
+    background: rgb(117, 133, 61);
+}
+
+.swap > button:active {
+    top: 0px;
+}
+
+.swap:active {
+    position:relative;
+    top: 1px;
+}
