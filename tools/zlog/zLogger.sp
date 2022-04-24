@@ -282,11 +282,18 @@ public Action AfterDamage(Handle timer, DataPack dp) {
 
 public void KillRockets(int client) {
     int ent = -1;
-    while((ent = FindEntityByClassname(ent, "tf_projectile_rocket")) != -1) {
-        if(IsValidEntity(ent) && GetEntPropEnt(ent, Prop_Data, "m_hOwnerEntity") == client) {
-            AcceptEntityInput(ent, "kill");
+    char ents[][] = {
+        "tf_projectile_rocket",
+        "tf_projectile_energy_ball"
+    };
+    for(int i = 0; i < sizeof(ents); i++) {
+        while((ent = FindEntityByClassname(ent, ents[i])) != -1) {
+            if(IsValidEntity(ent) && GetEntPropEnt(ent, Prop_Data, "m_hOwnerEntity") == client) {
+                AcceptEntityInput(ent, "kill");
+            }
         }
     }
+    
 }
 
 public bool AlmostEqual(float a, float b) {
