@@ -20,34 +20,37 @@ let CFG = ['sv_allow_wait_command 1', 'cl_autoreload 0', 'sdr_spew_level 0', `al
 let DIRS = ['N', 'F', 'B', 'L', 'R', 'FL', 'FR', 'BL', 'BR']
 let TYPES = ['S', 'DS', 'JS', 'JDS']
 
-let MOD = 'WA'
-if (MOD) {
-  DIRS = DIRS.map(x => MOD + x)
-}
+let MODS = ['', 'W', 'A', 'WA']
 
-for (let type of TYPES) {
-  echo('HOLD', type)
-  for (let dir of DIRS) {
-    let start = type === 'DS' ? dir + 'D' : dir
-    add(start, DELAY, dir + type)
+for (let mod of MODS) {
+  let dirs = DIRS.map(x => mod + x)
+  if (!mod) mod = 'N'
+
+  for (let type of TYPES) {
+    echo(mod + '_HOLD', type)
+
+    for (let dir of dirs) {
+      let start = type === 'DS' ? dir + 'D' : dir
+      add(start, DELAY, dir + type)
+    }
   }
-}
 
-for (let type of TYPES) {
-  echo('TICK', type)
+  for (let type of TYPES) {
+    echo(mod + '_TICK', type)
 
-  for (let dir of DIRS) {
-    let start = type === 'DS' ? 'ND' : 'N'
-    add(start, DELAY, dir + type)
+    for (let dir of dirs) {
+      let start = type === 'DS' ? 'ND' : 'N'
+      add(start, DELAY, dir + type)
+    }
   }
-}
 
-for (let type of TYPES) {
-  echo('REVERSE', type)
+  for (let type of TYPES) {
+    echo(mod + '_REVERSE', type)
 
-  for (let dir of DIRS) {
-    let start = type === 'DS' ? dir + 'D' : dir
-    add(start, DELAY, type)
+    for (let dir of dirs) {
+      let start = type === 'DS' ? dir + 'D' : dir
+      add(start, DELAY, type)
+    }
   }
 }
 
