@@ -76,8 +76,13 @@ enum struct ZClient {
         TeleportEntity(this.client, this.pos, this.ang, view_as<float>({0.0, 0.0, 0.0})); 
 
         TF2_RegeneratePlayer(this.client);
+
+        // for reload setups
         int wep = GetEntPropEnt(this.client, Prop_Data, "m_hActiveWeapon");
-        if(wep != -1) SetEntProp(wep, Prop_Data, "m_iClip1", 2); // for reload setups
+        if(wep != -1) {
+            SetEntProp(wep, Prop_Data, "m_iClip1", 2); 
+            SetEntPropFloat(wep, Prop_Send, "m_flEnergy", 10.0);
+        }
 
         if(this.iters-- == 0) this.done();
         else {
@@ -192,7 +197,7 @@ public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3
             SetEntPropFloat(wep, Prop_Send, "m_flNextPrimaryAttack", next);
 
             char cname[128]; GetEntityClassname(wep, cname, sizeof(cname));
-            if(StrEqual(cname, "tf_weapon_particle_cannon")) {
+            if(StrEqual(cname, "tf_weapon_particle_cannon") && ((zclients[client].beforeButtons & IN_ATTACK2) || (zclients[client].afterButtons & IN_ATTACK2))) {
                 float charge = GetEntPropFloat(wep, Prop_Send, "m_flChargeBeginTime");
                 float chargemod = charge - 4.0;
                 if (charge != 0 && zclients[client].lastCharge != chargemod) {
