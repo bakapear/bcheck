@@ -1,3 +1,5 @@
+// turns .log file into bcheck compatible bounces .json
+
 let fs = require('fs')
 
 let current = {
