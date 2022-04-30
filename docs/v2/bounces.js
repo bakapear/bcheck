@@ -7054,6 +7054,3528 @@ window.BOUNCES = {
           vel: 630.872375,
           offs: 0,
           crouched: true
+        },
+        {
+          text: 'N > WBRS',
+          mod: 10,
+          chance: 30,
+          speedo: 93.24,
+          vel: 446.388031,
+          offs: 0
+        },
+        {
+          text: 'N > WBRS',
+          mod: 10,
+          chance: 70,
+          speedo: 133.88,
+          vel: 443.666198,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 5,
+      bounces: [
+        {
+          text: 'AND > ANDS',
+          mod: 23,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280639,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AN > ANS',
+          mod: 23,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504943,
+          offs: 0
+        },
+        {
+          text: 'AND > DS',
+          mod: 23,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280639,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AN > S',
+          mod: 23,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504943,
+          offs: 0
+        },
+        {
+          text: 'ND > ANDS',
+          mod: 23,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280639,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > ANS',
+          mod: 23,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504943,
+          offs: 0
+        },
+        {
+          text: 'ND > NDS',
+          mod: 7,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280578,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > NS',
+          mod: 7,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504974,
+          offs: 0
+        },
+        {
+          text: 'ND > DS',
+          mod: 7,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280578,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > S',
+          mod: 7,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504974,
+          offs: 0
+        },
+        {
+          text: 'ND > NDS',
+          mod: 7,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280578,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > NS',
+          mod: 7,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504974,
+          offs: 0
+        },
+        {
+          text: 'WAND > WANDS',
+          mod: 31,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280639,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAN > WANS',
+          mod: 31,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504943,
+          offs: 0
+        },
+        {
+          text: 'WAND > DS',
+          mod: 31,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280639,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAN > S',
+          mod: 31,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504943,
+          offs: 0
+        },
+        {
+          text: 'ND > WANDS',
+          mod: 31,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280639,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WANS',
+          mod: 31,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504943,
+          offs: 0
+        },
+        {
+          text: 'WND > WNDS',
+          mod: 15,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280578,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WN > WNS',
+          mod: 15,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504974,
+          offs: 0
+        },
+        {
+          text: 'WND > DS',
+          mod: 15,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280639,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WN > S',
+          mod: 15,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504943,
+          offs: 0
+        },
+        {
+          text: 'ND > WNDS',
+          mod: 15,
+          chance: 100,
+          speedo: 179.99,
+          vel: 612.280578,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WNS',
+          mod: 15,
+          chance: 100,
+          speedo: 68.82,
+          vel: 429.504974,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 8,
+      bounces: [
+        {
+          text: 'AFD > AFDS',
+          mod: 17,
+          chance: 70,
+          speedo: 124.54,
+          vel: 623.125061,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFD > AFDS',
+          mod: 17,
+          chance: 30,
+          speedo: 125.87,
+          vel: 618.018554,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AF > AFS',
+          mod: 17,
+          chance: 70,
+          speedo: 347.47,
+          vel: 405.110107,
+          offs: 0
+        },
+        {
+          text: 'AF > AFS',
+          mod: 17,
+          chance: 30,
+          speedo: 321.14,
+          vel: 416.235321,
+          offs: 0
+        },
+        {
+          text: 'AFD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 133.1,
+          vel: 620.527404,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 135,
+          vel: 616.779968,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AF > S',
+          mod: 20,
+          chance: 70,
+          speedo: 268.1,
+          vel: 412.647308,
+          offs: 0
+        },
+        {
+          text: 'AF > S',
+          mod: 20,
+          chance: 30,
+          speedo: 259.21,
+          vel: 419.901763,
+          offs: 0
+        },
+        {
+          text: 'ND > AFDS',
+          mod: 18,
+          chance: 70,
+          speedo: 137.58,
+          vel: 615.36737,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > AFDS',
+          mod: 18,
+          chance: 30,
+          speedo: 127.58,
+          vel: 613.623107,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > AFS',
+          mod: 18,
+          chance: 70,
+          speedo: 189.3,
+          vel: 423.290313,
+          offs: 0
+        },
+        {
+          text: 'N > AFS',
+          mod: 18,
+          chance: 30,
+          speedo: 147.59,
+          vel: 426.754516,
+          offs: 0
+        },
+        {
+          text: 'FD > FDS',
+          mod: 1,
+          chance: 70,
+          speedo: 124.54,
+          vel: 623.124633,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FD > FDS',
+          mod: 1,
+          chance: 30,
+          speedo: 125.87,
+          vel: 618.018249,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'F > FS',
+          mod: 1,
+          chance: 30,
+          speedo: 321.13,
+          vel: 416.235565,
+          offs: 0
+        },
+        {
+          text: 'F > FS',
+          mod: 1,
+          chance: 70,
+          speedo: 347.47,
+          vel: 405.110534,
+          offs: 0
+        },
+        {
+          text: 'FD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 132.11,
+          vel: 617.196289,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 130.14,
+          vel: 621.289001,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'F > S',
+          mod: 4,
+          chance: 70,
+          speedo: 282.96,
+          vel: 411.004394,
+          offs: 0
+        },
+        {
+          text: 'F > S',
+          mod: 4,
+          chance: 30,
+          speedo: 273.64,
+          vel: 418.973052,
+          offs: 0
+        },
+        {
+          text: 'ND > FDS',
+          mod: 2,
+          chance: 70,
+          speedo: 137.58,
+          vel: 615.367309,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > FDS',
+          mod: 2,
+          chance: 30,
+          speedo: 127.58,
+          vel: 613.623107,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > FS',
+          mod: 2,
+          chance: 70,
+          speedo: 189.3,
+          vel: 423.290557,
+          offs: 0
+        },
+        {
+          text: 'N > FS',
+          mod: 2,
+          chance: 30,
+          speedo: 147.59,
+          vel: 426.75473,
+          offs: 0
+        },
+        {
+          text: 'WAFD > WAFDS',
+          mod: 25,
+          chance: 70,
+          speedo: 123.32,
+          vel: 621.313476,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFD > WAFDS',
+          mod: 25,
+          chance: 30,
+          speedo: 122.14,
+          vel: 617.002075,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAF > WAFS',
+          mod: 25,
+          chance: 70,
+          speedo: 289.65,
+          vel: 411.559234,
+          offs: 0
+        },
+        {
+          text: 'WAF > WAFS',
+          mod: 25,
+          chance: 30,
+          speedo: 267.67,
+          vel: 419.736236,
+          offs: 0
+        },
+        {
+          text: 'WAFD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 142.39,
+          vel: 618.585144,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 143.46,
+          vel: 615.737976,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAF > S',
+          mod: 28,
+          chance: 30,
+          speedo: 217.66,
+          vel: 422.41275,
+          offs: 0
+        },
+        {
+          text: 'WAF > S',
+          mod: 28,
+          chance: 70,
+          speedo: 225.16,
+          vel: 417.108947,
+          offs: 0
+        },
+        {
+          text: 'ND > WAFDS',
+          mod: 26,
+          chance: 70,
+          speedo: 145.44,
+          vel: 614.566955,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WAFDS',
+          mod: 26,
+          chance: 30,
+          speedo: 134.47,
+          vel: 613.294555,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WAFS',
+          mod: 26,
+          chance: 70,
+          speedo: 157.95,
+          vel: 425.068664,
+          offs: 0
+        },
+        {
+          text: 'N > WAFS',
+          mod: 26,
+          chance: 30,
+          speedo: 126.55,
+          vel: 427.487487,
+          offs: 0
+        },
+        {
+          text: 'WFD > WFDS',
+          mod: 9,
+          chance: 30,
+          speedo: 122.14,
+          vel: 617.001892,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFD > WFDS',
+          mod: 9,
+          chance: 70,
+          speedo: 123.32,
+          vel: 621.313049,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WF > WFS',
+          mod: 9,
+          chance: 70,
+          speedo: 289.65,
+          vel: 411.559387,
+          offs: 0
+        },
+        {
+          text: 'WF > WFS',
+          mod: 9,
+          chance: 30,
+          speedo: 267.67,
+          vel: 419.736419,
+          offs: 0
+        },
+        {
+          text: 'WFD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 138.31,
+          vel: 619.383056,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 139.81,
+          vel: 616.162902,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WF > S',
+          mod: 12,
+          chance: 70,
+          speedo: 237.2,
+          vel: 415.902587,
+          offs: 0
+        },
+        {
+          text: 'WF > S',
+          mod: 12,
+          chance: 30,
+          speedo: 229.29,
+          vel: 421.73526,
+          offs: 0
+        },
+        {
+          text: 'ND > WFDS',
+          mod: 10,
+          chance: 70,
+          speedo: 145.44,
+          vel: 614.567077,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WFDS',
+          mod: 10,
+          chance: 30,
+          speedo: 134.47,
+          vel: 613.294433,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WFS',
+          mod: 10,
+          chance: 70,
+          speedo: 157.95,
+          vel: 425.068572,
+          offs: 0
+        },
+        {
+          text: 'N > WFS',
+          mod: 10,
+          chance: 30,
+          speedo: 126.55,
+          vel: 427.487548,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 2,
+      bounces: [
+        {
+          text: 'ABD > ABDS',
+          mod: 17,
+          chance: 30,
+          speedo: 259.33,
+          vel: 605.981567,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABD > ABDS',
+          mod: 17,
+          chance: 70,
+          speedo: 273.29,
+          vel: 599.184448,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AB > ABS',
+          mod: 17,
+          chance: 70,
+          speedo: 290.28,
+          vel: 418.827362,
+          offs: 0
+        },
+        {
+          text: 'AB > ABS',
+          mod: 17,
+          chance: 30,
+          speedo: 264.83,
+          vel: 425.841796,
+          offs: 0
+        },
+        {
+          text: 'ABD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 244.77,
+          vel: 602.81134,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 240.41,
+          vel: 607.444335,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AB > S',
+          mod: 20,
+          chance: 30,
+          speedo: 209.34,
+          vel: 427.759979,
+          offs: 0
+        },
+        {
+          text: 'AB > S',
+          mod: 20,
+          chance: 70,
+          speedo: 218.41,
+          vel: 423.732666,
+          offs: 0
+        },
+        {
+          text: 'ND > ABDS',
+          mod: 18,
+          chance: 70,
+          speedo: 205.14,
+          vel: 609.039489,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > ABDS',
+          mod: 18,
+          chance: 30,
+          speedo: 196.52,
+          vel: 610.909973,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > ABS',
+          mod: 18,
+          chance: 30,
+          speedo: 122.07,
+          vel: 430.0177,
+          offs: 0
+        },
+        {
+          text: 'N > ABS',
+          mod: 18,
+          chance: 70,
+          speedo: 162.55,
+          vel: 428.804687,
+          offs: 0
+        },
+        {
+          text: 'BD > BDS',
+          mod: 1,
+          chance: 30,
+          speedo: 259.33,
+          vel: 605.981689,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BD > BDS',
+          mod: 1,
+          chance: 70,
+          speedo: 273.29,
+          vel: 599.184875,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'B > BS',
+          mod: 1,
+          chance: 30,
+          speedo: 264.83,
+          vel: 425.841796,
+          offs: 0
+        },
+        {
+          text: 'B > BS',
+          mod: 1,
+          chance: 70,
+          speedo: 290.28,
+          vel: 418.827362,
+          offs: 0
+        },
+        {
+          text: 'BD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 252.08,
+          vel: 601.787353,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 246.66,
+          vel: 606.95935,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'B > S',
+          mod: 4,
+          chance: 70,
+          speedo: 231.84,
+          vel: 422.710021,
+          offs: 0
+        },
+        {
+          text: 'B > S',
+          mod: 4,
+          chance: 30,
+          speedo: 222.23,
+          vel: 427.302398,
+          offs: 0
+        },
+        {
+          text: 'ND > BDS',
+          mod: 2,
+          chance: 70,
+          speedo: 205.14,
+          vel: 609.039367,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > BDS',
+          mod: 2,
+          chance: 30,
+          speedo: 196.52,
+          vel: 610.90979,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > BS',
+          mod: 2,
+          chance: 70,
+          speedo: 162.55,
+          vel: 428.804748,
+          offs: 0
+        },
+        {
+          text: 'N > BS',
+          mod: 2,
+          chance: 30,
+          speedo: 122.07,
+          vel: 430.017761,
+          offs: 0
+        },
+        {
+          text: 'WABD > WABDS',
+          mod: 25,
+          chance: 70,
+          speedo: 254.97,
+          vel: 601.754211,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABD > WABDS',
+          mod: 25,
+          chance: 30,
+          speedo: 243.73,
+          vel: 607.186584,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAB > WABS',
+          mod: 25,
+          chance: 30,
+          speedo: 240.23,
+          vel: 426.838195,
+          offs: 0
+        },
+        {
+          text: 'WAB > WABS',
+          mod: 25,
+          chance: 70,
+          speedo: 263.37,
+          vel: 421.085662,
+          offs: 0
+        },
+        {
+          text: 'WABD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 227.03,
+          vel: 605.290771,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 225.21,
+          vel: 608.628234,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAB > S',
+          mod: 28,
+          chance: 70,
+          speedo: 198.65,
+          vel: 425.128082,
+          offs: 0
+        },
+        {
+          text: 'WAB > S',
+          mod: 28,
+          chance: 30,
+          speedo: 190.42,
+          vel: 428.367645,
+          offs: 0
+        },
+        {
+          text: 'ND > WABDS',
+          mod: 26,
+          chance: 70,
+          speedo: 198.03,
+          vel: 609.910766,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WABDS',
+          mod: 26,
+          chance: 30,
+          speedo: 192.35,
+          vel: 611.250732,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WABS',
+          mod: 26,
+          chance: 70,
+          speedo: 132.1,
+          vel: 429.553161,
+          offs: 0
+        },
+        {
+          text: 'N > WABS',
+          mod: 26,
+          chance: 30,
+          speedo: 102.69,
+          vel: 430.104553,
+          offs: 0
+        },
+        {
+          text: 'WBD > WBDS',
+          mod: 9,
+          chance: 30,
+          speedo: 243.73,
+          vel: 607.186645,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBD > WBDS',
+          mod: 9,
+          chance: 70,
+          speedo: 254.97,
+          vel: 601.754577,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WB > WBS',
+          mod: 9,
+          chance: 30,
+          speedo: 240.23,
+          vel: 426.838165,
+          offs: 0
+        },
+        {
+          text: 'WB > WBS',
+          mod: 9,
+          chance: 70,
+          speedo: 263.37,
+          vel: 421.085571,
+          offs: 0
+        },
+        {
+          text: 'WBD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 234.17,
+          vel: 604.293762,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 231.32,
+          vel: 608.150512,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WB > S',
+          mod: 12,
+          chance: 70,
+          speedo: 210.72,
+          vel: 424.291778,
+          offs: 0
+        },
+        {
+          text: 'WB > S',
+          mod: 12,
+          chance: 30,
+          speedo: 201.97,
+          vel: 428.006011,
+          offs: 0
+        },
+        {
+          text: 'ND > WBDS',
+          mod: 10,
+          chance: 70,
+          speedo: 198.03,
+          vel: 609.910461,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WBDS',
+          mod: 10,
+          chance: 30,
+          speedo: 192.35,
+          vel: 611.250732,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WBS',
+          mod: 10,
+          chance: 70,
+          speedo: 132.1,
+          vel: 429.553039,
+          offs: 0
+        },
+        {
+          text: 'N > WBS',
+          mod: 10,
+          chance: 30,
+          speedo: 102.69,
+          vel: 430.104644,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 4,
+      bounces: [
+        {
+          text: 'ALD > ALDS',
+          mod: 17,
+          chance: 70,
+          speedo: 268.58,
+          vel: 600.183654,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ALD > ALDS',
+          mod: 17,
+          chance: 30,
+          speedo: 254.94,
+          vel: 606.503662,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AL > ALS',
+          mod: 17,
+          chance: 70,
+          speedo: 385.05,
+          vel: 388.863159,
+          offs: 0
+        },
+        {
+          text: 'AL > ALS',
+          mod: 17,
+          chance: 30,
+          speedo: 361.56,
+          vel: 403.760589,
+          offs: 0
+        },
+        {
+          text: 'ALD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 240.98,
+          vel: 603.565551,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ALD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 236.72,
+          vel: 607.853027,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AL > S',
+          mod: 20,
+          chance: 70,
+          speedo: 306.14,
+          vel: 398.735778,
+          offs: 0
+        },
+        {
+          text: 'AL > S',
+          mod: 20,
+          chance: 30,
+          speedo: 299.2,
+          vel: 409.24298,
+          offs: 0
+        },
+        {
+          text: 'ND > ALDS',
+          mod: 18,
+          chance: 70,
+          speedo: 203.25,
+          vel: 609.319335,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > ALDS',
+          mod: 18,
+          chance: 30,
+          speedo: 195.2,
+          vel: 611.031555,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > ALS',
+          mod: 18,
+          chance: 70,
+          speedo: 227.18,
+          vel: 414.819671,
+          offs: 0
+        },
+        {
+          text: 'N > ALS',
+          mod: 18,
+          chance: 30,
+          speedo: 183.01,
+          vel: 421.557617,
+          offs: 0
+        },
+        {
+          text: 'LD > LDS',
+          mod: 1,
+          chance: 70,
+          speedo: 268.58,
+          vel: 600.183349,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'LD > LDS',
+          mod: 1,
+          chance: 30,
+          speedo: 254.94,
+          vel: 606.503356,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'L > LS',
+          mod: 1,
+          chance: 70,
+          speedo: 385.05,
+          vel: 388.862976,
+          offs: 0
+        },
+        {
+          text: 'L > LS',
+          mod: 1,
+          chance: 30,
+          speedo: 361.56,
+          vel: 403.760498,
+          offs: 0
+        },
+        {
+          text: 'LD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 248.03,
+          vel: 602.61322,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'LD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 242.73,
+          vel: 607.406127,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'L > S',
+          mod: 4,
+          chance: 70,
+          speedo: 320.92,
+          vel: 396.515747,
+          offs: 0
+        },
+        {
+          text: 'L > S',
+          mod: 4,
+          chance: 30,
+          speedo: 313.77,
+          vel: 407.811248,
+          offs: 0
+        },
+        {
+          text: 'ND > LDS',
+          mod: 2,
+          chance: 70,
+          speedo: 203.25,
+          vel: 609.319274,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > LDS',
+          mod: 2,
+          chance: 30,
+          speedo: 195.2,
+          vel: 611.031433,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > LS',
+          mod: 2,
+          chance: 70,
+          speedo: 227.18,
+          vel: 414.819671,
+          offs: 0
+        },
+        {
+          text: 'N > LS',
+          mod: 2,
+          chance: 30,
+          speedo: 183.01,
+          vel: 421.557617,
+          offs: 0
+        },
+        {
+          text: 'WALD > WALDS',
+          mod: 25,
+          chance: 70,
+          speedo: 250.81,
+          vel: 602.582031,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WALD > WALDS',
+          mod: 25,
+          chance: 30,
+          speedo: 239.91,
+          vel: 607.615539,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAL > WALS',
+          mod: 25,
+          chance: 30,
+          speedo: 307.88,
+          vel: 408.985534,
+          offs: 0
+        },
+        {
+          text: 'WAL > WALS',
+          mod: 25,
+          chance: 70,
+          speedo: 327.94,
+          vel: 397.261047,
+          offs: 0
+        },
+        {
+          text: 'WALD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 223.98,
+          vel: 605.86499,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WALD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 222.2,
+          vel: 608.941772,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAL > S',
+          mod: 28,
+          chance: 30,
+          speedo: 256.83,
+          vel: 413.310058,
+          offs: 0
+        },
+        {
+          text: 'WAL > S',
+          mod: 28,
+          chance: 70,
+          speedo: 263,
+          vel: 405.029296,
+          offs: 0
+        },
+        {
+          text: 'ND > WALDS',
+          mod: 26,
+          chance: 70,
+          speedo: 196.61,
+          vel: 610.117919,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WALDS',
+          mod: 26,
+          chance: 30,
+          speedo: 191.33,
+          vel: 611.34259,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WALS',
+          mod: 26,
+          chance: 30,
+          speedo: 159.24,
+          vel: 423.260925,
+          offs: 0
+        },
+        {
+          text: 'N > WALS',
+          mod: 26,
+          chance: 70,
+          speedo: 193.89,
+          vel: 418.081909,
+          offs: 0
+        },
+        {
+          text: 'WLD > WLDS',
+          mod: 9,
+          chance: 70,
+          speedo: 250.81,
+          vel: 602.582031,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WLD > WLDS',
+          mod: 9,
+          chance: 30,
+          speedo: 239.91,
+          vel: 607.615478,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WL > WLS',
+          mod: 9,
+          chance: 30,
+          speedo: 307.88,
+          vel: 408.985412,
+          offs: 0
+        },
+        {
+          text: 'WL > WLS',
+          mod: 9,
+          chance: 70,
+          speedo: 327.94,
+          vel: 397.260955,
+          offs: 0
+        },
+        {
+          text: 'WLD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 230.8,
+          vel: 604.941711,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WLD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 228.03,
+          vel: 608.502868,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WL > S',
+          mod: 12,
+          chance: 30,
+          speedo: 268.76,
+          vel: 412.179656,
+          offs: 0
+        },
+        {
+          text: 'WL > S',
+          mod: 12,
+          chance: 70,
+          speedo: 275.17,
+          vel: 403.282592,
+          offs: 0
+        },
+        {
+          text: 'ND > WLDS',
+          mod: 10,
+          chance: 70,
+          speedo: 196.61,
+          vel: 610.117858,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WLDS',
+          mod: 10,
+          chance: 30,
+          speedo: 191.33,
+          vel: 611.342468,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WLS',
+          mod: 10,
+          chance: 30,
+          speedo: 159.24,
+          vel: 423.261047,
+          offs: 0
+        },
+        {
+          text: 'N > WLS',
+          mod: 10,
+          chance: 70,
+          speedo: 193.89,
+          vel: 418.08197,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 6,
+      bounces: [
+        {
+          text: 'ARD > ARDS',
+          mod: 17,
+          chance: 70,
+          speedo: 138.54,
+          vel: 621.940856,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ARD > ARDS',
+          mod: 17,
+          chance: 30,
+          speedo: 137.59,
+          vel: 617.449707,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AR > ARS',
+          mod: 17,
+          chance: 70,
+          speedo: 266.8,
+          vel: 442.260009,
+          offs: 0
+        },
+        {
+          text: 'AR > ARS',
+          mod: 17,
+          chance: 30,
+          speedo: 234.98,
+          vel: 445.7789,
+          offs: 0
+        },
+        {
+          text: 'ARD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 140.33,
+          vel: 619.671936,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ARD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 141.58,
+          vel: 616.343322,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AR > S',
+          mod: 20,
+          chance: 30,
+          speedo: 170.15,
+          vel: 444.066833,
+          offs: 0
+        },
+        {
+          text: 'AR > S',
+          mod: 20,
+          chance: 70,
+          speedo: 182.35,
+          vel: 445.777069,
+          offs: 0
+        },
+        {
+          text: 'ND > ARDS',
+          mod: 18,
+          chance: 70,
+          speedo: 143.5,
+          vel: 615.074584,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > ARDS',
+          mod: 18,
+          chance: 30,
+          speedo: 136.16,
+          vel: 613.499084,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > ARS',
+          mod: 18,
+          chance: 70,
+          speedo: 96.35,
+          vel: 441.14508,
+          offs: 0
+        },
+        {
+          text: 'N > ARS',
+          mod: 18,
+          chance: 30,
+          speedo: 51.26,
+          vel: 436.508056,
+          offs: 0
+        },
+        {
+          text: 'RD > RDS',
+          mod: 1,
+          chance: 70,
+          speedo: 138.54,
+          vel: 621.940734,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'RD > RDS',
+          mod: 1,
+          chance: 30,
+          speedo: 137.59,
+          vel: 617.449584,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'R > RS',
+          mod: 1,
+          chance: 30,
+          speedo: 234.98,
+          vel: 445.778961,
+          offs: 0
+        },
+        {
+          text: 'R > RS',
+          mod: 1,
+          chance: 70,
+          speedo: 266.8,
+          vel: 442.260009,
+          offs: 0
+        },
+        {
+          text: 'RD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 139.47,
+          vel: 616.715759,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'RD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 138.3,
+          vel: 620.340576,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'R > S',
+          mod: 4,
+          chance: 70,
+          speedo: 198.33,
+          vel: 445.288177,
+          offs: 0
+        },
+        {
+          text: 'R > S',
+          mod: 4,
+          chance: 30,
+          speedo: 185.32,
+          vel: 444.649932,
+          offs: 0
+        },
+        {
+          text: 'ND > RDS',
+          mod: 2,
+          chance: 70,
+          speedo: 143.5,
+          vel: 615.074523,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > RDS',
+          mod: 2,
+          chance: 30,
+          speedo: 136.16,
+          vel: 613.499084,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > RS',
+          mod: 2,
+          chance: 70,
+          speedo: 96.35,
+          vel: 441.145202,
+          offs: 0
+        },
+        {
+          text: 'N > RS',
+          mod: 2,
+          chance: 30,
+          speedo: 51.26,
+          vel: 436.508117,
+          offs: 0
+        },
+        {
+          text: 'WARD > WARDS',
+          mod: 25,
+          chance: 70,
+          speedo: 134.93,
+          vel: 620.362365,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WARD > WARDS',
+          mod: 25,
+          chance: 30,
+          speedo: 135.15,
+          vel: 616.542236,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAR > WARS',
+          mod: 25,
+          chance: 70,
+          speedo: 204.92,
+          vel: 445.479797,
+          offs: 0
+        },
+        {
+          text: 'WAR > WARS',
+          mod: 25,
+          chance: 30,
+          speedo: 178.91,
+          vel: 444.177642,
+          offs: 0
+        },
+        {
+          text: 'WARD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 148.19,
+          vel: 615.408142,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WARD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 147.4,
+          vel: 617.953979,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAR > S',
+          mod: 28,
+          chance: 70,
+          speedo: 136.06,
+          vel: 445.520568,
+          offs: 0
+        },
+        {
+          text: 'WAR > S',
+          mod: 28,
+          chance: 30,
+          speedo: 126.31,
+          vel: 442.025543,
+          offs: 0
+        },
+        {
+          text: 'ND > WARDS',
+          mod: 26,
+          chance: 70,
+          speedo: 149.79,
+          vel: 614.352905,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WARDS',
+          mod: 26,
+          chance: 30,
+          speedo: 141.04,
+          vel: 613.201416,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WARS',
+          mod: 26,
+          chance: 70,
+          speedo: 62.62,
+          vel: 439.041534,
+          offs: 0
+        },
+        {
+          text: 'N > WARS',
+          mod: 26,
+          chance: 30,
+          speedo: 33.62,
+          vel: 435.154693,
+          offs: 0
+        },
+        {
+          text: 'WRD > WRDS',
+          mod: 9,
+          chance: 70,
+          speedo: 134.93,
+          vel: 620.362243,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WRD > WRDS',
+          mod: 9,
+          chance: 30,
+          speedo: 135.15,
+          vel: 616.542114,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WR > WRS',
+          mod: 9,
+          chance: 70,
+          speedo: 204.92,
+          vel: 445.479888,
+          offs: 0
+        },
+        {
+          text: 'WR > WRS',
+          mod: 9,
+          chance: 30,
+          speedo: 178.91,
+          vel: 444.177703,
+          offs: 0
+        },
+        {
+          text: 'WRD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 145.28,
+          vel: 615.789916,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WRD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 144.2,
+          vel: 618.661804,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WR > S',
+          mod: 12,
+          chance: 70,
+          speedo: 149.06,
+          vel: 445.850463,
+          offs: 0
+        },
+        {
+          text: 'WR > S',
+          mod: 12,
+          chance: 30,
+          speedo: 138.61,
+          vel: 442.643768,
+          offs: 0
+        },
+        {
+          text: 'ND > WRDS',
+          mod: 10,
+          chance: 70,
+          speedo: 149.79,
+          vel: 614.352783,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WRDS',
+          mod: 10,
+          chance: 30,
+          speedo: 141.04,
+          vel: 613.201293,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WRS',
+          mod: 10,
+          chance: 70,
+          speedo: 62.62,
+          vel: 439.041656,
+          offs: 0
+        },
+        {
+          text: 'N > WRS',
+          mod: 10,
+          chance: 30,
+          speedo: 33.62,
+          vel: 435.154724,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 7,
+      bounces: [
+        {
+          text: 'AFLD > AFLDS',
+          mod: 17,
+          chance: 30,
+          speedo: 200.99,
+          vel: 612.250427,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFLD > AFLDS',
+          mod: 17,
+          chance: 70,
+          speedo: 209.61,
+          vel: 611.391296,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFL > AFLS',
+          mod: 17,
+          chance: 70,
+          speedo: 379.02,
+          vel: 391.511047,
+          offs: 0
+        },
+        {
+          text: 'AFL > AFLS',
+          mod: 17,
+          chance: 30,
+          speedo: 355.04,
+          vel: 405.800842,
+          offs: 0
+        },
+        {
+          text: 'AFLD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 194.55,
+          vel: 611.945007,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFLD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 192.14,
+          vel: 612.32965,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFL > S',
+          mod: 20,
+          chance: 70,
+          speedo: 300.08,
+          vel: 401.007476,
+          offs: 0
+        },
+        {
+          text: 'AFL > S',
+          mod: 20,
+          chance: 30,
+          speedo: 292.79,
+          vel: 410.99121,
+          offs: 0
+        },
+        {
+          text: 'ND > AFLDS',
+          mod: 18,
+          chance: 70,
+          speedo: 182.3,
+          vel: 612.368591,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > AFLDS',
+          mod: 18,
+          chance: 30,
+          speedo: 182.3,
+          vel: 612.346374,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > AFLS',
+          mod: 18,
+          chance: 30,
+          speedo: 177.42,
+          vel: 422.425903,
+          offs: 0
+        },
+        {
+          text: 'N > AFLS',
+          mod: 18,
+          chance: 70,
+          speedo: 221.17,
+          vel: 416.216308,
+          offs: 0
+        },
+        {
+          text: 'FLD > FLDS',
+          mod: 1,
+          chance: 70,
+          speedo: 209.61,
+          vel: 611.390991,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FLD > FLDS',
+          mod: 1,
+          chance: 30,
+          speedo: 200.99,
+          vel: 612.250183,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FL > FLS',
+          mod: 1,
+          chance: 70,
+          speedo: 379.02,
+          vel: 391.511352,
+          offs: 0
+        },
+        {
+          text: 'FL > FLS',
+          mod: 1,
+          chance: 30,
+          speedo: 355.04,
+          vel: 405.800994,
+          offs: 0
+        },
+        {
+          text: 'FLD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 198.03,
+          vel: 611.809509,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FLD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 194.85,
+          vel: 612.307678,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FL > S',
+          mod: 4,
+          chance: 70,
+          speedo: 314.86,
+          vel: 398.880493,
+          offs: 0
+        },
+        {
+          text: 'FL > S',
+          mod: 4,
+          chance: 30,
+          speedo: 307.33,
+          vel: 409.64035,
+          offs: 0
+        },
+        {
+          text: 'ND > FLDS',
+          mod: 2,
+          chance: 70,
+          speedo: 182.3,
+          vel: 612.368286,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > FLDS',
+          mod: 2,
+          chance: 30,
+          speedo: 182.3,
+          vel: 612.346313,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > FLS',
+          mod: 2,
+          chance: 70,
+          speedo: 221.17,
+          vel: 416.216461,
+          offs: 0
+        },
+        {
+          text: 'N > FLS',
+          mod: 2,
+          chance: 30,
+          speedo: 177.42,
+          vel: 422.426025,
+          offs: 0
+        },
+        {
+          text: 'WAFLD > WAFLDS',
+          mod: 25,
+          chance: 70,
+          speedo: 203.54,
+          vel: 611.643371,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFLD > WAFLDS',
+          mod: 25,
+          chance: 30,
+          speedo: 196.53,
+          vel: 612.293273,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFL > WAFLS',
+          mod: 25,
+          chance: 30,
+          speedo: 324.18,
+          vel: 408.6763,
+          offs: 0
+        },
+        {
+          text: 'WAFL > WAFLS',
+          mod: 25,
+          chance: 70,
+          speedo: 346.15,
+          vel: 396.209869,
+          offs: 0
+        },
+        {
+          text: 'WAFLD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 190.18,
+          vel: 612.105163,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFLD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 188.7,
+          vel: 612.352661,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFL > S',
+          mod: 28,
+          chance: 70,
+          speedo: 275.3,
+          vel: 404.494445,
+          offs: 0
+        },
+        {
+          text: 'WAFL > S',
+          mod: 28,
+          chance: 30,
+          speedo: 268.49,
+          vel: 413.208404,
+          offs: 0
+        },
+        {
+          text: 'ND > WAFLDS',
+          mod: 26,
+          chance: 70,
+          speedo: 182.3,
+          vel: 612.369995,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WAFLDS',
+          mod: 26,
+          chance: 30,
+          speedo: 182.3,
+          vel: 612.33966,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WAFLS',
+          mod: 26,
+          chance: 30,
+          speedo: 163.97,
+          vel: 423.321136,
+          offs: 0
+        },
+        {
+          text: 'N > WAFLS',
+          mod: 26,
+          chance: 70,
+          speedo: 202.19,
+          vel: 417.972473,
+          offs: 0
+        },
+        {
+          text: 'WFLD > WFLDS',
+          mod: 9,
+          chance: 70,
+          speedo: 203.54,
+          vel: 611.643066,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFLD > WFLDS',
+          mod: 9,
+          chance: 30,
+          speedo: 196.53,
+          vel: 612.29309,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFL > WFLS',
+          mod: 9,
+          chance: 30,
+          speedo: 324.19,
+          vel: 408.676147,
+          offs: 0
+        },
+        {
+          text: 'WFL > WFLS',
+          mod: 9,
+          chance: 70,
+          speedo: 346.15,
+          vel: 396.209625,
+          offs: 0
+        },
+        {
+          text: 'WFLD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 193.18,
+          vel: 611.99652,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFLD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 191.07,
+          vel: 612.337524,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFL > S',
+          mod: 12,
+          chance: 30,
+          speedo: 281.5,
+          vel: 412.028289,
+          offs: 0
+        },
+        {
+          text: 'WFL > S',
+          mod: 12,
+          chance: 70,
+          speedo: 288.57,
+          vel: 402.639251,
+          offs: 0
+        },
+        {
+          text: 'ND > WFLDS',
+          mod: 10,
+          chance: 70,
+          speedo: 182.3,
+          vel: 612.370117,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WFLDS',
+          mod: 10,
+          chance: 30,
+          speedo: 182.3,
+          vel: 612.339843,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WFLS',
+          mod: 10,
+          chance: 30,
+          speedo: 163.97,
+          vel: 423.321258,
+          offs: 0
+        },
+        {
+          text: 'N > WFLS',
+          mod: 10,
+          chance: 70,
+          speedo: 202.19,
+          vel: 417.972686,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 9,
+      bounces: [
+        {
+          text: 'AFRD > AFRDS',
+          mod: 17,
+          chance: 70,
+          speedo: 31.91,
+          vel: 627.835815,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFRD > AFRDS',
+          mod: 17,
+          chance: 30,
+          speedo: 14.39,
+          vel: 620.246826,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFR > AFRS',
+          mod: 17,
+          chance: 70,
+          speedo: 300.84,
+          vel: 425.028869,
+          offs: 0
+        },
+        {
+          text: 'AFR > AFRS',
+          mod: 17,
+          chance: 30,
+          speedo: 271.42,
+          vel: 431.53305,
+          offs: 0
+        },
+        {
+          text: 'AFRD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 105.59,
+          vel: 618.4859,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFRD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 99.97,
+          vel: 623.900878,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'AFR > S',
+          mod: 20,
+          chance: 70,
+          speedo: 219.62,
+          vel: 429.750915,
+          offs: 0
+        },
+        {
+          text: 'AFR > S',
+          mod: 20,
+          chance: 30,
+          speedo: 208.79,
+          vel: 432.843109,
+          offs: 0
+        },
+        {
+          text: 'ND > AFRDS',
+          mod: 18,
+          chance: 70,
+          speedo: 111.65,
+          vel: 616.507507,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > AFRDS',
+          mod: 18,
+          chance: 30,
+          speedo: 86.6,
+          vel: 614.103881,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > AFRS',
+          mod: 18,
+          chance: 70,
+          speedo: 139.16,
+          vel: 433.337554,
+          offs: 0
+        },
+        {
+          text: 'N > AFRS',
+          mod: 18,
+          chance: 30,
+          speedo: 99.01,
+          vel: 432.582,
+          offs: 0
+        },
+        {
+          text: 'FRD > FRDS',
+          mod: 1,
+          chance: 70,
+          speedo: 31.91,
+          vel: 627.83551,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FRD > FRDS',
+          mod: 1,
+          chance: 30,
+          speedo: 14.39,
+          vel: 620.246582,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FR > FRS',
+          mod: 1,
+          chance: 70,
+          speedo: 300.84,
+          vel: 425.029571,
+          offs: 0
+        },
+        {
+          text: 'FR > FRS',
+          mod: 1,
+          chance: 30,
+          speedo: 271.42,
+          vel: 431.533538,
+          offs: 0
+        },
+        {
+          text: 'FRD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 98.38,
+          vel: 619.074523,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FRD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 91.48,
+          vel: 625.036193,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'FR > S',
+          mod: 4,
+          chance: 30,
+          speedo: 223.37,
+          vel: 432.57315,
+          offs: 0
+        },
+        {
+          text: 'FR > S',
+          mod: 4,
+          chance: 70,
+          speedo: 234.85,
+          vel: 428.81607,
+          offs: 0
+        },
+        {
+          text: 'ND > FRDS',
+          mod: 2,
+          chance: 70,
+          speedo: 111.65,
+          vel: 616.507202,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > FRDS',
+          mod: 2,
+          chance: 30,
+          speedo: 86.6,
+          vel: 614.103881,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > FRS',
+          mod: 2,
+          chance: 30,
+          speedo: 99.01,
+          vel: 432.582153,
+          offs: 0
+        },
+        {
+          text: 'N > FRS',
+          mod: 2,
+          chance: 70,
+          speedo: 139.16,
+          vel: 433.337707,
+          offs: 0
+        },
+        {
+          text: 'WAFRD > WAFRDS',
+          mod: 25,
+          chance: 30,
+          speedo: 30.72,
+          vel: 619.414978,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFRD > WAFRDS',
+          mod: 25,
+          chance: 70,
+          speedo: 47.49,
+          vel: 626.251525,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFR > WAFRS',
+          mod: 25,
+          chance: 70,
+          speedo: 266.54,
+          vel: 427.534667,
+          offs: 0
+        },
+        {
+          text: 'WAFR > WAFRS',
+          mod: 25,
+          chance: 30,
+          speedo: 240.13,
+          vel: 432.34851,
+          offs: 0
+        },
+        {
+          text: 'WAFRD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 112.03,
+          vel: 622.27185,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFRD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 115.83,
+          vel: 617.645202,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WAFR > S',
+          mod: 28,
+          chance: 30,
+          speedo: 184.64,
+          vel: 433.164978,
+          offs: 0
+        },
+        {
+          text: 'WAFR > S',
+          mod: 28,
+          chance: 70,
+          speedo: 194.32,
+          vel: 431.09616,
+          offs: 0
+        },
+        {
+          text: 'ND > WAFRDS',
+          mod: 26,
+          chance: 30,
+          speedo: 97.3,
+          vel: 613.845886,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WAFRDS',
+          mod: 26,
+          chance: 70,
+          speedo: 120.6,
+          vel: 615.870178,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WAFRS',
+          mod: 26,
+          chance: 70,
+          speedo: 121.45,
+          vel: 433.284301,
+          offs: 0
+        },
+        {
+          text: 'N > WAFRS',
+          mod: 26,
+          chance: 30,
+          speedo: 88.09,
+          vel: 432.334625,
+          offs: 0
+        },
+        {
+          text: 'WFRD > WFRDS',
+          mod: 9,
+          chance: 70,
+          speedo: 47.5,
+          vel: 626.251281,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFRD > WFRDS',
+          mod: 9,
+          chance: 30,
+          speedo: 30.72,
+          vel: 619.414733,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFR > WFRS',
+          mod: 9,
+          chance: 70,
+          speedo: 266.54,
+          vel: 427.534515,
+          offs: 0
+        },
+        {
+          text: 'WFR > WFRS',
+          mod: 9,
+          chance: 30,
+          speedo: 240.13,
+          vel: 432.34851,
+          offs: 0
+        },
+        {
+          text: 'WFRD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 103.55,
+          vel: 623.419982,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFRD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 108.62,
+          vel: 618.237182,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WFR > S',
+          mod: 12,
+          chance: 30,
+          speedo: 197.53,
+          vel: 433.013061,
+          offs: 0
+        },
+        {
+          text: 'WFR > S',
+          mod: 12,
+          chance: 70,
+          speedo: 207.83,
+          vel: 430.411285,
+          offs: 0
+        },
+        {
+          text: 'ND > WFRDS',
+          mod: 10,
+          chance: 70,
+          speedo: 120.6,
+          vel: 615.870239,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WFRDS',
+          mod: 10,
+          chance: 30,
+          speedo: 97.3,
+          vel: 613.845947,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WFRS',
+          mod: 10,
+          chance: 70,
+          speedo: 121.45,
+          vel: 433.284515,
+          offs: 0
+        },
+        {
+          text: 'N > WFRS',
+          mod: 10,
+          chance: 30,
+          speedo: 88.09,
+          vel: 432.334686,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 1,
+      bounces: [
+        {
+          text: 'ABLD > ABLDS',
+          mod: 17,
+          chance: 30,
+          speedo: 275.6,
+          vel: 603.976745,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABLD > ABLDS',
+          mod: 17,
+          chance: 70,
+          speedo: 290.67,
+          vel: 595.373779,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABL > ABLS',
+          mod: 17,
+          chance: 30,
+          speedo: 339.02,
+          vel: 410.766052,
+          offs: 0
+        },
+        {
+          text: 'ABL > ABLS',
+          mod: 17,
+          chance: 70,
+          speedo: 364.14,
+          vel: 397.972442,
+          offs: 0
+        },
+        {
+          text: 'ABLD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 254.14,
+          vel: 605.872619,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABLD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 258.85,
+          vel: 599.925231,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABL > S',
+          mod: 20,
+          chance: 30,
+          speedo: 276.97,
+          vel: 415.237701,
+          offs: 0
+        },
+        {
+          text: 'ABL > S',
+          mod: 20,
+          chance: 70,
+          speedo: 285.06,
+          vel: 406.542114,
+          offs: 0
+        },
+        {
+          text: 'ND > ABLDS',
+          mod: 18,
+          chance: 70,
+          speedo: 212.27,
+          vel: 607.960815,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > ABLDS',
+          mod: 18,
+          chance: 30,
+          speedo: 201.55,
+          vel: 610.440429,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > ABLS',
+          mod: 18,
+          chance: 30,
+          speedo: 163.51,
+          vel: 424.510742,
+          offs: 0
+        },
+        {
+          text: 'N > ABLS',
+          mod: 18,
+          chance: 70,
+          speedo: 206.26,
+          vel: 419.597656,
+          offs: 0
+        },
+        {
+          text: 'BLD > BLDS',
+          mod: 1,
+          chance: 70,
+          speedo: 290.67,
+          vel: 595.373779,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BLD > BLDS',
+          mod: 1,
+          chance: 30,
+          speedo: 275.6,
+          vel: 603.976623,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BL > BLS',
+          mod: 1,
+          chance: 30,
+          speedo: 339.02,
+          vel: 410.766052,
+          offs: 0
+        },
+        {
+          text: 'BL > BLS',
+          mod: 1,
+          chance: 70,
+          speedo: 364.14,
+          vel: 397.972503,
+          offs: 0
+        },
+        {
+          text: 'BLD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 267.1,
+          vel: 598.632629,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BLD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 261.29,
+          vel: 605.242553,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BL > S',
+          mod: 4,
+          chance: 70,
+          speedo: 299.86,
+          vel: 404.643737,
+          offs: 0
+        },
+        {
+          text: 'BL > S',
+          mod: 4,
+          chance: 30,
+          speedo: 291.45,
+          vel: 414.085723,
+          offs: 0
+        },
+        {
+          text: 'ND > BLDS',
+          mod: 2,
+          chance: 70,
+          speedo: 212.27,
+          vel: 607.960998,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > BLDS',
+          mod: 2,
+          chance: 30,
+          speedo: 201.55,
+          vel: 610.440368,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > BLS',
+          mod: 2,
+          chance: 30,
+          speedo: 163.51,
+          vel: 424.510742,
+          offs: 0
+        },
+        {
+          text: 'N > BLS',
+          mod: 2,
+          chance: 70,
+          speedo: 206.26,
+          vel: 419.597686,
+          offs: 0
+        },
+        {
+          text: 'WABLD > WABLDS',
+          mod: 25,
+          chance: 70,
+          speedo: 278.98,
+          vel: 597.230834,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABLD > WABLDS',
+          mod: 25,
+          chance: 30,
+          speedo: 265.44,
+          vel: 604.876708,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABL > WABLS',
+          mod: 25,
+          chance: 70,
+          speedo: 331.09,
+          vel: 402.242095,
+          offs: 0
+        },
+        {
+          text: 'WABL > WABLS',
+          mod: 25,
+          chance: 30,
+          speedo: 308.19,
+          vel: 413.258209,
+          offs: 0
+        },
+        {
+          text: 'WABLD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 243.96,
+          vel: 606.765258,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABLD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 247.09,
+          vel: 601.751525,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABL > S',
+          mod: 28,
+          chance: 70,
+          speedo: 260.31,
+          vel: 409.622955,
+          offs: 0
+        },
+        {
+          text: 'WABL > S',
+          mod: 28,
+          chance: 30,
+          speedo: 252.84,
+          vel: 417.107818,
+          offs: 0
+        },
+        {
+          text: 'ND > WABLDS',
+          mod: 26,
+          chance: 30,
+          speedo: 198.49,
+          vel: 610.703002,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WABLDS',
+          mod: 26,
+          chance: 70,
+          speedo: 207.18,
+          vel: 608.624328,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WABLS',
+          mod: 26,
+          chance: 70,
+          speedo: 187.68,
+          vel: 421.021911,
+          offs: 0
+        },
+        {
+          text: 'N > WABLS',
+          mod: 26,
+          chance: 30,
+          speedo: 150.64,
+          vel: 425.186157,
+          offs: 0
+        },
+        {
+          text: 'WBLD > WBLDS',
+          mod: 9,
+          chance: 70,
+          speedo: 278.98,
+          vel: 597.231018,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBLD > WBLDS',
+          mod: 9,
+          chance: 30,
+          speedo: 265.44,
+          vel: 604.876831,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBL > WBLS',
+          mod: 9,
+          chance: 70,
+          speedo: 331.09,
+          vel: 402.24179,
+          offs: 0
+        },
+        {
+          text: 'WBL > WBLS',
+          mod: 9,
+          chance: 30,
+          speedo: 308.19,
+          vel: 413.258087,
+          offs: 0
+        },
+        {
+          text: 'WBLD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 251.12,
+          vel: 606.137451,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBLD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 255.37,
+          vel: 600.467773,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBL > S',
+          mod: 12,
+          chance: 70,
+          speedo: 273.55,
+          vel: 407.988891,
+          offs: 0
+        },
+        {
+          text: 'WBL > S',
+          mod: 12,
+          chance: 30,
+          speedo: 265.75,
+          vel: 416.115814,
+          offs: 0
+        },
+        {
+          text: 'ND > WBLDS',
+          mod: 10,
+          chance: 70,
+          speedo: 207.18,
+          vel: 608.624084,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WBLDS',
+          mod: 10,
+          chance: 30,
+          speedo: 198.49,
+          vel: 610.702697,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WBLS',
+          mod: 10,
+          chance: 70,
+          speedo: 187.68,
+          vel: 421.021972,
+          offs: 0
+        },
+        {
+          text: 'N > WBLS',
+          mod: 10,
+          chance: 30,
+          speedo: 150.64,
+          vel: 425.186218,
+          offs: 0
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 3,
+      bounces: [
+        {
+          text: 'ABRD > ABRDS',
+          mod: 17,
+          chance: 30,
+          speedo: 208.94,
+          vel: 611.481689,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABRD > ABRDS',
+          mod: 17,
+          chance: 70,
+          speedo: 218.44,
+          vel: 609.867675,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABR > ABRS',
+          mod: 17,
+          chance: 70,
+          speedo: 277.71,
+          vel: 435.866851,
+          offs: 0
+        },
+        {
+          text: 'ABR > ABRS',
+          mod: 17,
+          chance: 30,
+          speedo: 246.74,
+          vel: 440.122528,
+          offs: 0
+        },
+        {
+          text: 'ABRD > DS',
+          mod: 20,
+          chance: 70,
+          speedo: 201.36,
+          vel: 610.815124,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABRD > DS',
+          mod: 20,
+          chance: 30,
+          speedo: 198.61,
+          vel: 611.733276,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ABR > S',
+          mod: 20,
+          chance: 70,
+          speedo: 194.58,
+          vel: 439.361297,
+          offs: 0
+        },
+        {
+          text: 'ABR > S',
+          mod: 20,
+          chance: 30,
+          speedo: 182.85,
+          vel: 439.90512,
+          offs: 0
+        },
+        {
+          text: 'ND > ABRDS',
+          mod: 18,
+          chance: 30,
+          speedo: 182.35,
+          vel: 612.172973,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > ABRDS',
+          mod: 18,
+          chance: 70,
+          speedo: 184.58,
+          vel: 611.96405,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > ABRS',
+          mod: 18,
+          chance: 70,
+          speedo: 111.14,
+          vel: 438.488006,
+          offs: 0
+        },
+        {
+          text: 'N > ABRS',
+          mod: 18,
+          chance: 30,
+          speedo: 69.23,
+          vel: 435.272979,
+          offs: 0
+        },
+        {
+          text: 'BRD > BRDS',
+          mod: 1,
+          chance: 70,
+          speedo: 218.44,
+          vel: 609.867736,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BRD > BRDS',
+          mod: 1,
+          chance: 30,
+          speedo: 208.94,
+          vel: 611.481689,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BR > BRS',
+          mod: 1,
+          chance: 70,
+          speedo: 277.71,
+          vel: 435.867034,
+          offs: 0
+        },
+        {
+          text: 'BR > BRS',
+          mod: 1,
+          chance: 30,
+          speedo: 246.74,
+          vel: 440.122589,
+          offs: 0
+        },
+        {
+          text: 'BRD > DS',
+          mod: 4,
+          chance: 70,
+          speedo: 205.42,
+          vel: 610.567138,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BRD > DS',
+          mod: 4,
+          chance: 30,
+          speedo: 201.85,
+          vel: 611.654235,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'BR > S',
+          mod: 4,
+          chance: 70,
+          speedo: 210.24,
+          vel: 438.776062,
+          offs: 0
+        },
+        {
+          text: 'BR > S',
+          mod: 4,
+          chance: 30,
+          speedo: 197.76,
+          vel: 440.074615,
+          offs: 0
+        },
+        {
+          text: 'ND > BRDS',
+          mod: 2,
+          chance: 70,
+          speedo: 184.58,
+          vel: 611.964233,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > BRDS',
+          mod: 2,
+          chance: 30,
+          speedo: 182.35,
+          vel: 612.172912,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > BRS',
+          mod: 2,
+          chance: 70,
+          speedo: 111.14,
+          vel: 438.488006,
+          offs: 0
+        },
+        {
+          text: 'N > BRS',
+          mod: 2,
+          chance: 30,
+          speedo: 69.23,
+          vel: 435.27301,
+          offs: 0
+        },
+        {
+          text: 'WABRD > WABRDS',
+          mod: 25,
+          chance: 70,
+          speedo: 211.68,
+          vel: 610.278869,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABRD > WABRDS',
+          mod: 25,
+          chance: 30,
+          speedo: 203.82,
+          vel: 611.606079,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABR > WABRS',
+          mod: 25,
+          chance: 30,
+          speedo: 214.85,
+          vel: 440.146179,
+          offs: 0
+        },
+        {
+          text: 'WABR > WABRS',
+          mod: 25,
+          chance: 70,
+          speedo: 242.61,
+          vel: 437.863433,
+          offs: 0
+        },
+        {
+          text: 'WABRD > DS',
+          mod: 28,
+          chance: 70,
+          speedo: 196.12,
+          vel: 611.136901,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABRD > DS',
+          mod: 28,
+          chance: 30,
+          speedo: 194.4,
+          vel: 611.837951,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WABR > S',
+          mod: 28,
+          chance: 70,
+          speedo: 168.5,
+          vel: 439.999542,
+          offs: 0
+        },
+        {
+          text: 'WABR > S',
+          mod: 28,
+          chance: 30,
+          speedo: 158.07,
+          vel: 439.451019,
+          offs: 0
+        },
+        {
+          text: 'ND > WABRDS',
+          mod: 26,
+          chance: 70,
+          speedo: 183.46,
+          vel: 612.027038,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WABRDS',
+          mod: 26,
+          chance: 30,
+          speedo: 182.25,
+          vel: 612.190795,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'N > WABRS',
+          mod: 26,
+          chance: 30,
+          speedo: 57.94,
+          vel: 434.673767,
+          offs: 0
+        },
+        {
+          text: 'N > WABRS',
+          mod: 26,
+          chance: 70,
+          speedo: 92.68,
+          vel: 437.74472,
+          offs: 0
+        },
+        {
+          text: 'WBRD > WBRDS',
+          mod: 9,
+          chance: 30,
+          speedo: 203.82,
+          vel: 611.606079,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBRD > WBRDS',
+          mod: 9,
+          chance: 70,
+          speedo: 211.68,
+          vel: 610.279174,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBR > WBRS',
+          mod: 9,
+          chance: 70,
+          speedo: 242.61,
+          vel: 437.863037,
+          offs: 0
+        },
+        {
+          text: 'WBR > WBRS',
+          mod: 9,
+          chance: 30,
+          speedo: 214.85,
+          vel: 440.145996,
+          offs: 0
+        },
+        {
+          text: 'WBRD > DS',
+          mod: 12,
+          chance: 70,
+          speedo: 199.74,
+          vel: 610.914367,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBRD > DS',
+          mod: 12,
+          chance: 30,
+          speedo: 197.32,
+          vel: 611.765136,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'WBR > S',
+          mod: 12,
+          chance: 70,
+          speedo: 182.44,
+          vel: 439.713195,
+          offs: 0
+        },
+        {
+          text: 'WBR > S',
+          mod: 12,
+          chance: 30,
+          speedo: 171.3,
+          vel: 439.719879,
+          offs: 0
+        },
+        {
+          text: 'ND > WBRDS',
+          mod: 10,
+          chance: 70,
+          speedo: 183.46,
+          vel: 612.026611,
+          offs: 0,
+          crouched: true
+        },
+        {
+          text: 'ND > WBRDS',
+          mod: 10,
+          chance: 30,
+          speedo: 182.25,
+          vel: 612.190551,
+          offs: 0,
+          crouched: true
         }
       ]
     }
@@ -11070,6 +14592,2112 @@ window.BOUNCES = {
           crouched: true
         }
       ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 5,
+      bounces: [
+        {
+          text: 'AN > ANJDS',
+          mod: 23,
+          chance: 70,
+          speedo: 94.52,
+          vel: 870.739929,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AN > ANJDS',
+          mod: 23,
+          chance: 30,
+          speedo: 100,
+          vel: 892.70874,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AN > JDS',
+          mod: 23,
+          chance: 70,
+          speedo: 94.52,
+          vel: 870.739929,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AN > JDS',
+          mod: 23,
+          chance: 30,
+          speedo: 100,
+          vel: 892.70874,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'N > ANJDS',
+          mod: 23,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > ANJDS',
+          mod: 23,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > NJDS',
+          mod: 7,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > NJDS',
+          mod: 7,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > JDS',
+          mod: 7,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > JDS',
+          mod: 7,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > NJDS',
+          mod: 7,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > NJDS',
+          mod: 7,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WAN > WANJDS',
+          mod: 31,
+          chance: 30,
+          speedo: 100,
+          vel: 892.70874,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAN > WANJDS',
+          mod: 31,
+          chance: 70,
+          speedo: 94.52,
+          vel: 870.739929,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAN > JDS',
+          mod: 31,
+          chance: 30,
+          speedo: 100,
+          vel: 892.70874,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAN > JDS',
+          mod: 31,
+          chance: 70,
+          speedo: 94.52,
+          vel: 870.739929,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > WANJDS',
+          mod: 31,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WANJDS',
+          mod: 31,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WN > WNJDS',
+          mod: 15,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WN > WNJDS',
+          mod: 15,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WN > JDS',
+          mod: 15,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WN > JDS',
+          mod: 15,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WNJDS',
+          mod: 15,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WNJDS',
+          mod: 15,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WNJDS',
+          mod: 15,
+          chance: 70,
+          speedo: 71.71,
+          vel: 923.230285,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WNJDS',
+          mod: 15,
+          chance: 30,
+          speedo: 76.66,
+          vel: 946.746337,
+          offs: 32.195007,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 8,
+      bounces: [
+        {
+          text: 'AF > AFJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 289.05,
+          vel: 875.35614,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AF > AFJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 262.93,
+          vel: 900.142761,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AF > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 262.93,
+          vel: 900.142761,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AF > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 289.05,
+          vel: 875.35614,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > AFJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 90.37,
+          vel: 922.568969,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > AFJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 92.73,
+          vel: 946.300781,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'F > FJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 356.15,
+          vel: 907.698791,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'F > FJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 332.46,
+          vel: 938.017089,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'F > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 332.46,
+          vel: 938.017089,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'F > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 356.15,
+          vel: 907.698791,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > FJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 90.37,
+          vel: 922.569091,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > FJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 92.73,
+          vel: 946.300964,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WAF > WAFJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 204.18,
+          vel: 900.416503,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAF > WAFJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 225.52,
+          vel: 877.190917,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAF > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 204.18,
+          vel: 900.416503,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAF > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 225.52,
+          vel: 877.190917,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > WAFJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 90.37,
+          vel: 922.568969,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WAFJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 92.73,
+          vel: 946.300781,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WF > WFJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 296.3,
+          vel: 912.269348,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WF > WFJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 277.46,
+          vel: 940.502258,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WF > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 296.3,
+          vel: 912.269165,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WF > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 277.46,
+          vel: 940.502136,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WFJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 90.37,
+          vel: 922.569091,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WFJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 92.73,
+          vel: 946.300964,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WFJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 92.73,
+          vel: 946.300781,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WFJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 90.37,
+          vel: 922.568969,
+          offs: 35.900009,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 2,
+      bounces: [
+        {
+          text: 'AB > ABJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 372.75,
+          vel: 868.765441,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AB > ABJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 385.95,
+          vel: 838.531555,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AB > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 372.75,
+          vel: 868.765441,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AB > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 385.95,
+          vel: 838.531555,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > ABJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 76.3,
+          vel: 923.51062,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > ABJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 80.78,
+          vel: 947.002685,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'B > BJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 272.54,
+          vel: 944.367858,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'B > BJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 295.98,
+          vel: 916.80133,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'B > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 272.54,
+          vel: 944.367858,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'B > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 295.98,
+          vel: 916.80133,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > BJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 80.78,
+          vel: 947.002685,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > BJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 76.3,
+          vel: 923.51062,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WAB > WABJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 346.05,
+          vel: 871.631652,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAB > WABJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 357.77,
+          vel: 842.519531,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAB > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 346.05,
+          vel: 871.631591,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAB > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 357.77,
+          vel: 842.519531,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > WABJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 80.78,
+          vel: 947.002685,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WABJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 76.3,
+          vel: 923.51062,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WB > WBJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 247.44,
+          vel: 945.009216,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WB > WBJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 268.44,
+          vel: 918.232299,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WB > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 268.44,
+          vel: 918.23236,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WB > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 247.44,
+          vel: 945.009216,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WBJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 76.3,
+          vel: 923.51062,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WBJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 80.78,
+          vel: 947.002685,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WBJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 76.3,
+          vel: 923.51062,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WBJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 80.78,
+          vel: 947.002685,
+          offs: 32.195007,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 4,
+      bounces: [
+        {
+          text: 'AL > ALJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 411.75,
+          vel: 836.377624,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AL > ALJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 396.3,
+          vel: 867.574035,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AL > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 396.3,
+          vel: 867.574035,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AL > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 411.75,
+          vel: 836.377624,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > ALJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 112.97,
+          vel: 920.84259,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > ALJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 114.53,
+          vel: 945.012634,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'L > LJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 380.63,
+          vel: 928.197875,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'L > LJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 400.52,
+          vel: 894.896545,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'L > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 400.52,
+          vel: 894.896545,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'L > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 380.63,
+          vel: 928.197875,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > LJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 112.97,
+          vel: 920.842712,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > LJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 114.53,
+          vel: 945.012756,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WAL > WALJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 350.58,
+          vel: 844.829772,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAL > WALJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 338.41,
+          vel: 873.56665,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAL > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 350.58,
+          vel: 844.829772,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAL > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 338.41,
+          vel: 873.56665,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'N > WALJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 112.97,
+          vel: 920.84259,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WALJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 114.53,
+          vel: 945.012634,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WL > WLJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 340.41,
+          vel: 901.615722,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WL > WLJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 324.61,
+          vel: 932.397033,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WL > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 340.41,
+          vel: 901.615722,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WL > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 324.61,
+          vel: 932.397033,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WLJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 112.97,
+          vel: 920.842712,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WLJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 114.53,
+          vel: 945.012756,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WLJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 112.97,
+          vel: 920.84259,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WLJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 114.53,
+          vel: 945.012634,
+          offs: 32.195007,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 6,
+      bounces: [
+        {
+          text: 'AR > ARJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 276.05,
+          vel: 897.531555,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AR > ARJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 300.96,
+          vel: 872.200622,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AR > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 276.05,
+          vel: 897.531555,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AR > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 300.96,
+          vel: 872.200622,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > ARJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 24.35,
+          vel: 925.254333,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > ARJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 34.01,
+          vel: 948.30072,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'R > RJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 267.58,
+          vel: 928.724487,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'R > RJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 234.7,
+          vel: 953.932678,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'R > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 267.58,
+          vel: 928.724487,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'R > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 234.7,
+          vel: 953.932678,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > RJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 24.35,
+          vel: 925.254333,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > RJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 34.01,
+          vel: 948.300781,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WAR > WARJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 238.06,
+          vel: 874.599914,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAR > WARJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 217.91,
+          vel: 898.284667,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAR > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 238.06,
+          vel: 874.599914,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAR > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 217.91,
+          vel: 898.284667,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'N > WARJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 27.38,
+          vel: 948.30072,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WARJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 25.68,
+          vel: 925.254333,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WR > WRJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 205.2,
+          vel: 929.579833,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WR > WRJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 177.54,
+          vel: 953.525695,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WR > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 205.2,
+          vel: 929.579833,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WR > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 177.54,
+          vel: 953.525695,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WRJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 25.68,
+          vel: 925.254333,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WRJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 27.38,
+          vel: 948.300781,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WRJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 27.38,
+          vel: 948.30072,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WRJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 25.68,
+          vel: 925.254333,
+          offs: 35.900009,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 7,
+      bounces: [
+        {
+          text: 'AFL > AFLJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 336.29,
+          vel: 883.890258,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AFL > AFLJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 356.25,
+          vel: 855.803527,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AFL > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 336.29,
+          vel: 883.890258,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AFL > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 356.25,
+          vel: 855.803527,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > AFLJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 110.92,
+          vel: 945.244812,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > AFLJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 109.24,
+          vel: 921.153442,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'FL > FLJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 393.04,
+          vel: 897.163208,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'FL > FLJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 372.51,
+          vel: 929.943237,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'FL > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 393.04,
+          vel: 897.163208,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'FL > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 372.51,
+          vel: 929.943237,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > FLJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 109.24,
+          vel: 921.153442,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > FLJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 110.92,
+          vel: 945.244812,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WAFL > WAFLJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 320.81,
+          vel: 858.956237,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAFL > WAFLJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 303.22,
+          vel: 885.815063,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAFL > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 320.81,
+          vel: 858.956237,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAFL > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 303.22,
+          vel: 885.815063,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'N > WAFLJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 109.24,
+          vel: 921.153442,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WAFLJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 110.92,
+          vel: 945.244812,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WFL > WFLJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 340.38,
+          vel: 932.229309,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WFL > WFLJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 358.5,
+          vel: 900.893371,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WFL > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 358.5,
+          vel: 900.893493,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WFL > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 340.38,
+          vel: 932.229431,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WFLJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 109.24,
+          vel: 921.153442,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WFLJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 110.92,
+          vel: 945.244812,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WFLJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 110.92,
+          vel: 945.244812,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WFLJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 109.24,
+          vel: 921.153442,
+          offs: 35.900009,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 9,
+      bounces: [
+        {
+          text: 'AFR > AFRJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 230.46,
+          vel: 906.05371,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AFR > AFRJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 259.93,
+          vel: 882.519531,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'AFR > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 230.46,
+          vel: 906.05371,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'AFR > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 259.93,
+          vel: 882.519531,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > AFRJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 61.47,
+          vel: 924.269104,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > AFRJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 71.05,
+          vel: 947.567504,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'FR > FRJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 303.83,
+          vel: 920.842041,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'FR > FRJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 275.18,
+          vel: 947.997009,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'FR > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 303.83,
+          vel: 920.842041,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'FR > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 275.18,
+          vel: 947.997009,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > FRJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 61.47,
+          vel: 924.268981,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > FRJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 71.05,
+          vel: 947.567443,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WAFR > WAFRJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 222.03,
+          vel: 882.980224,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAFR > WAFRJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 195.1,
+          vel: 905.67279,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WAFR > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 222.03,
+          vel: 882.980224,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WAFR > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 195.1,
+          vel: 905.67279,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'N > WAFRJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 61.28,
+          vel: 924.269104,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WAFRJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 71.05,
+          vel: 947.567504,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WFR > WFRJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 268.87,
+          vel: 922.252136,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WFR > WFRJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 243.28,
+          vel: 948.444396,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WFR > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 268.87,
+          vel: 922.252258,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WFR > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 243.28,
+          vel: 948.444396,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WFRJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 61.28,
+          vel: 924.269104,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WFRJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 71.05,
+          vel: 947.567504,
+          offs: 32.195007,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 1,
+      bounces: [
+        {
+          text: 'ABL > ABLJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 434.31,
+          vel: 827.598999,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'ABL > ABLJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 420.71,
+          vel: 860.146301,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'ABL > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 420.71,
+          vel: 860.146301,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'ABL > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 434.31,
+          vel: 827.598999,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > ABLJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 100.86,
+          vel: 921.815368,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > ABLJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 102.81,
+          vel: 945.738708,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'BL > BLJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 376.4,
+          vel: 902.045471,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'BL > BLJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 354.46,
+          vel: 933.69281,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'BL > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 376.4,
+          vel: 902.045471,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'BL > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 354.46,
+          vel: 933.69281,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > BLJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 100.86,
+          vel: 921.815429,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > BLJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 102.81,
+          vel: 945.738769,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WABL > WABLJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 399.14,
+          vel: 833.352172,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WABL > WABLJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 387.13,
+          vel: 864.363586,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WABL > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 399.14,
+          vel: 833.352172,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WABL > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 387.13,
+          vel: 864.363586,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'N > WABLJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 102.81,
+          vel: 945.738708,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WABLJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 100.86,
+          vel: 921.815368,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WBL > WBLJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 341.91,
+          vel: 905.312133,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WBL > WBLJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 322.54,
+          vel: 935.606445,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WBL > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 341.91,
+          vel: 905.312438,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WBL > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 322.54,
+          vel: 935.606567,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WBLJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 100.86,
+          vel: 921.815368,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WBLJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 102.81,
+          vel: 945.738708,
+          offs: 32.195007,
+          crouched: true
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 3,
+      bounces: [
+        {
+          text: 'ABR > ABRJDS',
+          mod: 17,
+          chance: 70,
+          speedo: 368.88,
+          vel: 851.648498,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'ABR > ABRJDS',
+          mod: 17,
+          chance: 30,
+          speedo: 349.96,
+          vel: 880.414245,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'ABR > JDS',
+          mod: 20,
+          chance: 30,
+          speedo: 349.96,
+          vel: 880.414245,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'ABR > JDS',
+          mod: 20,
+          chance: 70,
+          speedo: 368.88,
+          vel: 851.648498,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'N > ABRJDS',
+          mod: 18,
+          chance: 30,
+          speedo: 51.43,
+          vel: 948.065979,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > ABRJDS',
+          mod: 18,
+          chance: 70,
+          speedo: 40.16,
+          vel: 924.938781,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'BR > BRJDS',
+          mod: 1,
+          chance: 70,
+          speedo: 279.81,
+          vel: 926.177734,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'BR > BRJDS',
+          mod: 1,
+          chance: 30,
+          speedo: 248.46,
+          vel: 952.01892,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'BR > JDS',
+          mod: 4,
+          chance: 30,
+          speedo: 248.46,
+          vel: 952.01892,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'BR > JDS',
+          mod: 4,
+          chance: 70,
+          speedo: 279.81,
+          vel: 926.177734,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > BRJDS',
+          mod: 2,
+          chance: 70,
+          speedo: 40.16,
+          vel: 924.938842,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > BRJDS',
+          mod: 2,
+          chance: 30,
+          speedo: 51.43,
+          vel: 948.06604,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WABR > WABRJDS',
+          mod: 25,
+          chance: 30,
+          speedo: 316.88,
+          vel: 882.685852,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'WABR > WABRJDS',
+          mod: 25,
+          chance: 70,
+          speedo: 333.54,
+          vel: 855.19934,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WABR > JDS',
+          mod: 28,
+          chance: 70,
+          speedo: 333.54,
+          vel: 855.19934,
+          offs: 42.770011,
+          crouched: true
+        },
+        {
+          text: 'WABR > JDS',
+          mod: 28,
+          chance: 30,
+          speedo: 316.88,
+          vel: 882.685852,
+          offs: 39.42501,
+          crouched: true
+        },
+        {
+          text: 'N > WABRJDS',
+          mod: 26,
+          chance: 70,
+          speedo: 40.39,
+          vel: 924.938781,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WABRJDS',
+          mod: 26,
+          chance: 30,
+          speedo: 51.43,
+          vel: 948.065979,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WBR > WBRJDS',
+          mod: 9,
+          chance: 70,
+          speedo: 244.28,
+          vel: 927.039489,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WBR > WBRJDS',
+          mod: 9,
+          chance: 30,
+          speedo: 216,
+          vel: 952.041076,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'WBR > JDS',
+          mod: 12,
+          chance: 70,
+          speedo: 244.28,
+          vel: 927.039733,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'WBR > JDS',
+          mod: 12,
+          chance: 30,
+          speedo: 216,
+          vel: 952.041137,
+          offs: 32.195007,
+          crouched: true
+        },
+        {
+          text: 'N > WBRJDS',
+          mod: 10,
+          chance: 70,
+          speedo: 40.39,
+          vel: 924.938781,
+          offs: 35.900009,
+          crouched: true
+        },
+        {
+          text: 'N > WBRJDS',
+          mod: 10,
+          chance: 30,
+          speedo: 51.43,
+          vel: 948.065979,
+          offs: 32.195007,
+          crouched: true
+        }
+      ]
     }
   ],
   JS: [
@@ -14633,6 +20261,1788 @@ window.BOUNCES = {
           chance: 30,
           speedo: 31.56,
           vel: 762.373962,
+          offs: 11.924995
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 5,
+      bounces: [
+        {
+          text: 'AN > ANJS',
+          mod: 23,
+          chance: 30,
+          speedo: 56.79,
+          vel: 715.882751,
+          offs: 18.97499
+        },
+        {
+          text: 'AN > ANJS',
+          mod: 23,
+          chance: 70,
+          speedo: 53.53,
+          vel: 697.479736,
+          offs: 22.229988
+        },
+        {
+          text: 'AN > JS',
+          mod: 23,
+          chance: 70,
+          speedo: 53.53,
+          vel: 697.479736,
+          offs: 22.229988
+        },
+        {
+          text: 'AN > JS',
+          mod: 23,
+          chance: 30,
+          speedo: 56.79,
+          vel: 715.882751,
+          offs: 18.97499
+        },
+        {
+          text: 'N > ANJS',
+          mod: 23,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631652,
+          offs: 11.924995
+        },
+        {
+          text: 'N > ANJS',
+          mod: 23,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304016,
+          offs: 15.539993
+        },
+        {
+          text: 'N > NJS',
+          mod: 7,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631713,
+          offs: 11.924995
+        },
+        {
+          text: 'N > NJS',
+          mod: 7,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304077,
+          offs: 15.539993
+        },
+        {
+          text: 'N > JS',
+          mod: 7,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304077,
+          offs: 15.539993
+        },
+        {
+          text: 'N > JS',
+          mod: 7,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631713,
+          offs: 11.924995
+        },
+        {
+          text: 'N > NJS',
+          mod: 7,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304077,
+          offs: 15.539993
+        },
+        {
+          text: 'N > NJS',
+          mod: 7,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631713,
+          offs: 11.924995
+        },
+        {
+          text: 'WAN > WANJS',
+          mod: 31,
+          chance: 70,
+          speedo: 53.53,
+          vel: 697.479736,
+          offs: 22.229988
+        },
+        {
+          text: 'WAN > WANJS',
+          mod: 31,
+          chance: 30,
+          speedo: 56.79,
+          vel: 715.882751,
+          offs: 18.97499
+        },
+        {
+          text: 'WAN > JS',
+          mod: 31,
+          chance: 30,
+          speedo: 56.79,
+          vel: 715.882751,
+          offs: 18.97499
+        },
+        {
+          text: 'WAN > JS',
+          mod: 31,
+          chance: 70,
+          speedo: 53.53,
+          vel: 697.479736,
+          offs: 22.229988
+        },
+        {
+          text: 'N > WANJS',
+          mod: 31,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631652,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WANJS',
+          mod: 31,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304016,
+          offs: 15.539993
+        },
+        {
+          text: 'WN > WNJS',
+          mod: 15,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304077,
+          offs: 15.539993
+        },
+        {
+          text: 'WN > WNJS',
+          mod: 15,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631713,
+          offs: 11.924995
+        },
+        {
+          text: 'WN > JS',
+          mod: 15,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631652,
+          offs: 11.924995
+        },
+        {
+          text: 'WN > JS',
+          mod: 15,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304016,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WNJS',
+          mod: 15,
+          chance: 30,
+          speedo: 65.15,
+          vel: 752.631713,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WNJS',
+          mod: 15,
+          chance: 70,
+          speedo: 60.78,
+          vel: 734.304077,
+          offs: 15.539993
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 8,
+      bounces: [
+        {
+          text: 'AF > AFJS',
+          mod: 17,
+          chance: 70,
+          speedo: 346.43,
+          vel: 675.326782,
+          offs: 22.229988
+        },
+        {
+          text: 'AF > AFJS',
+          mod: 17,
+          chance: 30,
+          speedo: 330.24,
+          vel: 700.643066,
+          offs: 18.97499
+        },
+        {
+          text: 'AF > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 346.43,
+          vel: 675.326782,
+          offs: 22.229988
+        },
+        {
+          text: 'AF > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 330.24,
+          vel: 700.643066,
+          offs: 18.97499
+        },
+        {
+          text: 'N > AFJS',
+          mod: 18,
+          chance: 30,
+          speedo: 81.51,
+          vel: 752.074768,
+          offs: 11.924995
+        },
+        {
+          text: 'N > AFJS',
+          mod: 18,
+          chance: 70,
+          speedo: 79.54,
+          vel: 733.522705,
+          offs: 15.539993
+        },
+        {
+          text: 'F > FJS',
+          mod: 1,
+          chance: 70,
+          speedo: 336.58,
+          vel: 716.866821,
+          offs: 15.539993
+        },
+        {
+          text: 'F > FJS',
+          mod: 1,
+          chance: 30,
+          speedo: 317.1,
+          vel: 742.170715,
+          offs: 11.924995
+        },
+        {
+          text: 'F > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 336.58,
+          vel: 716.866821,
+          offs: 15.539993
+        },
+        {
+          text: 'F > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 317.1,
+          vel: 742.170715,
+          offs: 11.924995
+        },
+        {
+          text: 'N > FJS',
+          mod: 2,
+          chance: 70,
+          speedo: 79.53,
+          vel: 733.522888,
+          offs: 15.539993
+        },
+        {
+          text: 'N > FJS',
+          mod: 2,
+          chance: 30,
+          speedo: 81.51,
+          vel: 752.07489,
+          offs: 11.924995
+        },
+        {
+          text: 'WAF > WAFJS',
+          mod: 25,
+          chance: 30,
+          speedo: 273.69,
+          vel: 705.046997,
+          offs: 18.97499
+        },
+        {
+          text: 'WAF > WAFJS',
+          mod: 25,
+          chance: 70,
+          speedo: 286.98,
+          vel: 681.799926,
+          offs: 22.229988
+        },
+        {
+          text: 'WAF > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 273.69,
+          vel: 705.046997,
+          offs: 18.97499
+        },
+        {
+          text: 'WAF > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 286.98,
+          vel: 681.799926,
+          offs: 22.229988
+        },
+        {
+          text: 'N > WAFJS',
+          mod: 26,
+          chance: 70,
+          speedo: 79.54,
+          vel: 733.522705,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WAFJS',
+          mod: 26,
+          chance: 30,
+          speedo: 81.51,
+          vel: 752.074768,
+          offs: 11.924995
+        },
+        {
+          text: 'WF > WFJS',
+          mod: 9,
+          chance: 30,
+          speedo: 263.76,
+          vel: 745.063049,
+          offs: 11.924995
+        },
+        {
+          text: 'WF > WFJS',
+          mod: 9,
+          chance: 70,
+          speedo: 279.42,
+          vel: 721.826965,
+          offs: 15.539993
+        },
+        {
+          text: 'WF > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 279.42,
+          vel: 721.826782,
+          offs: 15.539993
+        },
+        {
+          text: 'WF > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 263.76,
+          vel: 745.062927,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WFJS',
+          mod: 10,
+          chance: 70,
+          speedo: 79.53,
+          vel: 733.522888,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WFJS',
+          mod: 10,
+          chance: 30,
+          speedo: 81.51,
+          vel: 752.07489,
+          offs: 11.924995
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 2,
+      bounces: [
+        {
+          text: 'AB > ABJS',
+          mod: 17,
+          chance: 70,
+          speedo: 295.22,
+          vel: 685.957763,
+          offs: 22.229988
+        },
+        {
+          text: 'AB > ABJS',
+          mod: 17,
+          chance: 30,
+          speedo: 278.75,
+          vel: 709.242431,
+          offs: 18.97499
+        },
+        {
+          text: 'AB > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 295.22,
+          vel: 685.957763,
+          offs: 22.229988
+        },
+        {
+          text: 'AB > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 278.75,
+          vel: 709.242431,
+          offs: 18.97499
+        },
+        {
+          text: 'N > ABJS',
+          mod: 18,
+          chance: 70,
+          speedo: 66.62,
+          vel: 734.636901,
+          offs: 15.539993
+        },
+        {
+          text: 'N > ABJS',
+          mod: 18,
+          chance: 30,
+          speedo: 70.46,
+          vel: 752.953552,
+          offs: 11.924995
+        },
+        {
+          text: 'B > BJS',
+          mod: 1,
+          chance: 30,
+          speedo: 262.81,
+          vel: 749.6958,
+          offs: 11.924995
+        },
+        {
+          text: 'B > BJS',
+          mod: 1,
+          chance: 70,
+          speedo: 282.57,
+          vel: 726.880432,
+          offs: 15.539993
+        },
+        {
+          text: 'B > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 262.81,
+          vel: 749.6958,
+          offs: 11.924995
+        },
+        {
+          text: 'B > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 282.57,
+          vel: 726.880432,
+          offs: 15.539993
+        },
+        {
+          text: 'N > BJS',
+          mod: 2,
+          chance: 70,
+          speedo: 66.62,
+          vel: 734.636962,
+          offs: 15.539993
+        },
+        {
+          text: 'N > BJS',
+          mod: 2,
+          chance: 30,
+          speedo: 70.46,
+          vel: 752.953613,
+          offs: 11.924995
+        },
+        {
+          text: 'WAB > WABJS',
+          mod: 25,
+          chance: 70,
+          speedo: 267.6,
+          vel: 688.274536,
+          offs: 22.229988
+        },
+        {
+          text: 'WAB > WABJS',
+          mod: 25,
+          chance: 30,
+          speedo: 252.63,
+          vel: 710.683532,
+          offs: 18.97499
+        },
+        {
+          text: 'WAB > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 267.6,
+          vel: 688.274536,
+          offs: 22.229988
+        },
+        {
+          text: 'WAB > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 252.63,
+          vel: 710.683532,
+          offs: 18.97499
+        },
+        {
+          text: 'N > WABJS',
+          mod: 26,
+          chance: 70,
+          speedo: 66.62,
+          vel: 734.636901,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WABJS',
+          mod: 26,
+          chance: 30,
+          speedo: 70.46,
+          vel: 752.953552,
+          offs: 11.924995
+        },
+        {
+          text: 'WB > WBJS',
+          mod: 9,
+          chance: 30,
+          speedo: 238.34,
+          vel: 750.480529,
+          offs: 11.924995
+        },
+        {
+          text: 'WB > WBJS',
+          mod: 9,
+          chance: 70,
+          speedo: 256.14,
+          vel: 728.503784,
+          offs: 15.539993
+        },
+        {
+          text: 'WB > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 238.34,
+          vel: 750.48059,
+          offs: 11.924995
+        },
+        {
+          text: 'WB > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 256.13,
+          vel: 728.503906,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WBJS',
+          mod: 10,
+          chance: 70,
+          speedo: 66.62,
+          vel: 734.636962,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WBJS',
+          mod: 10,
+          chance: 30,
+          speedo: 70.46,
+          vel: 752.953613,
+          offs: 11.924995
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 4,
+      bounces: [
+        {
+          text: 'AL > ALJS',
+          mod: 17,
+          chance: 70,
+          speedo: 378.51,
+          vel: 661.506652,
+          offs: 22.229988
+        },
+        {
+          text: 'AL > ALJS',
+          mod: 17,
+          chance: 30,
+          speedo: 365.59,
+          vel: 688.46936,
+          offs: 18.97499
+        },
+        {
+          text: 'AL > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 378.51,
+          vel: 661.506652,
+          offs: 22.229988
+        },
+        {
+          text: 'AL > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 365.59,
+          vel: 688.46936,
+          offs: 18.97499
+        },
+        {
+          text: 'N > ALJS',
+          mod: 18,
+          chance: 70,
+          speedo: 100.14,
+          vel: 731.504028,
+          offs: 15.539993
+        },
+        {
+          text: 'N > ALJS',
+          mod: 18,
+          chance: 30,
+          speedo: 101.66,
+          vel: 750.481811,
+          offs: 11.924995
+        },
+        {
+          text: 'L > LJS',
+          mod: 1,
+          chance: 70,
+          speedo: 373.18,
+          vel: 703.527954,
+          offs: 15.539993
+        },
+        {
+          text: 'L > LJS',
+          mod: 1,
+          chance: 30,
+          speedo: 357.55,
+          vel: 731.239318,
+          offs: 11.924995
+        },
+        {
+          text: 'L > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 373.18,
+          vel: 703.527954,
+          offs: 15.539993
+        },
+        {
+          text: 'L > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 357.55,
+          vel: 731.239318,
+          offs: 11.924995
+        },
+        {
+          text: 'N > LJS',
+          mod: 2,
+          chance: 70,
+          speedo: 100.14,
+          vel: 731.50415,
+          offs: 15.539993
+        },
+        {
+          text: 'N > LJS',
+          mod: 2,
+          chance: 30,
+          speedo: 101.66,
+          vel: 750.481933,
+          offs: 11.924995
+        },
+        {
+          text: 'WAL > WALJS',
+          mod: 25,
+          chance: 70,
+          speedo: 319.8,
+          vel: 669.968261,
+          offs: 22.229988
+        },
+        {
+          text: 'WAL > WALJS',
+          mod: 25,
+          chance: 30,
+          speedo: 309.23,
+          vel: 694.731628,
+          offs: 18.97499
+        },
+        {
+          text: 'WAL > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 319.8,
+          vel: 669.968261,
+          offs: 22.229988
+        },
+        {
+          text: 'WAL > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 309.23,
+          vel: 694.731628,
+          offs: 18.97499
+        },
+        {
+          text: 'N > WALJS',
+          mod: 26,
+          chance: 30,
+          speedo: 101.66,
+          vel: 750.481811,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WALJS',
+          mod: 26,
+          chance: 70,
+          speedo: 100.14,
+          vel: 731.504028,
+          offs: 15.539993
+        },
+        {
+          text: 'WL > WLJS',
+          mod: 9,
+          chance: 70,
+          speedo: 316.27,
+          vel: 710.439819,
+          offs: 15.539993
+        },
+        {
+          text: 'WL > WLJS',
+          mod: 9,
+          chance: 30,
+          speedo: 303.79,
+          vel: 735.830261,
+          offs: 11.924995
+        },
+        {
+          text: 'WL > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 316.27,
+          vel: 710.43988,
+          offs: 15.539993
+        },
+        {
+          text: 'WL > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 303.79,
+          vel: 735.830322,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WLJS',
+          mod: 10,
+          chance: 70,
+          speedo: 100.14,
+          vel: 731.50415,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WLJS',
+          mod: 10,
+          chance: 30,
+          speedo: 101.66,
+          vel: 750.481933,
+          offs: 11.924995
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 6,
+      bounces: [
+        {
+          text: 'AR > ARJS',
+          mod: 17,
+          chance: 70,
+          speedo: 284.88,
+          vel: 699.096069,
+          offs: 22.229988
+        },
+        {
+          text: 'AR > ARJS',
+          mod: 17,
+          chance: 30,
+          speedo: 262.03,
+          vel: 721.568176,
+          offs: 18.97499
+        },
+        {
+          text: 'AR > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 284.88,
+          vel: 699.096069,
+          offs: 22.229988
+        },
+        {
+          text: 'AR > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 262.03,
+          vel: 721.568176,
+          offs: 18.97499
+        },
+        {
+          text: 'N > ARJS',
+          mod: 18,
+          chance: 30,
+          speedo: 32.96,
+          vel: 754.597045,
+          offs: 11.924995
+        },
+        {
+          text: 'N > ARJS',
+          mod: 18,
+          chance: 70,
+          speedo: 16.46,
+          vel: 736.721313,
+          offs: 15.539993
+        },
+        {
+          text: 'R > RJS',
+          mod: 1,
+          chance: 30,
+          speedo: 235.39,
+          vel: 762.091918,
+          offs: 11.924995
+        },
+        {
+          text: 'R > RJS',
+          mod: 1,
+          chance: 70,
+          speedo: 263.45,
+          vel: 740.973144,
+          offs: 15.539993
+        },
+        {
+          text: 'R > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 263.45,
+          vel: 740.973144,
+          offs: 15.539993
+        },
+        {
+          text: 'R > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 235.39,
+          vel: 762.091918,
+          offs: 11.924995
+        },
+        {
+          text: 'N > RJS',
+          mod: 2,
+          chance: 70,
+          speedo: 16.46,
+          vel: 736.721313,
+          offs: 15.539993
+        },
+        {
+          text: 'N > RJS',
+          mod: 2,
+          chance: 30,
+          speedo: 32.96,
+          vel: 754.597045,
+          offs: 11.924995
+        },
+        {
+          text: 'WAR > WARJS',
+          mod: 25,
+          chance: 70,
+          speedo: 222.68,
+          vel: 701.832641,
+          offs: 22.229988
+        },
+        {
+          text: 'WAR > WARJS',
+          mod: 25,
+          chance: 30,
+          speedo: 203.26,
+          vel: 722.483032,
+          offs: 18.97499
+        },
+        {
+          text: 'WAR > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 222.68,
+          vel: 701.832641,
+          offs: 22.229988
+        },
+        {
+          text: 'WAR > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 203.26,
+          vel: 722.483032,
+          offs: 18.97499
+        },
+        {
+          text: 'N > WARJS',
+          mod: 26,
+          chance: 70,
+          speedo: 17.56,
+          vel: 736.721313,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WARJS',
+          mod: 26,
+          chance: 30,
+          speedo: 32.96,
+          vel: 754.597045,
+          offs: 11.924995
+        },
+        {
+          text: 'WR > WRJS',
+          mod: 9,
+          chance: 70,
+          speedo: 203.72,
+          vel: 742.044128,
+          offs: 15.539993
+        },
+        {
+          text: 'WR > WRJS',
+          mod: 9,
+          chance: 30,
+          speedo: 180.04,
+          vel: 761.526733,
+          offs: 11.924995
+        },
+        {
+          text: 'WR > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 203.72,
+          vel: 742.044128,
+          offs: 15.539993
+        },
+        {
+          text: 'WR > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 180.04,
+          vel: 761.526733,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WRJS',
+          mod: 10,
+          chance: 30,
+          speedo: 32.96,
+          vel: 754.597045,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WRJS',
+          mod: 10,
+          chance: 70,
+          speedo: 17.56,
+          vel: 736.721313,
+          offs: 15.539993
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 7,
+      bounces: [
+        {
+          text: 'AFL > AFLJS',
+          mod: 17,
+          chance: 70,
+          speedo: 372.91,
+          vel: 663.991821,
+          offs: 22.229988
+        },
+        {
+          text: 'AFL > AFLJS',
+          mod: 17,
+          chance: 30,
+          speedo: 359.42,
+          vel: 690.660888,
+          offs: 18.97499
+        },
+        {
+          text: 'AFL > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 372.91,
+          vel: 663.991821,
+          offs: 22.229988
+        },
+        {
+          text: 'AFL > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 359.42,
+          vel: 690.660888,
+          offs: 18.97499
+        },
+        {
+          text: 'N > AFLJS',
+          mod: 18,
+          chance: 70,
+          speedo: 96.76,
+          vel: 731.865173,
+          offs: 15.539993
+        },
+        {
+          text: 'N > AFLJS',
+          mod: 18,
+          chance: 30,
+          speedo: 98.35,
+          vel: 750.766845,
+          offs: 11.924995
+        },
+        {
+          text: 'FL > FLJS',
+          mod: 1,
+          chance: 70,
+          speedo: 367.02,
+          vel: 705.836914,
+          offs: 15.539993
+        },
+        {
+          text: 'FL > FLJS',
+          mod: 1,
+          chance: 30,
+          speedo: 350.74,
+          vel: 733.131713,
+          offs: 11.924995
+        },
+        {
+          text: 'FL > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 367.02,
+          vel: 705.836914,
+          offs: 15.539993
+        },
+        {
+          text: 'FL > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 350.74,
+          vel: 733.131713,
+          offs: 11.924995
+        },
+        {
+          text: 'N > FLJS',
+          mod: 2,
+          chance: 70,
+          speedo: 96.76,
+          vel: 731.865234,
+          offs: 15.539993
+        },
+        {
+          text: 'N > FLJS',
+          mod: 2,
+          chance: 30,
+          speedo: 98.35,
+          vel: 750.766967,
+          offs: 11.924995
+        },
+        {
+          text: 'WAFL > WAFLJS',
+          mod: 25,
+          chance: 70,
+          speedo: 339.11,
+          vel: 668.747314,
+          offs: 22.229988
+        },
+        {
+          text: 'WAFL > WAFLJS',
+          mod: 25,
+          chance: 30,
+          speedo: 326.99,
+          vel: 694.137512,
+          offs: 18.97499
+        },
+        {
+          text: 'WAFL > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 339.11,
+          vel: 668.747314,
+          offs: 22.229988
+        },
+        {
+          text: 'WAFL > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 326.99,
+          vel: 694.137512,
+          offs: 18.97499
+        },
+        {
+          text: 'N > WAFLJS',
+          mod: 26,
+          chance: 30,
+          speedo: 98.35,
+          vel: 750.766845,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WAFLJS',
+          mod: 26,
+          chance: 70,
+          speedo: 96.76,
+          vel: 731.865173,
+          offs: 15.539993
+        },
+        {
+          text: 'WFL > WFLJS',
+          mod: 9,
+          chance: 70,
+          speedo: 334.28,
+          vel: 709.685546,
+          offs: 15.539993
+        },
+        {
+          text: 'WFL > WFLJS',
+          mod: 9,
+          chance: 30,
+          speedo: 319.85,
+          vel: 735.642944,
+          offs: 11.924995
+        },
+        {
+          text: 'WFL > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 319.85,
+          vel: 735.643005,
+          offs: 11.924995
+        },
+        {
+          text: 'WFL > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 334.28,
+          vel: 709.685668,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WFLJS',
+          mod: 10,
+          chance: 70,
+          speedo: 96.76,
+          vel: 731.865234,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WFLJS',
+          mod: 10,
+          chance: 30,
+          speedo: 98.35,
+          vel: 750.766967,
+          offs: 11.924995
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 9,
+      bounces: [
+        {
+          text: 'AFR > AFRJS',
+          mod: 17,
+          chance: 70,
+          speedo: 309.58,
+          vel: 689.98468,
+          offs: 22.229988
+        },
+        {
+          text: 'AFR > AFRJS',
+          mod: 17,
+          chance: 30,
+          speedo: 289.52,
+          vel: 713.539672,
+          offs: 18.97499
+        },
+        {
+          text: 'AFR > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 309.58,
+          vel: 689.98468,
+          offs: 22.229988
+        },
+        {
+          text: 'AFR > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 289.52,
+          vel: 713.539672,
+          offs: 18.97499
+        },
+        {
+          text: 'N > AFRJS',
+          mod: 18,
+          chance: 30,
+          speedo: 62.46,
+          vel: 753.664916,
+          offs: 11.924995
+        },
+        {
+          text: 'N > AFRJS',
+          mod: 18,
+          chance: 70,
+          speedo: 53.63,
+          vel: 735.53894,
+          offs: 15.539993
+        },
+        {
+          text: 'FR > FRJS',
+          mod: 1,
+          chance: 70,
+          speedo: 293.36,
+          vel: 731.500915,
+          offs: 15.539993
+        },
+        {
+          text: 'FR > FRJS',
+          mod: 1,
+          chance: 30,
+          speedo: 269.08,
+          vel: 754.207885,
+          offs: 11.924995
+        },
+        {
+          text: 'FR > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 293.36,
+          vel: 731.500915,
+          offs: 15.539993
+        },
+        {
+          text: 'FR > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 269.08,
+          vel: 754.207885,
+          offs: 11.924995
+        },
+        {
+          text: 'N > FRJS',
+          mod: 2,
+          chance: 30,
+          speedo: 62.46,
+          vel: 753.664794,
+          offs: 11.924995
+        },
+        {
+          text: 'N > FRJS',
+          mod: 2,
+          chance: 70,
+          speedo: 53.63,
+          vel: 735.538818,
+          offs: 15.539993
+        },
+        {
+          text: 'WAFR > WAFRJS',
+          mod: 25,
+          chance: 70,
+          speedo: 274.56,
+          vel: 692.558837,
+          offs: 22.229988
+        },
+        {
+          text: 'WAFR > WAFRJS',
+          mod: 25,
+          chance: 30,
+          speedo: 256.39,
+          vel: 714.965942,
+          offs: 18.97499
+        },
+        {
+          text: 'WAFR > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 274.56,
+          vel: 692.558837,
+          offs: 22.229988
+        },
+        {
+          text: 'WAFR > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 256.39,
+          vel: 714.965942,
+          offs: 18.97499
+        },
+        {
+          text: 'N > WAFRJS',
+          mod: 26,
+          chance: 70,
+          speedo: 53.35,
+          vel: 735.53894,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WAFRJS',
+          mod: 26,
+          chance: 30,
+          speedo: 62.46,
+          vel: 753.664916,
+          offs: 11.924995
+        },
+        {
+          text: 'WFR > WFRJS',
+          mod: 9,
+          chance: 70,
+          speedo: 259.81,
+          vel: 733.148315,
+          offs: 15.539993
+        },
+        {
+          text: 'WFR > WFRJS',
+          mod: 9,
+          chance: 30,
+          speedo: 238,
+          vel: 754.778625,
+          offs: 11.924995
+        },
+        {
+          text: 'WFR > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 259.81,
+          vel: 733.148376,
+          offs: 15.539993
+        },
+        {
+          text: 'WFR > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 238,
+          vel: 754.778625,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WFRJS',
+          mod: 10,
+          chance: 70,
+          speedo: 53.35,
+          vel: 735.538818,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WFRJS',
+          mod: 10,
+          chance: 30,
+          speedo: 62.46,
+          vel: 753.664794,
+          offs: 11.924995
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 1,
+      bounces: [
+        {
+          text: 'ABL > ABLJS',
+          mod: 17,
+          chance: 70,
+          speedo: 361.52,
+          vel: 668.951293,
+          offs: 22.229988
+        },
+        {
+          text: 'ABL > ABLJS',
+          mod: 17,
+          chance: 30,
+          speedo: 346.87,
+          vel: 695.030639,
+          offs: 18.97499
+        },
+        {
+          text: 'ABL > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 361.52,
+          vel: 668.951293,
+          offs: 22.229988
+        },
+        {
+          text: 'ABL > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 346.87,
+          vel: 695.030639,
+          offs: 18.97499
+        },
+        {
+          text: 'N > ABLJS',
+          mod: 18,
+          chance: 70,
+          speedo: 89.12,
+          vel: 732.638793,
+          offs: 15.539993
+        },
+        {
+          text: 'N > ABLJS',
+          mod: 18,
+          chance: 30,
+          speedo: 90.86,
+          vel: 751.377319,
+          offs: 11.924995
+        },
+        {
+          text: 'BL > BLJS',
+          mod: 1,
+          chance: 30,
+          speedo: 335.57,
+          vel: 737.273254,
+          offs: 11.924995
+        },
+        {
+          text: 'BL > BLJS',
+          mod: 1,
+          chance: 70,
+          speedo: 353.28,
+          vel: 710.891113,
+          offs: 15.539993
+        },
+        {
+          text: 'BL > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 335.57,
+          vel: 737.273254,
+          offs: 11.924995
+        },
+        {
+          text: 'BL > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 353.28,
+          vel: 710.891113,
+          offs: 15.539993
+        },
+        {
+          text: 'N > BLJS',
+          mod: 2,
+          chance: 70,
+          speedo: 89.12,
+          vel: 732.638916,
+          offs: 15.539993
+        },
+        {
+          text: 'N > BLJS',
+          mod: 2,
+          chance: 30,
+          speedo: 90.86,
+          vel: 751.377441,
+          offs: 11.924995
+        },
+        {
+          text: 'WABL > WABLJS',
+          mod: 25,
+          chance: 30,
+          speedo: 314.39,
+          vel: 698.134643,
+          offs: 18.97499
+        },
+        {
+          text: 'WABL > WABLJS',
+          mod: 25,
+          chance: 70,
+          speedo: 327.56,
+          vel: 673.311279,
+          offs: 22.229988
+        },
+        {
+          text: 'WABL > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 327.56,
+          vel: 673.311279,
+          offs: 22.229988
+        },
+        {
+          text: 'WABL > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 314.39,
+          vel: 698.134643,
+          offs: 18.97499
+        },
+        {
+          text: 'N > WABLJS',
+          mod: 26,
+          chance: 70,
+          speedo: 89.12,
+          vel: 732.638793,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WABLJS',
+          mod: 26,
+          chance: 30,
+          speedo: 90.86,
+          vel: 751.377319,
+          offs: 11.924995
+        },
+        {
+          text: 'WBL > WBLJS',
+          mod: 9,
+          chance: 70,
+          speedo: 320.48,
+          vel: 714.328247,
+          offs: 15.539993
+        },
+        {
+          text: 'WBL > WBLJS',
+          mod: 9,
+          chance: 30,
+          speedo: 304.76,
+          vel: 739.423828,
+          offs: 11.924995
+        },
+        {
+          text: 'WBL > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 320.48,
+          vel: 714.328491,
+          offs: 15.539993
+        },
+        {
+          text: 'WBL > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 304.76,
+          vel: 739.42395,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WBLJS',
+          mod: 10,
+          chance: 30,
+          speedo: 90.86,
+          vel: 751.377441,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WBLJS',
+          mod: 10,
+          chance: 70,
+          speedo: 89.12,
+          vel: 732.638916,
+          offs: 15.539993
+        }
+      ]
+    },
+    {
+      weapon: 'Mangler',
+      dir: 3,
+      bounces: [
+        {
+          text: 'ABR > ABRJS',
+          mod: 17,
+          chance: 70,
+          speedo: 293.62,
+          vel: 695.934814,
+          offs: 22.229988
+        },
+        {
+          text: 'ABR > ABRJS',
+          mod: 17,
+          chance: 30,
+          speedo: 271.78,
+          vel: 718.780395,
+          offs: 18.97499
+        },
+        {
+          text: 'ABR > JS',
+          mod: 20,
+          chance: 70,
+          speedo: 293.62,
+          vel: 695.934814,
+          offs: 22.229988
+        },
+        {
+          text: 'ABR > JS',
+          mod: 20,
+          chance: 30,
+          speedo: 271.78,
+          vel: 718.780395,
+          offs: 18.97499
+        },
+        {
+          text: 'N > ABRJS',
+          mod: 18,
+          chance: 70,
+          speedo: 33.24,
+          vel: 736.342041,
+          offs: 15.539993
+        },
+        {
+          text: 'N > ABRJS',
+          mod: 18,
+          chance: 30,
+          speedo: 46.51,
+          vel: 754.297973,
+          offs: 11.924995
+        },
+        {
+          text: 'BR > BRJS',
+          mod: 1,
+          chance: 30,
+          speedo: 246.79,
+          vel: 759.472534,
+          offs: 11.924995
+        },
+        {
+          text: 'BR > BRJS',
+          mod: 1,
+          chance: 70,
+          speedo: 273.51,
+          vel: 737.842407,
+          offs: 15.539993
+        },
+        {
+          text: 'BR > JS',
+          mod: 4,
+          chance: 30,
+          speedo: 246.79,
+          vel: 759.472534,
+          offs: 11.924995
+        },
+        {
+          text: 'BR > JS',
+          mod: 4,
+          chance: 70,
+          speedo: 273.51,
+          vel: 737.842407,
+          offs: 15.539993
+        },
+        {
+          text: 'N > BRJS',
+          mod: 2,
+          chance: 70,
+          speedo: 33.24,
+          vel: 736.342041,
+          offs: 15.539993
+        },
+        {
+          text: 'N > BRJS',
+          mod: 2,
+          chance: 30,
+          speedo: 46.51,
+          vel: 754.298095,
+          offs: 11.924995
+        },
+        {
+          text: 'WABR > WABRJS',
+          mod: 25,
+          chance: 30,
+          speedo: 238.24,
+          vel: 719.696533,
+          offs: 18.97499
+        },
+        {
+          text: 'WABR > WABRJS',
+          mod: 25,
+          chance: 70,
+          speedo: 258.13,
+          vel: 697.967773,
+          offs: 22.229988
+        },
+        {
+          text: 'WABR > JS',
+          mod: 28,
+          chance: 30,
+          speedo: 238.24,
+          vel: 719.696533,
+          offs: 18.97499
+        },
+        {
+          text: 'WABR > JS',
+          mod: 28,
+          chance: 70,
+          speedo: 258.13,
+          vel: 697.967773,
+          offs: 22.229988
+        },
+        {
+          text: 'N > WABRJS',
+          mod: 26,
+          chance: 30,
+          speedo: 46.51,
+          vel: 754.297973,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WABRJS',
+          mod: 26,
+          chance: 70,
+          speedo: 33.31,
+          vel: 736.342041,
+          offs: 15.539993
+        },
+        {
+          text: 'WBR > WBRJS',
+          mod: 9,
+          chance: 70,
+          speedo: 239.45,
+          vel: 738.893676,
+          offs: 15.539993
+        },
+        {
+          text: 'WBR > WBRJS',
+          mod: 9,
+          chance: 30,
+          speedo: 215.25,
+          vel: 759.501953,
+          offs: 11.924995
+        },
+        {
+          text: 'WBR > JS',
+          mod: 12,
+          chance: 70,
+          speedo: 239.45,
+          vel: 738.89392,
+          offs: 15.539993
+        },
+        {
+          text: 'WBR > JS',
+          mod: 12,
+          chance: 30,
+          speedo: 215.25,
+          vel: 759.502075,
+          offs: 11.924995
+        },
+        {
+          text: 'N > WBRJS',
+          mod: 10,
+          chance: 70,
+          speedo: 33.31,
+          vel: 736.342041,
+          offs: 15.539993
+        },
+        {
+          text: 'N > WBRJS',
+          mod: 10,
+          chance: 30,
+          speedo: 46.51,
+          vel: 754.298095,
           offs: 11.924995
         }
       ]
