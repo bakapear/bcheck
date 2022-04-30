@@ -65,6 +65,12 @@ function getFlags (mod) {
   return f
 }
 
+let BOUNCES = {}
+
+addBounces('stock.log', 'Stock')
+addBounces('ori.log', 'Original')
+addBounces('mangler.log', 'Mangler')
+
 function addBounces (file, weapon) {
   let data = fs.readFileSync(file, 'utf-8')
   let lines = data.split('\n')
@@ -108,10 +114,5 @@ function addBounces (file, weapon) {
     }
   }
 }
-
-let BOUNCES = {}
-
-addBounces('stock.log', 'Stock')
-addBounces('ori.log', 'Original')
 
 fs.writeFileSync('bounces.json', JSON.stringify(BOUNCES, null, 2))
