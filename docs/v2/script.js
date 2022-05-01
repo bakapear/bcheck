@@ -22,10 +22,17 @@ let MODS = {
   '+RELOAD': 1 << 4
 }
 
+let ICONS = {}
+
 window.onload = () => {
   LIST = {
     uncrouched: document.getElementById('list_uncrouched'),
     crouched: document.getElementById('list_crouched')
+  }
+
+  ICONS = {
+    MOVEUP: document.getElementById('template-icon-moveup'),
+    RELOAD: document.getElementById('template-icon-reload')
   }
 
   let opts = 'options'
@@ -336,6 +343,7 @@ function addBounceItemTag (parent, name, content, overwrite, title) {
   let node = document.createElement('span')
   node.className = name
   if (Array.isArray(content)) node.innerHTML = `<span>${Number(content[0]).toFixed(2)}</span><span>${Number(content[1]).toFixed(2)}</span>`
+  else if (content.constructor === window.DocumentFragment) node.appendChild(content)
   else node.innerText = overwrite || content
   if (title) node.title = title
   parent.appendChild(node)
@@ -368,9 +376,9 @@ function createBounceItem (bounce) {
   addBounceItemTag(item, 'weapon', bounce.weapon, w, bounce.weapon)
 
   if (bounce.mod) { // do something else pls
-    addBounceItemTag(item, 'normal', bounce.text)
-    if ((bounce.mod & MODS['+MOVEUP'])) addBounceItemTag(item, 'mod', 'W')
-    if ((bounce.mod & MODS['+RELOAD'])) addBounceItemTag(item, 'mod', 'A')
+    // addBounceItemTag(item, 'normal', bounce.text)
+    if ((bounce.mod & MODS['+MOVEUP'])) addBounceItemTag(item, 'mod', ICONS.MOVEUP.cloneNode(true).content, null, '+MOVEUP')
+    if ((bounce.mod & MODS['+RELOAD'])) addBounceItemTag(item, 'mod', ICONS.RELOAD.cloneNode(true).content, null, '+RELOAD')
   }
 
   let normal = addBounceItemTag(item, 'normal', bounce.dir ? formatBounceDir(bounce) : bounce.text)

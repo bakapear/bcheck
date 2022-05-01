@@ -369,8 +369,9 @@ button {
 }
 
 .list .item span.mod {
-    background: #1f1f1f;
-    width: 5px
+    background: rgba(118, 133, 61, 0.63);
+    width: 15px;
+    padding: 0 4px
 }
 
 .list .item span.alt {
