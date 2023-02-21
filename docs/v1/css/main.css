@@ -368,12 +368,6 @@ button {
     width: 25px
 }
 
-.list .item span.mod {
-    background: rgba(118, 133, 61, 0.63);
-    width: 15px;
-    padding: 0 4px
-}
-
 .list .item span.alt {
     background: #a78089
 }
@@ -439,30 +433,17 @@ button {
         flex: 1 1 20%
     }
 
-    .swap {
-        width: 100% !important;
-    }
-    
-    /*
     .sep {
+        width: 90%;
         border-radius: 100px;
         height: 2px;
         margin: 5px auto;
         background: rgb(255,255,255,.05)
     }
-    */
 
     .tags.weapons .button>img {
-        width: 100%;
-        max-width: 110px;
+        width: 100%
     }
-}
-
-.sep {
-    border-radius: 100px;
-    height: 2px;
-    margin: 5px auto;
-    background: rgb(255,255,255,.05)
 }
 
 footer {
@@ -492,33 +473,4 @@ footer .heart {
 
 footer .fruit {
     color: #eabc10
-}
-
-.swap {
-    display: flex;
-    width: 50%;
-    border-radius: 5px;
-    overflow:hidden;
-    background: #131313;
-}
-
-.swap > button {
-    background: 0 !important;
-}
-
-.swap > button:not(.disabled) {
-    background: rgb(53, 95, 53) !important;
-}
-
-.modifiers > button {
-    background: rgb(117, 133, 61);
-}
-
-.swap > button:active {
-    top: 0px;
-}
-
-.swap:active {
-    position:relative;
-    top: 1px;
 }

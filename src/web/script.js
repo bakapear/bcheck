@@ -4,11 +4,7 @@ let LIST = {}
 
 let bcheck = window.bcheck
 
-let total = window.BOUNCES
-if (window.location.search === '?EXPERIMENTAL') {
-  Object.assign(total, { EXPERIMENTAL: window.EXPERIMENTAL })
-}
-let BOUNCES = bcheck.formatBounceJSON(total)
+let BOUNCES = bcheck.formatBounceJSON(window.BOUNCES)
 
 Object.defineProperty(STATE, 'set', {
   enumerable: false,
@@ -18,10 +14,25 @@ Object.defineProperty(STATE, 'set', {
   }
 })
 
+let MODS = {
+  HOLD: 1 << 0,
+  TICK: 1 << 1,
+  REVERSE: 1 << 2,
+  '+MOVEUP': 1 << 3,
+  '+RELOAD': 1 << 4
+}
+
+let ICONS = {}
+
 window.onload = () => {
   LIST = {
     uncrouched: document.getElementById('list_uncrouched'),
     crouched: document.getElementById('list_crouched')
+  }
+
+  ICONS = {
+    MOVEUP: document.getElementById('template-icon-moveup'),
+    RELOAD: document.getElementById('template-icon-reload')
   }
 
   let opts = 'options'
@@ -29,6 +40,7 @@ window.onload = () => {
   addSetting(opts, 'ang', 'Custom Angle', [40, 89, 60], 'deg')
   addSetting(opts, 'teleheight', 'Override Teleheight', [0, 62, 10], 'digit', x => (x / 10).toFixed(1))
   addSetting(opts, 'hidelow', 'Hide bounces with lower probability')
+  addSetting(opts, 'bouncemods', 'Use bounce modifiers')
   addSetting(opts, 'wepicons', 'Use weapon icons')
   addSetting(opts, 'perinput', 'Update bounces on keystroke')
   // addSetting(opts, 'hell', 'Activate Light Mode')
@@ -37,8 +49,10 @@ window.onload = () => {
   handleInput('input_height', 'button_check')
 
   addTags('switch_types', BOUNCES.list.types)
+  addTags('switch_mods', [['HOLD', 'TICK', 'REVERSE'], '+MOVEUP', '+RELOAD'])
   addTags('switch_weps', BOUNCES.list.weapons, true)
   handleSwitches('switch_types', 'types', 1)
+  handleSwitches('switch_mods', 'modifiers', 1)
   handleSwitches('switch_weps', 'weapons')
 
   handleJumpbug('switch_jb', 1)
@@ -65,6 +79,16 @@ function updateSettings () {
   let check = document.getElementById('button_check')
   if (OPTIONS.perinput) check.classList.add('hidden')
   else check.classList.remove('hidden')
+
+  let mods = document.getElementById('switch_mods')
+  let sep = mods.nextElementSibling
+  if (OPTIONS.bouncemods) {
+    mods.classList.remove('hidden')
+    sep.classList.remove('hidden')
+  } else {
+    mods.classList.add('hidden')
+    sep.classList.add('hidden')
+  }
 
   updateBounces()
 }
@@ -132,25 +156,34 @@ function handleSettings (button) {
 function addTags (node, tags, imgs) {
   let parent = document.getElementById(node)
 
-  for (let tag of tags) {
-    let button = document.createElement('button')
-    button.className = 'button disabled'
-    button.setAttribute('data-id', tag)
-
-    let text = tag.split(' ').pop()
-
-    let span = document.createElement('span')
-    span.innerText = text
-    button.appendChild(span)
-
-    if (imgs) {
-      let img = document.createElement('img')
-      img.alt = tag
-      img.src = `icons/${text.toLowerCase()}.png`
-      button.appendChild(img)
+  for (let t of tags) {
+    let bundle
+    if (!Array.isArray(t)) t = [t]
+    else {
+      bundle = document.createElement('div')
+      bundle.className = 'swap'
     }
+    for (let tag of t) {
+      let button = document.createElement('button')
+      button.className = 'button disabled'
+      button.setAttribute('data-id', tag)
 
-    parent.appendChild(button)
+      let text = tag.split(' ').pop()
+
+      let span = document.createElement('span')
+      span.innerText = text
+      button.appendChild(span)
+
+      if (imgs) {
+        let img = document.createElement('img')
+        img.alt = tag
+        img.src = `icons/${text.toLowerCase()}.png`
+        button.appendChild(img)
+      }
+      if (bundle) bundle.appendChild(button)
+      else parent.appendChild(button)
+    }
+    if (bundle) parent.appendChild(bundle)
   }
 }
 
@@ -176,10 +209,25 @@ function handleInput (input, button) {
 
 function handleSwitches (switches, prop, def) {
   switches = Array.from(document.getElementById(switches).children)
+  switches = switches.map(x => {
+    if (x.tagName === 'DIV') return Array.from(x.children)
+    return x
+  }).flat()
   switches.forEach(s => {
     s.onclick = e => {
-      if (e.ctrlKey) switches.forEach(t => t.classList.add('disabled'))
-      s.classList.toggle('disabled')
+      if (s.parentNode.className === 'swap') {
+        switches.forEach(t => {
+          if (t.parentNode.className === 'swap') t.classList.add('disabled')
+        })
+        s.classList.remove('disabled')
+      } else {
+        if (e.ctrlKey) {
+          switches.forEach(t => {
+            if (t.parentNode.className !== 'swap') t.classList.add('disabled')
+          })
+        }
+        s.classList.toggle('disabled')
+      }
       let sws = switches.filter(x => !x.classList.contains('disabled'))
       STATE.set(prop, sws.map(x => x.getAttribute('data-id')))
     }
@@ -213,7 +261,7 @@ function updateBounces () {
 
   if (STATE.height === null) return
 
-  let bounces = getBounces(STATE.height, STATE.types, STATE.weapons)
+  let bounces = getBounces(STATE.height, STATE.types, STATE.modifiers, STATE.weapons)
 
   let type = null
 
@@ -254,19 +302,32 @@ function makeCustomAngles (ang) {
   return res.bounces.ANGLES
 }
 
-function getBounces (height, types = [], weapons = []) {
+function getFlags (mod) {
+  mod = [...new Set(mod)]
+  let f = 0
+  for (let m of mod) {
+    if (MODS[m]) f += MODS[m]
+  }
+  return f
+}
+
+function getBounces (height, types = [], mods = [], weapons = []) {
   if (height >= 1234567890) return { uncrouched: [], crouched: [] }
 
   let bounces = JSON.parse(JSON.stringify(BOUNCES.bounces))
+
   if (OPTIONS.ang) bounces.ANGLES.unshift(...makeCustomAngles(OPTIONS.ang))
+  if (!OPTIONS.bouncemods) mods = ['HOLD']
   let teleheight = typeof OPTIONS.teleheight === 'number' ? OPTIONS.teleheight / 10 : 1
 
   let set = []
   for (let type in bounces) {
     if (!types.length || types.includes(type)) {
       for (let bounce of bounces[type]) {
-        if (OPTIONS.hidelow && bounce.alt) continue
-        if (!bounce.weapon || !weapons.length || weapons.includes(bounce.weapon)) set.push({ ...bounce, type })
+        if (OPTIONS.hidelow && bounce.chance < 50) continue
+        if (bounce.weapon && weapons.length && !weapons.includes(bounce.weapon)) continue
+        if (bounce.mod && (bounce.mod !== getFlags(mods) && bounce.mod !== getFlags([...mods, 'HOLD', 'TICK', 'REVERSE']))) continue
+        set.push({ ...bounce, type })
       }
     }
   }
@@ -282,32 +343,16 @@ function addBounceItemTag (parent, name, content, overwrite, title) {
   let node = document.createElement('span')
   node.className = name
   if (Array.isArray(content)) node.innerHTML = `<span>${Number(content[0]).toFixed(2)}</span><span>${Number(content[1]).toFixed(2)}</span>`
+  else if (content.constructor === window.DocumentFragment) node.appendChild(content)
   else node.innerText = overwrite || content
   if (title) node.title = title
   parent.appendChild(node)
   return node
 }
 
-function formatBounceSetup (setup) {
-  let parts = setup.map(x => {
-    if (['JDS', 'JS', 'SHOOT'].includes(x)) return x
-    if (x === 'SIDE') return 'Left/Right'
-    return x[0].toUpperCase() + x.substr(1).toLowerCase()
-  })
-  let str = ''
-  for (let i = 0; i < parts.length; i++) {
-    if (parts[i] === 'SHOOT') continue
-    if (i !== 0) {
-      str += (i === 2 && parts.length > 3) ? '+' : ' '
-    }
-    str += parts[i]
-  }
-  return str
-}
-
 function formatBounceText (bounce) {
   return (bounce.weapon ? `(${bounce.weapon}) ` : '') +
-    (bounce.text || formatBounceSetup(bounce.setup)) +
+    (bounce.text) +
     (bounce.speedo ? ` <${bounce.speedo} u/s>` : '') +
     (bounce.ang && bounce.ang.length ? ` <${bounce.ang[0]} - ${bounce.ang[1]}>` : '') +
     (bounce.double ? ' [double]' : '')
@@ -330,15 +375,21 @@ function createBounceItem (bounce) {
   if (w) w = w.split(' ').pop()[0]
   addBounceItemTag(item, 'weapon', bounce.weapon, w, bounce.weapon)
 
-  let normal = addBounceItemTag(item, 'normal', bounce.text || formatBounceSetup(bounce.setup))
+  if (bounce.mod) { // do something else pls
+    // addBounceItemTag(item, 'normal', bounce.text)
+    if ((bounce.mod & MODS['+MOVEUP'])) addBounceItemTag(item, 'mod', ICONS.MOVEUP.cloneNode(true).content, null, '+MOVEUP')
+    if ((bounce.mod & MODS['+RELOAD'])) addBounceItemTag(item, 'mod', ICONS.RELOAD.cloneNode(true).content, null, '+RELOAD')
+  }
+
+  let normal = addBounceItemTag(item, 'normal', bounce.dir ? formatBounceDir(bounce) : bounce.text)
   normal.onclick = () => navigator.clipboard.writeText(formatBounceText(bounce))
 
-  if (bounce.ang) addBounceItemTag(item, 'angle', bounce.ang, null, Math.abs(bounce.ang[0] - bounce.ang[1]).toFixed(2))
+  addBounceItemTag(item, 'angle', bounce.ang, null, Math.abs(bounce.ang[0] - bounce.ang[1]).toFixed(2))
 
-  let speedo = addBounceItemTag(item, 'speedo', bounce.speedo, null, bounce.chance ? bounce.chance + '%' : null)
+  let speedo = addBounceItemTag(item, 'speedo', parseInt(bounce.speedo), null, `<${bounce.speedo} u/s> ${bounce.chance ? bounce.chance + '%' : ''}`)
   if (speedo) speedo.style.webkitFilter = `saturate(${Math.min(bounce.chance * 1.8, 150)}%)`
 
-  if (!bounce.setup && bounce.type !== 'EXPERIMENTAL') addBounceItemTag(item, 'double', bounce.double, 'D', 'Double Bhop')
+  addBounceItemTag(item, 'double', bounce.double, 'D', 'Double Bhop')
 
   return item
 }
@@ -378,5 +429,30 @@ function handleSeparators () {
     Array.from(LIST[t].getElementsByClassName('separator')).forEach(s => {
       if (STATE.folds[t][s.getAttribute('data-type')] === true) s.click()
     })
+  }
+}
+
+function formatBounceDir (bounce) {
+  let crouched = bounce.text.split('>')[0].indexOf('D') > 0 // very specific hm
+  let type = bounce.type
+  let text = [
+    bounce.dir === 5 ? '' : crouched ? 'Crouch' : 'Walk',
+    crouched && bounce.dir === 5 ? 'Crouch' : getBounceDirText(bounce.dir),
+    type === 'SPECIAL' ? 'Shoot' : type
+  ]
+  return text.join(' ').trim()
+}
+
+function getBounceDirText (dir) {
+  switch (dir) {
+    case 1: return 'Back+Left'
+    case 2: return 'Back'
+    case 3: return 'Back+Right'
+    case 4: return 'Left'
+    case 5: return 'Stand'
+    case 6: return 'Right'
+    case 7: return 'Forward+Left'
+    case 8: return 'Forward'
+    case 9: return 'Forward+Right'
   }
 }
