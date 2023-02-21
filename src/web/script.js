@@ -1,5 +1,5 @@
 let STATE = { height: null, folds: {} }
-let OPTIONS = { wepicons: true }
+let OPTIONS = { wepicons: true, hidelow: true }
 let LIST = {}
 
 let bcheck = window.bcheck
