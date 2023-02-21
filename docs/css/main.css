@@ -62,6 +62,12 @@ body {
     font-weight: lighter
 }
 
+.title .version {
+    padding-left: 4px;
+    font-size: 10px;
+    opacity: 0.5
+}
+
 .row {
     padding: 5px 0;
     display: flex;
